@@ -1,7 +1,7 @@
 # Dotfiles 
 ![dotfiles-banner](https://github.com/rototrash/dotfiles/blob/main/assets/dotfiles_7p.png)
 
-Grab whatever you want I don't care. Just be careful with my i3 config, don't copy the whole thing, somethings may not on your system or things might break idk ¯\\_\_(ツ)_\_/¯. Pick up the parts you like from it :)
+Grab whatever you want I don't care. Just be careful with my i3 config, don't copy the whole thing, somethings may not work on your system or things might break idk ¯\\_\_(ツ)_\_/¯. Pick up the parts you like from it :)
 
 Do not **BLINDLY** do anything, ever.
 
