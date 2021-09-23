@@ -10,7 +10,7 @@ Do not BLINDLY do anything, ever.
 ```
                     /-                        rototrash@github.com
                    ooo:                       --------------------
-                  yoooo/                      OS: [ArcoLinuxB](https://arcolinux.com/) [x86_64]
+                  yoooo/                      OS: ArcoLinuxB [x86_64]
                  yooooooo                     WM: i3-gaps (X11)
                 yooooooooo                    Shell: zsh 5.8
                yooooooooooo                   Prompt: agnoster
