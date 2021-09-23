@@ -1,32 +1,18 @@
-# Dotfiles
-![Dotfiles_img](https://github.com/rototrash/dotfiles/blob/main/assets/dotfiles_7p.png)
+# Dotfiles 
+![dotfiles-banner](https://github.com/rototrash/dotfiles/blob/main/assets/dotfiles_7p.png)
 
 Grab whatever you want I don't care. Just be careful with my i3 config, don't copy the whole thing, somethings may not on your system or things might break idk ¯\\_\_(ツ)_\_/¯. Pick up the parts you like from it :)
 
-Do not BLINDLY do anything, ever.
+Do not **BLINDLY** do anything, ever.
 
-## Stuff I use:
+Also the configs are messy, BUT EVERYTHING WORKS FINE hehe. I'll cleanup up the messy config sometime later. So go through the config and check the paths, install the necessary fonts and stuff or change if things dont work or look weird.
 
-```
-                    /-                        rototrash@github.com
-                   ooo:                       --------------------
-                  yoooo/                      OS: ArcoLinuxB [x86_64]
-                 yooooooo                     WM: i3-gaps (X11)
-                yooooooooo                    Shell: zsh 5.8
-               yooooooooooo                   Prompt: agnoster
-             .yooooooooooooo                  Bar: Polybar
-            .oooooooooooooooo                 Terminal: Alacritty
-           .oooooooarcoooooooo                Browser: Firefox
-          .ooooooooo-oooooooooo               Text-Editor: VS-Codium
-         .ooooooooo-  oooooooooo              GTK-Theme: Ayu-Dark
-        :ooooooooo.    :ooooooooo             Icon-Theme: Papirus-Dark
-       :ooooooooo.      :ooooooooo            Login-Manager: SDDM
-      :oooarcooo         .oooarcooo           File-Manager: Thunar
-     :ooooooooy           .ooooooooo          Notifications: Dunst
-    :ooooooooo    ooooooooooooooooooo         Launcher: Rofi
-   :ooooooooo      .-ooooooooooooooooo.       Music-Player: Cantata
-  ooooooooo-             -ooooooooooooo.      Font: JetBrainsMono Nerd Font
- ooooooooo-                 .-oooooooooo.     Screen-Lock: i3lock-color
-ooooooooo.                     -ooooooooo
+Fonts used are JetBrainsMono Nerd Font, Font-Awesome and Material Design Icons. You can install them using yay or pacman, whichever works.
+ 
+# Screenshots
+![preview-ss](https://github.com/rototrash/dotfiles/blob/main/assets/B.png)
 
-```
+# WIP
+
+## License
+[**MIT**](https://github.com/rototrash/dotfiles/blob/main/LICENSE)
