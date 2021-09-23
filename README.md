@@ -12,7 +12,7 @@ Fonts used are JetBrainsMono Nerd Font, Font-Awesome and Material Design Icons. 
 # Screenshots
 ![preview-ss](https://github.com/rototrash/dotfiles/blob/main/assets/B.png)
 
-# WIP
+# Still WIP
 
 ## License
 [**MIT**](https://github.com/rototrash/dotfiles/blob/main/LICENSE)
