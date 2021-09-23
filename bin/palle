@@ -1,0 +1,11 @@
+#!/bin/sh
+
+printf "\n"
+printf "\n"
+for i in 0 1 2 3 4 5 6 7
+do
+printf "\tcolor${i} \033[1;3${i}m ▄▄▄▄▄ \n\033[1;0m"
+done
+printf "\n"
+printf "\n"
+#exit code 69
