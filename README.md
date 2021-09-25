@@ -6,19 +6,40 @@ Grab whatever you want I don't care. Just be careful with my i3 config, don't co
 Do not **BLINDLY** do anything, ever.
 
 Also the configs are messy, BUT EVERYTHING WORKS FINE hehe. I'll cleanup up the messy config sometime later. So go through the config and check the paths, install the necessary fonts and stuff or change if things dont work or look weird.
-
-Fonts used are JetBrainsMono Nerd Font, Font-Awesome and Material Design Icons. You can install them using yay or pacman, whichever works.
  
 # Screenshots
 Based on the [Ayu-Dark](https://github.com/ayu-theme/ayu-colors) Color Palette :)
 ![preview-ss](https://github.com/rototrash/dotfiles/blob/main/assets/flex.png)
+
+# Alright stuff that you'll need:
+1. **Fonts:**
+```
+yay -S nerd-fonts-jetbrains-mono ttf-jetbrains-mono  ttf-font-awesome  ttf-material-design-icons
+```
+
+2. **Compositor:**
+[picom-ibhagwan](https://github.com/ibhagwan/picom) (For rounded corners)
+```
+yay -S picom-ibhagwan-git
+```
+
+3. **Lockscreen:** [i3lock-color](https://github.com/Raymo111/i3lock-color)
+```
+yay -S i3lock-color
+```
+
+4. **GTK-Theme:**
+```
+yay -S ayu-theme
+```
+
 
 # Some Info about my system
 
 | Program | Name |
 | :---: | :---: |
 | Distro | [ArcoLinuxB](https://arcolinux.com/) |
-| Window Manager| [i3](https://i3wm.org/) |
+| Window Manager| [i3-gaps](https://i3wm.org/) |
 | Bar | [polybar](https://polybar.github.io/) |
 | Launcher | [Rofi](https://github.com/davatorium/rofi/) |
 | Terminal Emulator | [Alacritty](https://github.com/alacritty/alacritty) |
@@ -32,7 +53,7 @@ Based on the [Ayu-Dark](https://github.com/ayu-theme/ayu-colors) Color Palette :
 | Login Manager | [sddm](https://github.com/sddm/sddm) |
 | Music Player | [cantata](https://github.com/CDrummond/cantata) |
 | Fetch | [sofetch](https://github.com/sora6kq/scripts/blob/main/sofetch) |
-| Lock | [i3lock-color](https://github.com/Raymo111/i3lock-color) |
+| Lockscreen | [i3lock-color](https://github.com/Raymo111/i3lock-color) |
 
 ## License
 [**MIT**](https://github.com/rototrash/dotfiles/blob/main/LICENSE)
