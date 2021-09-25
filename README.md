@@ -20,6 +20,7 @@ Based on the [Ayu-Dark](https://github.com/ayu-theme/ayu-colors) Color Palette :
 | Distro | [ArcoLinuxB](https://arcolinux.com/) |
 | Window Manager| [i3](https://i3wm.org/) |
 | Bar | [polybar](https://polybar.github.io/) |
+| Launcher | [Rofi](https://github.com/davatorium/rofi/) |
 | Terminal Emulator | [Alacritty](https://github.com/alacritty/alacritty) |
 | Notifications | [Dunst](https://dunst-project.org/) |
 | Shell | zsh |
