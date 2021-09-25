@@ -10,7 +10,7 @@ Also the configs are messy, BUT EVERYTHING WORKS FINE hehe. I'll cleanup up the 
 Fonts used are JetBrainsMono Nerd Font, Font-Awesome and Material Design Icons. You can install them using yay or pacman, whichever works.
  
 # Screenshots
-![preview-ss](https://github.com/rototrash/dotfiles/blob/main/assets/B.png)
+![preview-ss](https://github.com/rototrash/dotfiles/blob/main/assets/flex.png)
 
 # Still WIP
 
