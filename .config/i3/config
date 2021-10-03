@@ -893,11 +893,11 @@ bindsym control+mod1+o exec --no-startup-id ~/.config/picom/scripts/picom-toggle
 
     # Window color settings
     # class                 border  backgr. text    indicator
-    client.focused          #59c2ff #59c2ff #e5e5e5 #59c2ff
-    client.unfocused        #0A0E14 #0A0E14 #aaaaaa #0A0E14
-    client.focused_inactive #0A0E14 #0A0E14 #a9a9a9 #0A0E14
-    client.placeholder      #222222 #222222 #aaaaaa #222222
-    client.urgent           #FF3333 #FF3333 #f7f7f7 #FF3333
+    client.focused          #59c2ff #59c2ff #0A0E14 #59c2ff
+    client.unfocused        #0A0E14 #0A0E14 #CBCCC6 #0A0E14
+    client.focused_inactive #0A0E14 #0A0E14 #CBCCC6 #0A0E14
+    client.placeholder      #222222 #222222 #CBCCC6 #222222
+    client.urgent           #FF3333 #FF3333 #0A0E14 #FF3333
 
     client.background       #242424
 
