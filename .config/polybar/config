@@ -2,6 +2,7 @@
 
 include-file = ~/.config/polybar/colors.ini
 include-file = ~/.config/polybar/modules.ini
+include-file = ~/.config/polybar/custom-modules.ini
 
 ;; Global WM Settings
 
@@ -20,12 +21,12 @@ margin-top = 0
 
 [bar/bar]
 
-monitor = eDP-1
+monitor = 
 monitor-fallback =
 monitor-strict = false
 override-redirect = false
 
-bottom = true
+bottom = false 
 
 fixed-center = true
 
@@ -56,7 +57,7 @@ border-left-color = "trasnperent"
 border-right-color = "trasnperent"
 
 padding-left = 1
-padding-right = 1
+padding-right = 0
 
 ; Number of spaces to add before/after each module
 module-margin-left = 0
@@ -69,12 +70,14 @@ font-0 = "JetBrains Mono:size=10;2"
 font-1 = "FontAwesome:size=11;3"
 font-2 = "Material Icons:size=11;3"
 font-3 = "JetBrainsMono Nerd Font:size=10;3"
-font-4 = "JetBrains Mono:size=12;3"
+font-4 = "JetBrains Mono:size=12;3" 
 font-5 = "FontAwesome:size=14;3"
 font-6 = "JetBrainsMono Nerd Font:size=16;4"
+font-7 = "JetBrains Mono:size=10;3"
+font-8 = "JetBrainsMono:size=11:weight=bold:style=italic;3"
 
 ;; Modules
-modules-left = ld menu rd space ld i3 rd
+modules-left = ld menu rd space ld terminal browser fileman rd space ld i3 rd space 
 modules-center = ld date rd
 ;modules-right = bluetooth battery brightness space pulseaudio space wlan
 modules-right = ld bluetooth rd space ld battery brightness rd space ld pulseaudio rd space ld wlan rd
