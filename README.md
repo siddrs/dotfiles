@@ -31,9 +31,12 @@ yay -S i3lock-color
 4. **GTK-Theme:**
 ```
 yay -S ayu-theme
+``` 
+
+5. **Light** (For adjusting brightness)
 ```
-
-
+yay -S light
+```
 # Some Info about my system
 
 | Program | Name |
