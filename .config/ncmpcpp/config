@@ -1,0 +1,138 @@
+## Copyright (C) 2020-2021 Aditya Shakya <adi1090x@gmail.com>
+## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
+
+ncmpcpp_directory    = ~/.config/ncmpcpp
+lyrics_directory     = ~/.config/mpd/lyrics
+mpd_music_dir        = ~/Music
+
+mpd_host             = "localhost"
+mpd_port             = "6600"
+
+#### Script ###
+execute_on_song_change="~/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp_cover_art.sh"
+
+### Global ###
+message_delay_time 				 = 1
+autocenter_mode 				 = "yes"
+centered_cursor 				 = "yes"
+ignore_leading_the 				 = "yes"
+playlist_disable_highlight_delay = 2
+allow_for_physical_item_deletion = "no"
+display_bitrate = "no"
+enable_window_title = "yes"
+follow_now_playing_lyrics = "yes"
+empty_tag_marker = ""
+cyclic_scrolling = "yes"
+header_text_scrolling = "yes"
+jump_to_now_playing_song_at_start = "yes"
+lines_scrolled = "2"
+system_encoding = "utf-8"
+regular_expressions = "extended"
+volume_change_step = 5
+display_remaining_time = "no"
+
+lyrics_fetchers = azlyrics, genius, musixmatch, sing365, metrolyrics, justsomelyrics, jahlyrics, plyrics, tekstowo, zeneszoveg, internet
+fetch_lyrics_for_current_song_in_background = yes
+
+
+### Window ###
+song_window_title_format = "Music Player"
+#song_window_title_format = "{%a - }{%t}|{%f}"
+statusbar_visibility 	 = "no"
+header_visibility 		 = "no"
+titles_visibility 		 = "yes"
+
+
+### UI ###
+current_item_prefix 				= "$r"
+current_item_suffix 				= "$/r$(end)"
+now_playing_prefix = "$3 "
+selected_item_prefix = "* "
+
+
+### Layout ###
+startup_screen = visualizer
+startup_slave_screen = playlist  
+startup_slave_screen_focus = yes
+locked_screen_width_part = 30
+
+
+### Visualizer ###
+visualizer_data_source = /tmp/mpd.fifo
+visualizer_output_name = "mpd_visualizer"
+visualizer_in_stereo   = "yes"
+#visualizer_look = "▐"
+#visualizer_look = "▗"
+#visualizer_look = "▉▉"
+#visualizer_look = "▗"
+#visualizer_look = "◾▍"
+#visualizer_look = "▮▍"
+#visualizer_look = "▍▍"
+#visualizer_look = "││"
+#visualizer_look = "▮▮"
+#visualizer_look = "▋▋"
+#visualizer_look = "●┃"
+#visualizer_look = "+|"
+#visualizer_look = "▄▍"
+#visualizer_look = "●●"
+#visualizer_look = "●▗"
+visualizer_look 	   = ""
+visualizer_type 	   = "ellipse"
+
+
+### Progress bar ###
+#progressbar_look 			= "▂▂▂"
+#progressbar_look = "━━━"
+progressbar_look = "─ "
+#progressbar_look = "─╼"
+#progressbar_look = "▃▃▃"
+#progressbar_look = "─▍"
+#progressbar_look = "•••"
+#progressbar_look = "---"
+#progressbar_look = "─●"
+#progressbar_look = "─"
+progressbar_color 			= "black"
+progressbar_elapsed_color   = "red"
+
+
+### Appearance ###
+playlist_display_mode = "columns"
+colors_enabled 		  = "yes"
+#user_interface       = classic
+user_interface 		  = alternative
+volume_color 		  = "yellow"
+
+
+### Alternative UI ###
+alternative_ui_separator_color 		  = "blue"
+alternative_header_first_line_format  = $8 Now Playing$9: $b$7{%t}|{%f}$/b $/b 
+alternative_header_second_line_format = {$b{$8by $9$7%a$9}{ $8on$9 $7 %b$9}}
+
+
+
+### Song list ###
+song_status_format		 = "$7%t"
+song_list_format 		 = "  $4%t$9 $7$R%a$9 $2%l$9  "
+#song_list_format = "{%t $R$6  $8%a$8}|{%f $R$6  $8%l$8}$8"
+song_library_format 	 = {{%a - %t} (%b)}|{%f}
+#song_columns_list_format = "(50)[blue]{t|fr:Title} (0)[green]{a}"
+song_columns_list_format = "(60)[blue]{t} (35)[green]{ar} (15)[cyan]{lr}"
+#song_columns_list_format = "(35)[blue]{t} (30)[green]{a}"
+#song_columns_list_format = "(35)[blue]{t} (30)[green]{a} (6)[cyan]{lr}"
+
+
+
+### Colors ###
+statusbar_time_color         = "yellow"
+player_state_color           = "yellow"
+state_line_color             = "yellow"
+state_flags_color            = "yellow"
+main_window_color   	     = "blue"
+color1                       = "white"
+color2                       = "red"
+
+
+### Misc ###
+default_place_to_search_in = "database"
+
+
