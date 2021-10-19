@@ -52,9 +52,9 @@ yay -S light
 | Web Browser | Firefox |
 | gtk-theme | ayu-dark |
 | icon-theme | papirus-dark |
-| Text-Editor | Sublime-Text |
+| Text-Editor | [VS-Codium](https://vscodium.com/) |
 | Login Manager | [sddm](https://github.com/sddm/sddm) |
-| Music Player | [cantata](https://github.com/CDrummond/cantata) |
+| Music Player | [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp) |
 | Fetch | [sofetch](https://github.com/sora6kq/scripts/blob/main/sofetch) |
 | Lockscreen | [i3lock-color](https://github.com/Raymo111/i3lock-color) |
 
