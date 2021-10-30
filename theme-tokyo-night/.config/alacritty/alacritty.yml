@@ -1,0 +1,87 @@
+background_opacity: 1
+
+window:
+  padding:
+    x: 10
+    y: 10
+  dimensions:
+    columns: 100
+    lines: 30
+  # set decorations to 'Full' if you want the Title Bars and Borders
+  decorations: none
+
+font:
+  font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Regular
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: Bold
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Italic
+  size: 8
+
+  
+draw_bold_text_with_bright_colors: true
+live_config_reload: true
+
+# tokyo-night Colors
+colors:
+  # Default colors
+  primary:
+    background: '#16161e'
+#    background: '#1a1b26'
+    foreground: '#c0caf5'
+
+  # Normal colors
+  normal:
+    black:   '#24283b'
+    red:     '#f7768e'
+    green:   '#9ece6a'
+    yellow:  '#ffa86f'
+    blue:    '#88afff'
+    magenta: '#c3a4f8'
+    cyan:    '#09c1dc'
+    white:   '#c0caf5'
+
+  # Bright colors#
+  bright:
+    black:   '#24283b'
+    red:     '#f7768e'
+    green:   '#9ece6a'
+    yellow:  '#ffa86f'
+    blue:    '#88afff'
+    magenta: '#c3a4f8'
+    cyan:    '#09c1dc'
+    white:   '#c0caf5'
+
+
+
+  indexed_colors:
+    - { index: 16, color: '0xff9e64' }
+    - { index: 17, color: '0xdb4b4b' }
+
+cursor:
+  style:
+
+    # Cursor Shape: Underline, Block, Beam
+    shape: Block 
+
+    # Blinking Values: On, Off, Never, Always
+    blinking: Off
+
+
+
+
+
+
+
+
+
+
+
+
+
+

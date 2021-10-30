@@ -1,0 +1,79 @@
+configuration {
+	font:							"JetBrainsMono Nerd Font 13";
+	sidebar-mode: 					true;
+    show-icons:                     false;
+}
+
+@theme "colors.rasi"
+
+window {
+    background-color:               @bg;
+    text-color:                     @fg;
+	border:							0px;
+	border-color:					@ac;
+    border-radius:                  6px;
+	width:							300px;
+    height:                         300px;
+    location:                       northeast;
+    anchor:                         northeast;
+    x-offset:                       -15;
+    y-offset:                       60;
+}
+
+
+textbox-prompt-colon {
+    str:                            "  Goodbye!";
+	expand: 						false;
+    border-radius:                  6px;
+    background-color:               @bg;
+    text-color:                     @ac;
+    padding:    					6px 10px 6px 10px;
+	font:							"JetBrainsMono Nerd Font 20";
+}
+
+inputbar {
+	children: 						[ textbox-prompt-colon];
+    background-color:               @bg;
+    text-color:                     @fg;
+    expand:                         false;
+}
+
+listview {
+    background-color:               @al;
+    padding:                        15px 0px 0px 0px;
+    columns:                        1;
+    lines:                          6;
+    spacing:                        15px;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @bg;
+	border-color:					@ac;
+    children:                       [ inputbar, listview ];
+    padding:                        25px;
+}
+
+element {
+    background-color:               @al;
+    text-color:                     @fg;
+    orientation:                    horizontal;
+    padding:                        0.5% 0.5% 0.5% 0.5%;
+}
+
+element-text {
+    background-color: 				@al;
+    text-color:       				inherit;
+    expand:                         true;
+    vertical-align:                 0.5;
+    margin:                         0% 0.25% 0% 0.25%;
+}
+
+element selected {
+    background-color:               @ac;
+    text-color:                     @bg;
+    border-radius:                  6px;
+    border-color:                  	@bg;
+}
