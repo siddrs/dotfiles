@@ -1,0 +1,65 @@
+background_opacity: 1.0
+
+window:
+  dimensions:
+    columns: 100
+    lines: 30
+
+
+  padding:
+    x: 10
+    y: 10
+  # set decorations to 'Full' if you want the Title Bars and Borders
+  decorations: none
+font:
+  normal:
+    #change the font family if the text looks weird on Alacritty or install the Nerd Fonts
+    family: JetBrainsMonoNerdFont
+  size: 8
+  offset:
+    x: 0
+  use_thin_strokes: false
+draw_bold_text_with_bright_colors: true
+live_config_reload: true
+
+# ayu-dark Colors
+colors:
+  # Default colors
+  primary:
+    background: '#0A0E14'
+    foreground: '#CBCCC6'
+
+  # Normal colors
+  normal:
+    black:   '#1D202F'
+    red:     '#FF3333'
+    green:   '#C2D94C'
+    yellow:  '#E6B450'
+    blue:    '#39BAE6'
+    magenta: '#A37ACC'
+    cyan:    '#59C2FF'
+    white:   '#B3B1AD'
+
+  # Bright colors
+  bright:
+    black:   '#1D202F'
+    red:     '#FF3333'
+    green:   '#C2D94C'
+    yellow:  '#E6B450'
+    blue:    '#39BAE6'
+    magenta: '#A37ACC'
+    cyan:    '#59C2FF'
+    white:   '#CBCCC6'
+
+  indexed_colors:
+    - { index: 16, color: '0xff9e64' }
+    - { index: 17, color: '0xdb4b4b' }
+
+cursor:
+  style:
+
+    # Cursor Shape: Underline, Block, Beam
+    shape: Block
+
+    # Blinking Values: On, Off, Never, Always
+    blinking: Off
