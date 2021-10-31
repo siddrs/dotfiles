@@ -7,11 +7,9 @@ Grab whatever you want I don't care. Just be careful with my i3 config, don't bl
 
 ![Tokyo-night-preview](./assets/tokyo-night-main.png)
 
-- [AYU DARK](./theme-ayu-dark) (This I don't use anymore)
+- [AYU DARK](./theme-ayu-dark) (This I don't use anymore, won't be updated)
 
 ![ayu-dark-preview](./assets/ayu-main.png)
-
-Look inside the respective theme folder for more previews and info
 
 # Alright stuff that you'll need:
 - **Fonts:**
@@ -22,7 +20,6 @@ Look inside the respective theme folder for more previews and info
 
 - **Packages and Apps:**
     - kitty
-    - alacritty
     - polybar
     - rofi
     - rofi-power-menu
@@ -36,7 +33,28 @@ Look inside the respective theme folder for more previews and info
     - mpd
     - ncmpcpp
     - cava
+    - ueberzug
+    - w3m
 
+# Notes: 
+- **NCMPCPP:**
+    
+    + **Preview**
+
+    ![ncmpcpp-ueberzug-preview](./assets/ncmpcpp-ueberzug.png)
+
+    + I use some scripts for displaying the current track's cover art in ncmpcpp cli and also send dunst notifications when the track changes which I got from [here](https://github.com/tam-carre/ncmpcpp-ueberzug). You need to have ueberzug installed: `pip3 install ueberzug`
+
+    + Make the scripts in the `~/.config/ncmpcpp/ncmpcpp-ueberzug` directory executable by running `chmod +x ncmpcpp-ueberzug ncmpcpp_cover_art.sh`
+
+    + Simply run ncmpcpp-ueberzug to open ncmpcpp with album art enabled. `~/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp-ueberzug`
+
+    + You may move or symlink it somewhere in your $PATH such that using its full path is unneeded. For example: 
+    + ```
+      $ ln -s ~/.ncmpcpp/ncmpcpp-ueberzug/ncmpcpp-ueberzug ~/.local/bin/
+      $ ncmpcpp-ueberzug
+        ```
+    + Also there are two ncmcpp configs inside the ncmpcpp folder, the `config` file is the one that displays cover art and the `config.normal` file which is without the cover art. Simply rename it (`ncmpcpp.normal`) to `config` if you want ncmpcpp without the cover art, and the other one to something else like `ncmpcpp.art`
 
 # Some Info about my system
 
@@ -57,12 +75,14 @@ Look inside the respective theme folder for more previews and info
 
 
 # Credits
-- [@adi1090x](https://github.com/adi1090x) for some of his scripts that I yoinked
 - [@erikdubois](https://github.com/erikdubois) and Arcolinux Team for this amazing [Distro](https://arcolinux.com/)
-- The [r/unixporn](https://www.reddit.com/r/unixporn/) and the Linux community
 - [@enkia](https://github.com/enkia) for the Tokyo Night colors
 - [@dempfi](https://github.com/dempfi) for the Ayu colors
 - [@koisodev](https://github.com/koiosdev/Tokyo-Night-Linux) for the Tokyo Night GTK and spotify themes 
+- [@tam-carre](https://github.com/tam-carre) for [ncmpcpp-ueberzug](https://github.com/tam-carre/ncmpcpp-ueberzug)
+- [@adi1090x](https://github.com/adi1090x) for some of his scripts that I yoinked
+- The [r/unixporn](https://www.reddit.com/r/unixporn/) and the Linux 
+community
 
 # License
 [**MIT**](https://github.com/rototrash/dotfiles/blob/main/LICENSE)
