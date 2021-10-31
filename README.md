@@ -38,6 +38,8 @@ The `theme-tokyo-night` directory contains all the config files.
     - w3m
 
 # Notes: 
+- [**GTK Theme for Tokyo Night**](https://github.com/koiosdev/Tokyo-Night-Linux): Follow the instruction from that repository to install the GTK theme.
+
 - **NCMPCPP:**
     
     + **Preview**
