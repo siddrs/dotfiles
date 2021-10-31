@@ -2,14 +2,13 @@
 ![preview image](./assets/banner.png)
 Grab whatever you want I don't care. Just be careful with my i3 config, don't blindly copy the whole thing, somethings may not work on your system or things might break idk ¯\\_\_(ツ)_\_/¯. Pick up the parts you like from it.
 
+If you are here for my old dotfiles based on the Ayu-Dark colors, check out the [ayu-dots branch](https://github.com/rototrash/dotfiles/tree/ayu-dots)
+
 # Previews
-- [TOKYO NIGHT](./theme-tokyo-night) (This is what I'm using for a while now)
+- [Tokyo Night](./theme-tokyo-night) (This is what I use!)
 
 ![Tokyo-night-preview](./assets/tokyo-night-main.png)
 
-- [AYU DARK](./theme-ayu-dark) (This I don't use anymore, won't be updated)
-
-![ayu-dark-preview](./assets/ayu-main.png)
 
 # Alright stuff that you'll need:
 - **Fonts:**
