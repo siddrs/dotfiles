@@ -13,14 +13,17 @@ The `theme-tokyo-night` directory contains all the config files.
 
 
 # Alright stuff that you'll need:
-- **Fonts:**
+- **Fonts:** Install these
     - nerd-fonts-jetbrains-mono 
     - ttf-jetbrains-mono  
     - ttf-font-awesome  
     - ttf-material-design-icons
+```
+$ yay -S nerd-fonts-jetbrains-mono ttf-jetbrains-mono ttf-font-awesome ttf-material-design-icons
+```
 
-- **Packages and Apps:**
-    - kitty
+- **Packages and Apps:** Install them.
+    - yay -S kitty
     - polybar
     - rofi
     - rofi-power-menu
@@ -30,15 +33,23 @@ The `theme-tokyo-night` directory contains all the config files.
     - i3lock-color
     - feh
     - blueberry
+    - bluez
+    - bluez-utils
     - pavucontrol
     - mpd
     - ncmpcpp
     - cava
     - ueberzug
     - w3m
+    - pulseaudio-control
+```
+$ yay -S kitty alacritty polybar rofi rofi-power-menu dunst light picom-ibhagawan i3lock-color feh bluez bluez-utils blueberry pulseaudio-control pavucontrol mpd ncmpcpp cava ueberzug w3m
+```
 
 # Notes: 
 - [**GTK Theme for Tokyo Night**](https://github.com/koiosdev/Tokyo-Night-Linux): Follow the instruction from that repository to install the GTK theme.
+
+- **Bluetooth:** Make sure you have the bluetooth utilites installed (`bluez, bluez-utils, blueberry`). Then enable the bluetooth service `sudo systemctl enable --now bluetooth`
 
 - **NCMPCPP:**
     
