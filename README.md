@@ -23,7 +23,7 @@ $ yay -S nerd-fonts-jetbrains-mono ttf-jetbrains-mono ttf-font-awesome ttf-mater
 ```
 
 - **Packages and Apps:** Install them.
-    - yay -S kitty
+    - kitty
     - polybar
     - rofi
     - rofi-power-menu
@@ -102,21 +102,3 @@ community
 [**MIT**](https://github.com/rototrash/dotfiles/blob/main/LICENSE)
 
 All attempts have been made to identify third party content within the repository, with sources and attribution given where necessary. Please contact me if any issues are discovered.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
