@@ -1,4 +1,5 @@
 # Wallpaper Previews
+From sources below, recolored by me to match the tokyo-night color scheme :))
 
 ### Normal Ones [1920 x 1080]
 ![path](https://github.com/rototrash/dotfiles/blob/main/wallpapers/tokyo-night/path.png)
@@ -17,5 +18,8 @@
 ![colorful-tile](https://github.com/rototrash/dotfiles/blob/main/wallpapers/tokyo-night/tile-colorful.png)
 ![tile-blue](https://github.com/rototrash/dotfiles/blob/main/wallpapers/tokyo-night/tile-kross.png)
 
+### Credits
+* [SimpleDesktops](simpledesktops.com/)
 
+* EndeavourOS
 
