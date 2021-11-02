@@ -27,6 +27,7 @@ $ yay -S nerd-fonts-jetbrains-mono ttf-jetbrains-mono ttf-font-awesome ttf-mater
     - polybar
     - rofi
     - rofi-power-menu
+    - rofi-emoji
     - dunst
     - light
     - picom-ibhagawan
@@ -43,7 +44,7 @@ $ yay -S nerd-fonts-jetbrains-mono ttf-jetbrains-mono ttf-font-awesome ttf-mater
     - w3m
     - pulseaudio-control
 ```
-$ yay -S kitty alacritty polybar rofi rofi-power-menu dunst light picom-ibhagawan i3lock-color feh bluez bluez-utils blueberry pulseaudio-control pavucontrol mpd ncmpcpp cava ueberzug w3m
+$ yay -S kitty alacritty polybar rofi rofi-power-menu rofi-emoji dunst light picom-ibhagawan i3lock-color feh bluez bluez-utils blueberry pulseaudio-control pavucontrol mpd ncmpcpp cava ueberzug w3m
 ```
 
 # Notes: 
