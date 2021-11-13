@@ -10,7 +10,7 @@ From sources below, recolored by me using imagegowild and GIMP to match the toky
 ![satellite](https://raw.githubusercontent.com/rototrash/dotfiles/main/wallpapers/tokyo-night/satellite.png)
 ![girl-blue](https://raw.githubusercontent.com/rototrash/dotfiles/main/wallpapers/tokyo-night/girl-blue.png)
 ![girl-pink](https://raw.githubusercontent.com/rototrash/dotfiles/main/wallpapers/tokyo-night/girl-pink.png)
-![girl-purp](https://raw.githubusercontent.com/rototrash/dotfiles/main/wallpapers/tokyo-night/girl-purple.png)
+![girl-purp](https://raw.githubusercontent.com/rototrash/dotfiles/main/wallpapers/tokyo-night/girl-purple.png)waves-abstract.png
 ![progression](https://raw.githubusercontent.com/rototrash/dotfiles/main/wallpapers/tokyo-night/progression.png)
 
 ![planet](https://raw.githubusercontent.com/rototrash/dotfiles/main/wallpapers/tokyo-night/another-planet.png)
@@ -36,7 +36,7 @@ From sources below, recolored by me using imagegowild and GIMP to match the toky
 ![tile-blue](https://raw.githubusercontent.com/rototrash/dotfiles/main/wallpapers/tokyo-night/tile-kross.png)
 
 ### Credits
-* [SimpleDesktops](simpledesktops.com/)
-* [wallhaven](wallhaven.cc)
+* [SimpleDesktops](http://www.simpledesktops.com/)
+* [wallhaven](https://www.wallhaven.cc)
 * EndeavourOS
 
