@@ -70,9 +70,9 @@ visualizer_color         = blue, magenta, red, yellow, green
 ### Progress Bar Look
 ##############################################
 
-progressbar_look = "─ "
+#progressbar_look = "─ "
 #progressbar_look = "▂▂▂"
-#progressbar_look = "━━━"
+progressbar_look = "━━━"
 #progressbar_look = "─●"
 #progressbar_look = "─"
 
@@ -109,7 +109,7 @@ song_status_format   = {$4$b %t}|{%f}$/b$9 $b$8by$9$/b $4$b %a$/b$9 $b$8on
 song_library_format	 = {{%a - %t} (%b)}|{%f}
 
 # Alternative UI
-alternative_header_first_line_format = $8 Now Playing:$9 $b$4{%t}|{%f}$/b $/b 
+alternative_header_first_line_format = $8 Now Playing:$9 $b$4{%t}|{%f}$/b$/b 
 alternative_header_second_line_format = {$b{$8by $9$4 %a$9}{ $8on$9 $4 %b$9}}
 
 current_item_prefix = $r
