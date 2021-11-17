@@ -1,0 +1,155 @@
+;; File-Inclusions
+
+include-file = ~/.config/polybar/themes/default/colors.ini
+include-file = ~/.config/polybar/themes/default/modules.ini
+
+;; Global WM Settings
+
+[global/wm]
+margin-bottom = 0
+margin-top = 0
+
+;; == == == == == == == == == == == == == == == == == == == == ==
+;;  ____               ____       _   _   _
+;; | __ )  __ _ _ __  / ___|  ___| |_| |_(_)_ __   __ _ ___
+;; |  _ \ / _` | '__| \___ \ / _ \ __| __| | '_ \ / _` / __|
+;; | |_) | (_| | |     ___) |  __/ |_| |_| | | | | (_| \__ \
+;; |____/ \__,_|_|    |____/ \___|\__|\__|_|_| |_|\__, |___/
+;;                                                |___/
+;; == == == == == == == == == == == == == == == == == == == == ==
+
+[bar/bar]
+
+monitor = 
+monitor-fallback =
+monitor-strict = false
+override-redirect = false
+
+bottom = false 
+
+fixed-center = true
+
+width = 100%
+height = 26
+
+offset-x = 0
+offset-y = 0
+
+background = ${colors.bg}
+foreground = ${colors.fg}
+
+; Radius for rounded corners
+radius-top = 0
+radius-bottom = 0
+
+line-size = 2
+line-color = ${colors.fg}
+
+border-top-size = 8
+border-bottom-size = 8
+border-left-size = 0
+border-right-size = 0
+
+border-top-color = ${colors.bg}
+border-bottom-color = ${colors.bg}
+border-left-color = "trasnperent"
+border-right-color = "trasnperent"
+
+padding-left = 1
+padding-right = 0
+
+; Number of spaces to add before/after each module
+module-margin-left = 0
+module-margin-right = 0
+
+; font-N = <fontconfig pattern>;<vertical offset>
+; NOTE: The -font property is a 1-based index of available fonts 
+; (which means that *-font = 1 will use font-0)
+font-0 = "JetBrains Mono:size=10;2"
+font-1 = "FontAwesome:size=10;3"
+font-2 = "Material Icons:size=11;3"
+font-3 = "JetBrainsMono Nerd Font:size=10;3"
+font-4 = "JetBrains Mono:size=12;3" 
+font-5 = "FontAwesome:size=14;3"
+font-6 = "JetBrainsMono Nerd Font:size=16;4"
+font-7 = "JetBrains Mono:size=10;3"
+font-8 = "JetBrainsMono:size=11:weight=bold:style=italic;3"
+font-9 = "Material Icons:size=14;5"
+
+
+;; Modules
+;modules-left = ld menu rd space ld terminal browser fileman rd space ld i3 rd 
+modules-left = ld menu rd arr ld mpd rd arr ld i3 rd
+modules-center =  ld date rd 
+;modules-right = bluetooth battery brightness space pulseaudio space wlan
+;modules-right = ld bluetooth rd arr ld battery brightness rd arr ld pulseaudio rd arr ld wlan rd arr ld powermenu rd arr
+modules-right = ld bluetooth rd space ld battery brightness rd space ld pulseaudio rd space ld wlan rd  space ld powermenu rd arr
+
+; The separator will be inserted between the output of each module
+separator = 
+
+; Opacity value between 0.0 and 1.0 used on fade in/out
+dim-value = 1.0
+
+; Value to be used to set the WM_NAME atom
+wm-name =
+
+; Locale used to localize various module data (e.g. date)
+locale = 
+
+;; System-Tray Settings: 
+tray-position = right
+tray-detached = false
+tray-maxsize = 14
+tray-transparent = false
+tray-background = ${root.background}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+tray-scale = 1
+
+;; workspace-scroll handling on whole bar
+scroll-up = "#i3.prev"
+scroll-down = "#i3.next"
+
+; Restack the bar window and put it above the
+; selected window manager's root.
+; Fixes the issue where the bar is being drawn
+; on top of fullscreen window's.
+; Currently supported WM's:
+;   bspwm
+;   i3 (requires: `override-redirect = true`)
+; wm-restack =
+
+enable-ipc = true
+
+;; == == == == == == == == == == == == == == == == == == == == == ;;
+;;                     Application Settings                       ;;
+;; == == == == == == == == == == == == == == == == == == == == == ;;
+[settings]
+
+throttle-output = 5
+throttle-output-for = 10
+
+; Reload upon receiving XCB_RANDR_SCREEN_CHANGE_NOTIFY events
+screenchange-reload = false
+
+; Compositing operators
+compositing-background = source
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = over
+compositing-border = over
+
+; Enables pseudo-transparency for the bar
+; If set to true the bar can be transparent without a compositor.
+pseudo-transparency = false
+
+;; == == == == == == == == == == == == == == == == == == == == ==
+;;  _____ _   _ _____
+;; | ____| \ | |  _  \
+;; |  _| |  \| | | | |
+;; | |___| |\  | |_| |
+;; |_____|_| \_|____/
+;;
+;; == == == == == == == == == == == == == == == == == == == == ==
