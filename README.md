@@ -18,8 +18,10 @@ The `theme-tokyo-night` directory contains all the config files.
     - ttf-jetbrains-mono  
     - ttf-font-awesome  
     - ttf-material-design-icons
+    - ttf-remixicon
+    - ttf-icomoon-feather
 ```
-$ yay -S nerd-fonts-jetbrains-mono ttf-jetbrains-mono ttf-font-awesome ttf-material-design-icons
+$ yay -S nerd-fonts-jetbrains-mono ttf-jetbrains-mono ttf-font-awesome ttf-material-design-icons ttf-remixicon ttf-icomoon-feather
 ```
 
 - **Packages and Apps:** Install them.
