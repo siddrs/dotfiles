@@ -1,3 +1,6 @@
+;; Feel free to modify and share, made with <3 by rototrash ;; 
+;; github: https://github.com/rototrash ;;
+
 ;; File-Inclusions
 
 include-file = ~/.config/polybar/themes/notsofancy/colors.ini
@@ -30,7 +33,7 @@ bottom = false
 fixed-center = true
 
 width = 100%
-height = 26
+height = 24
 
 offset-x = 0
 offset-y = 0
@@ -42,7 +45,7 @@ foreground = ${colors.fg}
 radius-top = 0
 radius-bottom = 0
 
-line-size = 2
+line-size = 1
 line-color = ${colors.fg}
 
 border-top-size = 8
@@ -71,9 +74,8 @@ font-4 = "Material Icons:size=13;5"
 font-5 = "Material Icons:size=16;6"
 font-6 = "remixicon:size=16;6"
 
-
 ; Modules
-modules-left = menu dot i3
+modules-left = menu dot menu-apps dot i3
 modules-center = mpd
 modules-right = bluetooth dot pulseaudio dot brightness dot battery dot date dot powermenu dot
 
@@ -97,7 +99,7 @@ tray-transparent = false
 tray-background = ${root.background}
 tray-offset-x = 0
 tray-offset-y = 0
-tray-padding = 0
+tray-padding = 4
 tray-scale = 1
 
 ;; workspace-scroll handling on whole bar
