@@ -421,7 +421,7 @@ bindsym Print exec --no-startup-id flameshot gui
 for_window [class="Arcolinux-welcome-app.py"] floating enable
 #for_window [class="Arcolinux-tweak-tool.py"] floating enable
 for_window [class="Arcolinux-calamares-tool.py"] floating enable
-for_window [class="Blueberry.py"] floating enZable
+for_window [class="Blueberry.py"] floating enable
 for_window [class="Galculator"] floating enable
 for_window [class="Gnome-disks"] floating enable
 for_window [class="^Gnome-font-viewer$"] floating enable
