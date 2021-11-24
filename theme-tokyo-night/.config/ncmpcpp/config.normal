@@ -36,7 +36,7 @@ connected_message_on_startup = yes
 header_text_scrolling = yes
 cyclic_scrolling = no
 
-locked_screen_width_part = 36
+locked_screen_width_part = 40
 
 clock_display_seconds = yes
 display_volume_level = yes
@@ -57,8 +57,26 @@ visualizer_in_stereo     = yes
 # Available values: spectrum, wave, wave_filled, ellipse.
 visualizer_type          = ellipse
 visualizer_fps           = 60
-visualizer_autoscale     = no
-visualizer_look          = ""
+visualizer_autoscale     = yes
+
+visualizer_look = ""
+; visualizer_look = "▄▍"
+; visualizer_look = "▐"
+; visualizer_look = "▗"
+; visualizer_look = "▉▉"
+; visualizer_look = "▗"
+; visualizer_look = "◾▍"
+; visualizer_look = "▮▍"
+; visualizer_look = "▍▍"
+; visualizer_look = "││"
+; visualizer_look = "▮▮"
+; visualizer_look = "▋▋"
+; visualizer_look = "●┃"
+; visualizer_look = "+|"
+; visualizer_look = "▄▍"
+; visualizer_look = "●●"
+; visualizer_look = "●▗"
+
 visualizer_color         = blue, magenta, red, yellow
 
 # Note: The next few visualization options apply to the spectrum visualizer.
@@ -103,7 +121,8 @@ message_delay_time = 3
 song_list_format     = "$5{  %t}|{%f} $9{$3$R %a} $9{$5$R  %l $9}"
 
 # Song Status
-song_status_format   = {$4$b %t}|{%f}$/b$9 $b$8by$9$/b $4$b %a$/b$9 $b$8on$9$/b $4$b %b$/b$9 
+; song_status_format   = {$4$b %t}|{%f}$/b$9 $b$8by$9$/b $4$b %a$/b$9 $b$8on$9$/b $4$b %b$/b$9 
+song_status_format   = {$2$b %t}|{%f}$/b$9 $b$2by$9$/b $2$b %a$/b$9 $b$2on$9$/b $2$b %b$/b$9 
 
 # Song Library
 song_library_format	 = {{%a - %t} (%b)}|{%f}
@@ -143,14 +162,15 @@ song_window_title_format = "{%a - }{%t}|{%f}"
 # - r - column will be right aligned
 # - E - if tag is empty, empty tag marker won't be displayed
 
-song_columns_list_format     = "(60)[blue]{t|f: Track} (35)[blue]{ar: Artist} (5)[blue]{lr:Time}"
+; song_columns_list_format     = "(60)[blue]{t|f: Track} (35)[blue]{ar: Artist} (5)[blue]{lr:Time}"
+song_columns_list_format     = "(65)[white]{t|f: Track} (35)[white]{ar: Artist}"
 
 
 ##############################################
 ### Colors
 ##############################################
 
-main_window_color        = "red"   
+main_window_color        = "blue"   
 
 colors_enabled           = yes
 header_window_color      = "red"
@@ -160,12 +180,12 @@ state_line_color         = "red"
 state_flags_color        = "blue"
 
 color1                   = white
-color2                   = yellow
+color2                   = blue
 
 statusbar_color          = "blue"
 statusbar_time_color     = "blue"
 player_state_color       = "blue"
-alternative_ui_separator_color = "red"
+alternative_ui_separator_color = "blue"
 window_border_color      = yellow
 active_window_border     = red
 
@@ -212,3 +232,5 @@ startup_slave_screen_focus = yes
 jump_to_now_playing_song_at_start = yes
 
 lines_scrolled = 5
+
+
