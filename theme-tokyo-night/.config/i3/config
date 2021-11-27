@@ -1,4 +1,22 @@
-# KEY DEFINITIONS TO REMEMBER
+
+################################################
+### Set Wallpaper
+################################################
+
+# feh
+# exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/path.png &
+exec --no-startup-id feh --bg-tile ~/Pictures/wallpapers/tokyo-night/tiles/tile-tn-cross-small-80.png &
+
+################################################
+#### Polybar
+################################################
+
+exec_always --no-startup-id ~/.config/polybar/themes/notsofancy/launch.sh &
+
+################################################
+### KEY DEFINITIONS TO REMEMBER
+################################################
+
 
 # $Mod = WINDOWS key or Super key or Mod4        # Mod1 = ALT key
 
@@ -42,18 +60,6 @@ set $right semicolon
 #set $left j
 #set $right m
 
-################################################
-### Set Wallpaper
-################################################
-
-# feh
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/path.png &
-
-################################################
-#### Polybar
-################################################
-
-exec_always --no-startup-id ~/.config/polybar/themes/notsofancy/launch.sh &
 
 ################################################
 ### Workspaces
@@ -340,9 +346,9 @@ bindsym control+mod1+w exec --no-startup-id arcolinux-welcome-app
 bindsym control+mod1+e exec --no-startup-id arcolinux-tweak-tool
 
 # terminals
-bindsym $mod+Return exec --no-startup-id kitty;focus
+bindsym $mod+Return exec --no-startup-id wezterm;focus
 bindsym $mod+KP_Enter exec --no-startup-id urxvt;focus
-bindsym control+mod1+t exec --no-startup-id xfce4-terminal; focus
+bindsym control+mod1+t exec --no-startup-id alacritty; focus
 bindsym control+mod1+Return exec --no-startup-id alacritty; focus
 bindsym control+mod1+KP_Enter exec --no-startup-id termite; focus
 bindsym F12 exec --no-startup-id xfce4-terminal --drop-down; focus
@@ -393,7 +399,7 @@ bindsym $mod+F10 exec --no-startup-id spotify;focus
 ################################################
 
 # Toggle Touchpad
-bindsym $mod+Shift+T exec ~/.local/bin/toggle-touchpad.sh
+bindsym $mod+Shift+T exec --no-startup-id ~/.local/bin/toggle-touchpad.sh
 
 ################################################
 #### Screenshot Keybinds
@@ -504,6 +510,7 @@ bindsym $mod+t border normal
 bindsym $mod+y border 1pixel
 bindsym $mod+u border none
 
+
 #new_window pixel 1
 #new_window normal
 new_window none
@@ -518,7 +525,7 @@ gaps outer 5
 #smart_gaps on
 smart_borders on
 
-for_window [class="^.*"] border pixel 4
+for_window [class="^.*"] border pixel 3
 for_window [class="firefox"] border pixel 2
 for_window [instance="script-fu"] border normal
 
@@ -599,8 +606,8 @@ bindsym $mod+b bar mode toggle
     # Window color settings
     # class                 border  backgr. text    indicator
     client.focused          #88afff #88afff #16161e #88afff
-    client.unfocused        #16161e #16161e #c0caf5 #16161e
-    client.focused_inactive #16161e #16161e #c0caf5 #16161e
+    client.unfocused        #24283b #24283b #c0caf5 #24283b
+    client.focused_inactive #24283b #24283b #c0caf5 #24283b
     client.placeholder      #222222 #222222 #c0caf5 #222222
     client.urgent           #f7768e #f7768e #16161e #f7768e
 
