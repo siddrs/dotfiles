@@ -1,0 +1,19 @@
+sw_volume: 30
+audio_device_state:1:pulse audio
+audio_device_state:1:Visualizer feed
+state: pause
+current: 2
+time: 1.368000
+random: 1
+repeat: 1
+single: 0
+consume: 0
+crossfade: 5
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Jaden/SYRE/SYRE CD 1 TRACK 3 (320).mp3
+1:Jaden/SYRE/SYRE CD 1 TRACK 7 (320).mp3
+2:Jaden/SYRE/SYRE CD 1 TRACK 13 (320).mp3
+3:Jaden/ERYS/04 K.mp3
+playlist_end

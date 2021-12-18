@@ -1,0 +1,20 @@
+# Speed up scrolling for telegram-desktop
+# "^telegram-desktop$"
+# 	None, Up, Button4, 3
+# 	None, Down, Button 5, 3
+# 
+
+# Speed up scrolling for discord
+"^discord$"
+	None, Up, Button4, 2
+	None, Down, Button 5, 2
+
+
+# other apps
+"^firefox$"
+    None, Up, Button4, 1
+    None, Down, Button5, 1
+    Shift_L,   Up,   Shift_L|Button4, 4
+    Shift_L,   Down, Shift_L|Button5, 4
+    Control_L, Up,   Control_L|Button4
+    Control_L, Down, Control_L|Button5

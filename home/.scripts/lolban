@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# fonts: 3d.flf rebel.tlf 
+printf "\n"
+printf "\n"
+
+toilet -f fonts/3d.flf "$1" | lolcat
+
+printf "\n"
+printf "\n"

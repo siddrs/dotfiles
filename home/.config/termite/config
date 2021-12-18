@@ -1,0 +1,94 @@
+[options]
+#https://github.com/thestinger/termite/blob/master/config
+allow_bold = true
+audible_bell = false
+browser = xdg-open
+clickable_url = true
+cursor_blink = system
+cursor_shape = block
+dynamic_title = true
+filter_unmatched_urls = true
+font = JetBrainsMono Nerd Font 13
+#font = Hack Bold 10
+geometry = 900x650
+highlight = #2f2f2f
+icon_name = terminal
+modify_other_keys = false
+mouse_autohide = false
+scroll_on_output = false
+scroll_on_keystroke = true
+scrollback_lines = 50000
+size_hints = false
+search_wrap = true
+urgent_on_bell = true
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 10
+#roundness = 2.0
+
+############################################################
+#### You can change the color coding to your liking
+#### There is a folder themes in ~/config/termite/themes
+#### Copy/paste the colors from one of the 79+ templates to this one
+#### A backup of the original config termite is present
+############################################################
+#### Use websites to make the terminal your own
+#### https://terminal.sexy
+#### https://critical.ch/xterm/
+############################################################
+
+[colors]
+# Base16 OneDark
+# Author: Lalit Magant (http://github.com/tilal6991)
+
+foreground      = #c0caf5
+foreground_bold = #c0caf5
+cursor          = #c0caf5
+background = #16161e
+
+# 16 color space
+
+# Black, Gray, Silver, White
+color0  = #1D202F
+color8  = #1D202F
+color7  = #B3B1AD
+color15 = #CBCCC6
+
+# Red
+color1  = #FF3333
+color9  = #FF3333
+
+# Green
+color2  = #C2D94C
+color10 = #C2D94C
+
+# Yellow
+color3  = #E6B450
+color11 = #E6B450
+
+# Blue
+color4  = #39BAE6
+color12 = #39BAE6
+
+# Purple
+color5  = #A37ACC
+color13 = #A37ACC
+
+# Teal
+color6  = #59C2FF
+color14 = #59C2FF
+
+# Extra colors
+color16 = #d19a66
+color17 = #be5046
+color18 = #353b45
+color19 = #3e4451
+color20 = #565c64
+color21 = #b6bdca

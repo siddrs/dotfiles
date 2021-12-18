@@ -1,0 +1,639 @@
+
+################################################
+### Set Wallpaper
+################################################
+
+# feh
+#exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/street-ltn.png &
+exec --no-startup-id feh --bg-tile ~/Pictures/wallpapers/tokyo-night/tiles/cross-blue-thin.png &
+
+################################################
+#### Polybar
+################################################
+
+#exec_always --no-startup-id ~/.config/polybar/themes/smpl/launch.sh &
+exec_always --no-startup-id ~/.config/polybar/themes/minimal/launch.sh &
+
+### Toggle Polybar ###
+bindsym $mod+Shift+b exec --no-startup-id polybar-msg cmd toggle
+
+################################################
+### KEY DEFINITIONS TO REMEMBER
+################################################
+
+
+# $Mod = WINDOWS key or Super key or Mod4        # Mod1 = ALT key
+
+# Control = CTRL key                             # Shift = SHIFT key
+
+# Escape = ESCAPE key                            # Return = ENTER or RETURN key
+
+# KP_Enter = Keypad Enter                        # Pause = PAUSE key
+
+# Print = PRINT key                              # Tab = TAB key
+
+################################################
+### Define $mod key here
+################################################
+
+# Key to rule them all : Super() or Alt key?
+
+# Mod4 = Windows or Super key on keyboard
+# Mod1 = Alt key on keyboard
+
+#Set Alt key as $mod
+#set $mod Mod1
+
+#set Super key as $mod
+set $mod Mod4
+
+
+################################################
+### Define the movements keys - variables 
+################################################
+
+#This is setup for qwerty
+set $up k
+set $down j
+set $left h
+set $right l
+# set $up l
+# set $down k
+# set $left j
+# set $right semicolon
+
+#This is setup for azerty
+#set $up l
+#set $down k
+#set $left j
+#set $right m
+
+
+################################################
+### Workspaces
+################################################
+
+#set $ws1 "1 ︁"
+#set $ws2 "2 "
+#set $ws3 "3 "
+#set $ws4 "4 "
+#set $ws5 "5 "
+#set $ws6 "6 "
+#set $ws7 "7 "
+#set $ws8 "8 "
+#set $ws9 "9 "
+#set $ws10 "10 "
+
+# Workspace Variables
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+
+################################################
+### Launcher keybinds
+################################################
+
+# rofi
+bindsym $mod+Shift+f exec --no-startup-id rofi -show drun -theme ~/.config/rofi/launcher.rasi 
+bindsym $mod+Shift+p exec --no-startup-id rofi -show drun -theme ~/Desktop/rofi-themes/config
+
+# -- conflict -- 
+# bindsym $mod+Shift+h exec --no-startup-id rofi -show emoji -theme ~/.config/rofi/launcher.rasi
+
+# rofi-powermenu
+bindsym $mod+control+l exec --no-startup-id ~/.config/rofi/scripts/powermenu
+
+# dmenu
+bindsym $mod+shift+d exec --no-startup-id dmenu_run -i -b -nb '#16161e' -nf '#88afff' -sb '#88afff' -sf '#191919' -fn 'JetBrainsMono Nerd Font:bold:pixelsize=14'
+
+# xfce4-appfinder
+bindsym $mod+p exec --no-startup-id xfce4-appfinder
+
+################################################
+### Session Options
+################################################
+
+#Backup exit
+#Press ctrl+alt+x - check toolbar for next choices
+bindsym control+mod1+X mode "$mode_system"
+
+set $mode_system System (k) lock, (l) logout, (u) suspend, (h) hibernate, (r) reboot, (s) shutdown
+mode "$mode_system" {
+    bindsym k exec --no-startup-id ~/.config/i3/scripts/i3exit.sh lock, mode "default"
+    bindsym l exec --no-startup-id ~/.config/i3/scripts/i3exit.sh logout, mode "default"
+    bindsym u exec --no-startup-id ~/.config/i3/scripts/i3exit.sh suspend, mode "default"
+    bindsym h exec --no-startup-id ~/.config/i3/scripts/i3exit.sh hibernate, mode "default"
+    bindsym r exec --no-startup-id ~/.config/i3/scripts/i3exit.sh reboot, mode "default"
+    bindsym s exec --no-startup-id ~/.config/i3/scripts/i3exit.sh shutdown, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# Lock PC - i3lock
+bindsym $mod+Shift+x exec --no-startup-id ~/.config/i3lock/i3lock.sh 
+
+################################################
+### Reload i3wm
+################################################
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+################################################
+### Close Windows
+################################################
+
+# kill focused window
+bindsym $mod+Shift+q kill
+bindsym $mod+q kill
+
+################################################
+### Moving Around in i3
+################################################
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+# move focused window
+bindsym $mod+Shift+$left move left 20 px
+bindsym $mod+Shift+$down move down 20 px
+bindsym $mod+Shift+$up move up 20 px
+bindsym $mod+Shift+$right move right 20 px
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left 20 px
+bindsym $mod+Shift+Down move down 20 px
+bindsym $mod+Shift+Up move up 20 px
+bindsym $mod+Shift+Right move right 20 px
+
+################################################
+### Moving around workspaces
+################################################
+
+# next/previous workspace
+bindsym Mod1+Tab workspace next
+bindsym Mod1+Shift+Tab workspace prev
+bindsym $mod+Tab workspace back_and_forth
+
+#navigate workspaces next / previous
+bindsym Mod1+Ctrl+Right workspace next
+bindsym Mod1+Ctrl+Left workspace prev
+
+# switch to workspace with urgent window automatically
+for_window [urgent=latest] focus
+
+################################################
+### Tiling Parameters
+################################################
+
+# orientation for new workspaces
+default_orientation horizontal
+
+# split in horizontal orientation
+bindsym $mod+b split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+z layout tabbed
+bindsym $mod+e layout toggle split
+
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+# bindsym $mod+d focus child
+
+################################################
+### Resizing Windows
+################################################
+
+bindsym $mod+Mod1+Ctrl+Right resize shrink width 30 px or 1 ppt
+bindsym $mod+Mod1+Ctrl+Up resize grow height 30 px or 1 ppt
+bindsym $mod+Mod1+Ctrl+Down resize shrink height 30 px or 1 ppt
+bindsym $mod+Mod1+Ctrl+Left resize grow width 30 px or 1 ppt
+
+################################################
+### Font 
+################################################
+
+# Font for window titles
+font pango:JetBrainsMono Nerd Font 11
+
+################################################
+### Assign Applications to workspaces
+################################################
+
+# Assign application to start on a specific workspace
+# you can find the class with the program xprop
+
+# zoom on worspace 6
+assign [class="Zoom|zoom"] $ws6
+for_window [class="zoom|Zoom"] move to workspace $ws6
+
+# Telegram on Workspace 8
+assign [class="telegramdesktop|telegram-desktop|Telegram|telegram"] $ws8
+
+# spotify on worspace 10
+assign [class="Spotify|spotify"] $ws10
+# fix for spotify not moving to workspace 10
+for_window [class="Spotify"] move to workspace $ws10
+
+################################################
+### Autostart Applications at startup
+################################################
+
+# Autotiling
+# exec_always --no-startup-id autotiling
+
+# Music
+#exec --no-startup-id spotify
+assign [class="Spotify"] workspace $ws10 
+
+# Discord
+exec --no-startup-id discord 
+assign [class="discord"] workspace $ws9
+
+# imwheel
+exec --no-startup-id imwheel &
+
+# Power Manager
+exec --no-startup-id xfce4-power-manager &
+
+##### TRAY APPLICATIONS #####
+
+#Authentication dialog
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# bluetooth
+exec --no-startup-id blueberry-tray 
+exec --no-startup-id bluetooth-autoconnect 
+
+# network
+exec --no-startup-id nm-applet
+
+# num lock activated
+exec_always --no-startup-id numlockx on
+
+################################################
+#### Application Keybinds
+################################################
+
+# terminals (I know this is a mess)
+bindsym $mod+Return exec --no-startup-id kitty;focus
+bindsym $mod+KP_Enter exec --no-startup-id urxvt;focus
+bindsym control+mod1+t exec --no-startup-id alacritty; focus
+bindsym control+mod1+Return exec --no-startup-id wezterm; focus
+bindsym control+mod1+KP_Enter exec --no-startup-id termite; focus
+bindsym F12 exec --no-startup-id xfce4-terminal --drop-down; focus
+
+#System monitor
+bindsym control+Shift+Escape exec --no-startup-id xfce4-taskmanager;focus
+
+#settings
+bindsym control+mod1+m exec --no-startup-id xfce4-settings-manager
+
+#catfish
+bindsym control+mod1+c exec --no-startup-id catfish;focus
+
+#rofi theme selector
+#bindsym control+mod1+r exec --no-startup-id rofi-theme-selector
+
+#ranger
+bindsym $mod+control+Return exec --no-startup-id kitty -e ranger 
+
+#ncmpcpp
+bindsym $mod+Shift+n exec --no-startup-id kitty -e ncmpcpp 
+
+#xkill
+bindsym --release $mod+Escape exec xkill
+
+# Firefox
+bindsym $mod+w exec --no-startup-id firefox;focus
+
+# QtCreator
+bindsym $mod+F3 exec --no-startup-id qtcreator;focus
+bindsym mod1+shift+q exec --no-startup-id qtcreator;focus
+
+# VLC
+bindsym $mod+F7 exec --no-startup-id vlc;focus
+
+# Thunar
+bindsym $mod+Shift+Return exec --no-startup-id thunar;focus
+bindsym $mod+Shift+KP_Enter exec --no-startup-id thunar;focus
+
+# Spotify
+bindsym $mod+F10 exec --no-startup-id spotify;focus
+
+################################################
+#### Custom Keybinds
+################################################
+
+# Toggle Touchpad
+bindsym $mod+Shift+T exec --no-startup-id ~/.scripts/toggle-touchpad.sh
+
+################################################
+#### Screenshot Keybinds
+################################################
+
+# High-Qual-Fullscreen
+bindsym Shift+Print exec --no-startup-id scrot -q 25 -d 3 'SCROT-HQ-%H-%M-%S-[%d-%m-%y].png' -e 'mv $f ~/Pictures/screenshots' && notify-send -u low "SCROT" "Screenshot captured\nSaved at ~/Pictures/screenshots"
+
+# Low-Qual
+#bindsym Shift+Print exec --no-startup-id scrot -q 75 'SCROT-LQ-%H-%M-%S-[%d-%m-%y].jpg' -e 'mv $f ~/Pictures/screenshots'
+
+# Shutter 
+bindsym $mod+shift+Print exec --no-startup-id shutter
+
+# Flameshot
+bindsym Print exec --no-startup-id flameshot gui
+#bindsym Print exec --no-startup-id flameshot full -c -p ~/Pictures/screenshots
+
+################################################
+#### Floating/Tiled
+################################################
+
+#floating enabled from some programs - find with xprop
+
+for_window [class="Blueberry.py"] floating enable
+for_window [class="Galculator"] floating enable
+for_window [class="Gnome-disks"] floating enable
+for_window [class="^Gnome-font-viewer$"] floating enable
+for_window [class="^Gpick$"] floating enable
+for_window [class="Hexchat"] floating disable
+for_window [class="Imagewriter"] floating enable
+for_window [class="Font-manager"] floating enable
+for_window [class="qt5ct|Lxappearance"] floating enable
+for_window [class="Nitrogen"] floating enable
+for_window [class="Pavucontrol"] floating disable
+for_window [class="Peek"] floating enable
+for_window [class="^Spotify$"] floating disable
+for_window [class="System-config-printer.py"] floating enable
+for_window [class="Unetbootin.elf"] floating enable
+for_window [class="Usb-creator-gtk"] floating enable
+for_window [class="^Vlc$"] floating disable
+for_window [class="Wine"] floating disable
+for_window [class="Xfburn"] floating disable
+for_window [class="Xfce4-appfinder"] floating enable
+for_window [class="Xfce4-settings-manager"] floating disable
+for_window [class="Xfce4-taskmanager"] floating enable
+for_window [instance="variety"] floating enable
+#for_window [instance="gimp"] floating disable
+#for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
+
+for_window [title="Copying"] floating enable
+for_window [title="Deleting"] floating enable
+for_window [title="Moving"] floating enable
+for_window [title="^Terminator Preferences$"] floating enable
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="^Preferences$"] floating enable
+for_window [window_role="setup"] floating` enable
+
+
+for_window [class="zoom"] floating enable
+for_window [title="Zoom Meeting"] floating disable
+
+for_window [class="Termite"] floating enable
+for_window [class="Termite"] resize set 1000 600 
+for_window [class="Termite"] move position center  
+
+for_window [class="URxvt"] floating enable
+for_window [class="URxvt"] resize set 1000 600 
+for_window [class="URxvt"] move position center
+
+for_window [class="XTerm"] floating enable
+for_window [class="XTerm"] resize set 800 500 
+for_window [class="XTerm"] move position center
+
+for_window [class="Gcolor3|gcolor3"] floating enable
+for_window [class="Shutter|shutter"] floating enable
+for_window [class="Pavucontrol|pavucontrol"] floating enable
+for_window [class="Font-manager"] floating disable
+
+for_window [title="Blender Preferences"] floating enable move position center resize set 800 500
+
+################################################
+#### just ArcoLinux things
+################################################
+
+# ArcoLinux Logout
+bindsym $mod+Shift+e exec --no-startup-id arcolinux-logout
+
+#pamac-manager
+bindsym control+mod1+p exec --no-startup-id pamac-manager
+
+# Updater
+#exec --no-startup-id pamac-tray
+
+#ArcoLinux Welcome App
+bindsym control+mod1+w exec --no-startup-id arcolinux-welcome-app
+ 
+#ArcoLinux Tweak Tool
+bindsym control+mod1+e exec --no-startup-id arcolinux-tweak-tool
+
+for_window [class="Arcolinux-welcome-app.py"] floating enable
+for_window [class="Arcolinux-tweak-tool.py"] floating enable
+for_window [class="Arcolinux-calamares-tool.py"] floating enable
+
+################################################
+#### Audio And Backlight Settings
+################################################
+
+# bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer -D pulse sset Master '5%+'"
+# bindsym XF86AudioLowerVolume exec --no-startup-id "amixer -D pulse sset Master '5%-'"
+# bindsym XF86AudioMute exec --no-startup-id "amixer -D pulse set Master toggle"
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id "~/.scripts/dunst-volume up"
+bindsym XF86AudioLowerVolume exec --no-startup-id "~/.scripts/dunst-volume down"
+bindsym XF86AudioMute exec --no-startup-id "~/.scripts/dunst-volume mute"
+
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+bindsym XF86AudioStop exec --no-startup-id playerctl stop
+
+bindsym XF86MonBrightnessUp exec --no-startup-id "~/.scripts/dunst-brightness up"
+bindsym XF86MonBrightnessDown exec --no-startup-id "~/.scripts/dunst-brightness down &"
+
+################################################
+#### Borders and i3gaps-next settings
+################################################
+
+# Border control
+hide_edge_borders both
+#bindsym $mod+shift+b exec --no-startup-id i3-msg border toggle
+
+#changing border style
+bindsym $mod+t border normal
+bindsym $mod+y border 1pixel
+bindsym $mod+u border none
+
+
+#new_window pixel 1
+#new_window normal
+new_window none
+
+#new_float pixel 1
+#new_float normal
+new_float none
+
+gaps inner 16 
+gaps outer 5
+# gaps top 44
+#smart_gaps on
+smart_borders on
+
+for_window [class="^.*"] border pixel 3
+for_window [class="firefox"] border pixel 2
+for_window [instance="script-fu"] border normal
+
+################################################
+#### Popups
+################################################
+
+#Popups during fullscreen mode
+popup_during_fullscreen smart
+
+################################################
+#### i3 Gaps Change Mode
+################################################
+
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+################################################
+#### Picom
+################################################
+
+#if you want transparency on non-focused windows, ...
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+
+bindsym control+mod1+o exec --no-startup-id ~/.config/picom/scripts/picom-toggle.sh && notify-send -u critical "PICOM" "Compositor has been disabled"
+
+################################################
+#### i3 bar settings (if in use)
+################################################
+
+#i3bar toggle, hide or show
+# bindsym $mod+b bar mode toggle
+
+################################################
+#### WM Colors
+################################################
+
+### COLORS ### 
+### TOKYO NIGHT ###
+
+    ## START THEMING WM (Borders and stuff)
+    # Theme name : TOKYO-NIGHT
+
+    # Window color settings
+    # class                  border    backgr.   text      indicator
+    client.focused          "#88afff" "#88afff" "#16161e" "#88afff"
+    client.unfocused        "#24283b" "#24283b" "#c0caf5" "#24283b"
+    client.focused_inactive "#24283b" "#24283b" "#c0caf5" "#24283b"
+    client.placeholder      "#24283b" "#24283b" "#c0caf5" "#24283b"
+    client.urgent           "#f7768e" "#f7768e" "#16161e" "#f7768e"
+
+    client.background       #24283b
+
+    ##STOP THEMING WM
+
+################################################
+#### END
+################################################

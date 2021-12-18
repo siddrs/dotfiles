@@ -1,0 +1,26 @@
+### MY CUSTOM ALIASES ###
+
+# edit configs with sublime-text
+alias subi3="subl ~/.config/i3/config"
+alias subzsh="subl ~/.zshrc"
+alias subfstab="subl /etc/fstab"
+
+# setting wallpaper
+alias setwall="feh --bg-fill"
+alias tilewall="feh --bg-tile"
+
+# navigations
+alias D:="cd ~/Drives/D/"
+alias E:="cd ~/Drives/E/"
+alias F:="cd ~/Drives/F/"
+
+alias code="codium" 
+
+alias sdtest="sddm-greeter --test-mode --theme"
+
+alias tokyo-conv="python3 ~/Code/projects/tokyo-night-factory/conv.py"
+
+alias nv="nvim"
+alias vi="nvim"
+
+# alias cava="cava -p $HOME/.config/i3/cava/config" 

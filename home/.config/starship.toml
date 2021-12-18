@@ -1,0 +1,88 @@
+# disable inserting a blank line between shell prompts
+add_newline = false
+
+# some more symbols:
+# ➜
+# 
+# 
+# 
+# Replace the default "❯" symbol:
+[character]
+success_symbol = "[](bold blue)[](bold yellow)[](bold red)"
+error_symbol   = "[](bold red)[](bold red)[](bold red)"
+
+[aws]
+symbol = "  "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+read_only = "  "
+truncation_length = 5
+# format = "[———————————————————————————————————————————————————————————————\n](bold black)[ ](bold cyan) [$path]($style)[$read_only](bold red) "
+format = "[ ](bold cyan) [$path]($style)[$read_only](bold red) "
+style = "bold cyan"
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[swift]
+symbol = "ﯣ "
