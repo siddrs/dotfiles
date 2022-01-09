@@ -1,18 +1,17 @@
-
 ################################################
 ### Set Wallpaper
 ################################################
 
 # feh
-#exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/street-ltn.png &
-exec --no-startup-id feh --bg-tile ~/Pictures/wallpapers/tokyo-night/tiles/cross-blue-thin.png &
+# exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/light/datsun.jpg &
+exec --no-startup-id feh --bg-tile ~/Pictures/wallpapers/tokyo-night/tiles/cross-storm-thin.png &
 
 ################################################
 #### Polybar
 ################################################
 
 #exec_always --no-startup-id ~/.config/polybar/themes/smpl/launch.sh &
-exec_always --no-startup-id ~/.config/polybar/themes/minimal/launch.sh &
+exec_always --no-startup-id ~/.config/polybar/themes/smpl/launch.sh &
 
 ### Toggle Polybar ###
 bindsym $mod+Shift+b exec --no-startup-id polybar-msg cmd toggle
@@ -57,6 +56,7 @@ set $up k
 set $down j
 set $left h
 set $right l
+
 # set $up l
 # set $down k
 # set $left j
@@ -129,11 +129,12 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 bindsym $mod+Shift+f exec --no-startup-id rofi -show drun -theme ~/.config/rofi/launcher.rasi 
 bindsym $mod+Shift+p exec --no-startup-id rofi -show drun -theme ~/Desktop/rofi-themes/config
 
+# rofi-powermenu
+bindsym $mod+Shift+v exec --no-startup-id ~/.config/rofi/scripts/powermenu
+
 # -- conflict -- 
 # bindsym $mod+Shift+h exec --no-startup-id rofi -show emoji -theme ~/.config/rofi/launcher.rasi
-
-# rofi-powermenu
-bindsym $mod+control+l exec --no-startup-id ~/.config/rofi/scripts/powermenu
+# -- -- -- -- -- 
 
 # dmenu
 bindsym $mod+shift+d exec --no-startup-id dmenu_run -i -b -nb '#16161e' -nf '#88afff' -sb '#88afff' -sf '#191919' -fn 'JetBrainsMono Nerd Font:bold:pixelsize=14'
@@ -227,9 +228,13 @@ bindsym Mod1+Tab workspace next
 bindsym Mod1+Shift+Tab workspace prev
 bindsym $mod+Tab workspace back_and_forth
 
-#navigate workspaces next / previous
+# Move to next/previous workspace using: 
+# Arrow Keys
 bindsym Mod1+Ctrl+Right workspace next
 bindsym Mod1+Ctrl+Left workspace prev
+# HomeRow Keys
+bindsym Mod1+Ctrl+$right workspace next
+bindsym Mod1+Ctrl+$left workspace prev
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -269,10 +274,16 @@ bindsym $mod+a focus parent
 ### Resizing Windows
 ################################################
 
+# Using Arrow Keys
 bindsym $mod+Mod1+Ctrl+Right resize shrink width 30 px or 1 ppt
 bindsym $mod+Mod1+Ctrl+Up resize grow height 30 px or 1 ppt
 bindsym $mod+Mod1+Ctrl+Down resize shrink height 30 px or 1 ppt
 bindsym $mod+Mod1+Ctrl+Left resize grow width 30 px or 1 ppt
+
+bindsym $mod+Mod1+Ctrl+$right resize shrink width 30 px or 1 ppt
+bindsym $mod+Mod1+Ctrl+$up resize grow height 30 px or 1 ppt
+bindsym $mod+Mod1+Ctrl+$Down resize shrink height 30 px or 1 ppt
+bindsym $mod+Mod1+Ctrl+$Left resize grow width 30 px or 1 ppt
 
 ################################################
 ### Font 
@@ -307,12 +318,15 @@ for_window [class="Spotify"] move to workspace $ws10
 # Autotiling
 # exec_always --no-startup-id autotiling
 
+# dunst
+# exec_always --no-startup-id dunst &
+
 # Music
 #exec --no-startup-id spotify
 assign [class="Spotify"] workspace $ws10 
 
 # Discord
-exec --no-startup-id discord 
+exec --no-startup-id discord &
 assign [class="discord"] workspace $ws9
 
 # imwheel
@@ -327,7 +341,7 @@ exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # bluetooth
-exec --no-startup-id blueberry-tray 
+#exec --no-startup-id blueberry-tray 
 exec --no-startup-id bluetooth-autoconnect 
 
 # network
@@ -367,7 +381,7 @@ bindsym $mod+control+Return exec --no-startup-id kitty -e ranger
 bindsym $mod+Shift+n exec --no-startup-id kitty -e ncmpcpp 
 
 #xkill
-bindsym --release $mod+Escape exec xkill
+bindsym --release $mod+Escape exec --no-startup-id xkill
 
 # Firefox
 bindsym $mod+w exec --no-startup-id firefox;focus
@@ -391,14 +405,14 @@ bindsym $mod+F10 exec --no-startup-id spotify;focus
 ################################################
 
 # Toggle Touchpad
-bindsym $mod+Shift+T exec --no-startup-id ~/.scripts/toggle-touchpad.sh
+bindsym XF86TouchpadToggle exec --no-startup-id ~/.scripts/toggle-touchpad.sh
 
 ################################################
 #### Screenshot Keybinds
 ################################################
 
 # High-Qual-Fullscreen
-bindsym Shift+Print exec --no-startup-id scrot -q 25 -d 3 'SCROT-HQ-%H-%M-%S-[%d-%m-%y].png' -e 'mv $f ~/Pictures/screenshots' && notify-send -u low "SCROT" "Screenshot captured\nSaved at ~/Pictures/screenshots"
+bindsym Shift+Print exec --no-startup-id scrot -q 25 -d 1 'SCROT-HQ-%H-%M-%S-[%d-%m-%y].png' -e 'mv $f ~/Pictures/screenshots' && notify-send -u low "SCROT" "Screenshot captured\nSaved at ~/Pictures/screenshots"
 
 # Low-Qual
 #bindsym Shift+Print exec --no-startup-id scrot -q 75 'SCROT-LQ-%H-%M-%S-[%d-%m-%y].jpg' -e 'mv $f ~/Pictures/screenshots'
@@ -471,7 +485,7 @@ for_window [class="Shutter|shutter"] floating enable
 for_window [class="Pavucontrol|pavucontrol"] floating enable
 for_window [class="Font-manager"] floating disable
 
-for_window [title="Blender Preferences"] floating enable move position center resize set 800 500
+for_window [title="Blender Preferences"] floating enable move position center resize set 1000 650
 
 ################################################
 #### just ArcoLinux things
@@ -513,8 +527,8 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym XF86AudioStop exec --no-startup-id playerctl stop
 
-bindsym XF86MonBrightnessUp exec --no-startup-id "~/.scripts/dunst-brightness up"
-bindsym XF86MonBrightnessDown exec --no-startup-id "~/.scripts/dunst-brightness down &"
+bindsym XF86MonBrightnessUp exec --no-startup-id "$HOME/.scripts/dunst-brightness up"
+bindsym XF86MonBrightnessDown exec --no-startup-id "$HOME/.scripts/dunst-brightness down"
 
 ################################################
 #### Borders and i3gaps-next settings
@@ -538,10 +552,12 @@ new_window none
 #new_float normal
 new_float none
 
-gaps inner 16 
-gaps outer 5
+gaps inner 15 
+gaps outer 0
+# gaps inner 16 
+# gaps outer 5
 # gaps top 44
-#smart_gaps on
+# smart_gaps off
 smart_borders on
 
 for_window [class="^.*"] border pixel 3
