@@ -3,8 +3,9 @@
 ################################################
 
 # feh
-# exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/light/datsun.jpg &
-exec --no-startup-id feh --bg-tile ~/Pictures/wallpapers/tokyo-night/tiles/cross-storm-thin.png &
+#exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/light/waiting.png &
+# exec --no-startup-id feh --bg-tile ~/Pictures/wallpapers/tokyo-night/tiles/cross-storm-thin.png &
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/broke.png &
 
 ################################################
 #### Polybar
