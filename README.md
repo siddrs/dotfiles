@@ -10,8 +10,15 @@
 
 <p align=center>
 Please make sure you go through this README :)<br>
-If you get stuck somewhere you can always message me on Discord at <code>rototrash#9000</code><br>
-Have a good time! 😄
+If you get stuck somewhere you can always message me on Discord
+<p align=center>
+<a href = "https://discord.com/users/710151070344675418" > 
+    <img src="https://dcbadge.vercel.app/api/shield/710151070344675418?theme=blurple&compact=true">
+</a>
+</p>
+
+<p align=center>
+Have a good time ricing! 😄
 </p>
 
 <p align=center>
@@ -21,24 +28,21 @@ If you are here for my old dotfiles based on the Ayu-Dark colors, check out the 
 
 ## Previews
 <p align=center>
-Rofi + Kitty
-<img src="./assets/1.png" alt="preview">
-</p>
-<p align=center>
-NCMCCPP + Cava
-<img src="./assets/2.png" alt="preview">
+Thunar + Neovim
+<img src="./assets/3.png" alt="preview">
 </p>
 
 <p align=center>
-Neovim + neofetch
-<img src="./assets/6.png" alt="preview">
+Rofi + Kitty
+<img src="./assets/1.png" alt="preview">
 </p>
 
 <details>
 <summary><strong>More Previews!</strong></summary>
+
 <p align=center>
-Thunar + Neovim
-<img src="./assets/3.png" alt="preview">
+NCMCCPP + Cava
+<img src="./assets/2.png" alt="preview">
 </p>
 
 <p align=center>
