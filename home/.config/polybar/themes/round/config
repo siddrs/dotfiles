@@ -46,7 +46,7 @@ radius-top = 0
 radius-bottom = 0
 
 line-size = 2
-line-color = ${colors.fg}
+; line-color = ${colors.fg}
 
 border-top-size = 8 
 border-bottom-size = 10
@@ -73,13 +73,13 @@ font-3 = "remixicon:size=14;5"
 font-4 = "Material Icons:size=13;5"
 font-5 = "Material Icons:size=16;6"
 font-6 = "remixicon:size=16;6"
-font-7 = "Iosevka Nerd Font:size=16:weight=bold;4"
+font-7 = "Iosevka Nerd Font:size=15:weight=bold;5"
 font-8 = "JetBrainsMono Nerd Font:size=20;5"
 
 ; Modules
-modules-left = ld menu rd space ld mpd rd space ld date rd 
-modules-center = ld i3 rd
-modules-right = ld bluetooth rd space ld pulseaudio rd space ld battery rd space ld powermenu rd space ld
+modules-left = ld menu rd space ld i3 rd space ld memory rd space ld cpu rd
+modules-center = xwindow
+modules-right = ld date rd space ld pulseaudio rd space ld battery rd space ld powermenu rd
 
 ; The separator will be inserted between the output of each module
 separator = 
@@ -97,10 +97,10 @@ locale =
 tray-position = right
 tray-detached = false
 tray-maxsize = 14
-tray-background = ${colors.bg-alt}
+tray-background = ${colors.bg}
 tray-offset-x = 0
 tray-offset-y = 0
-tray-padding = 8
+tray-padding = 6
 tray-scale = 1
 
 ;; workspace-scroll handling on whole bar
