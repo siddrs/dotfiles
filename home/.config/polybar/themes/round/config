@@ -33,7 +33,7 @@ bottom = false
 fixed-center = true
 
 width = 100%
-height = 31
+height = 30
 
 offset-x = 0
 offset-y = 0
@@ -49,7 +49,7 @@ line-size = 2
 line-color = ${colors.fg}
 
 border-top-size = 8 
-border-bottom-size = 8
+border-bottom-size = 10
 border-left-size = 0
 border-right-size = 0
 
@@ -66,21 +66,20 @@ module-margin-left = 0
 module-margin-right = 0
 
 ; Fonts
-font-0 = "JetBrainsMono Nerd Font:size=11;3"
+font-0 = "Iosevka Nerd Font:weight=Medium:size=11;4"
 font-1 = "icomoon\-feather:size=12;3"
 font-2 = "remixicon:size=11;3"
 font-3 = "remixicon:size=14;5"
-font-4 = "Material Icons:size=13;4"
-font-5 = "Material Icons:size=16;5"
-font-6 = "remixicon:size=14;5"
-font-7 = "mplus Nerd Font:size=11;2"
-font-8 = "mplus Nerd Font:size=14:weight=bold;3"
-font-9 = "JetBrainsMono Nerd Font:size=19;5"
+font-4 = "Material Icons:size=13;5"
+font-5 = "Material Icons:size=16;6"
+font-6 = "remixicon:size=16;6"
+font-7 = "Iosevka Nerd Font:size=16:weight=bold;4"
+font-8 = "JetBrainsMono Nerd Font:size=20;5"
 
 ; Modules
-modules-left = ld-red menu rd-red space ld-orange mpd rd-orange space ld-yellow date rd-yellow 
+modules-left = ld menu rd space ld mpd rd space ld date rd 
 modules-center = ld i3 rd
-modules-right = ld-purple bluetooth rd-purple space ld-blue pulseaudio rd-blue space ld-green battery rd-green space ld-red powermenu rd-red space ld-bgalt
+modules-right = ld bluetooth rd space ld pulseaudio rd space ld battery rd space ld powermenu rd space ld
 
 ; The separator will be inserted between the output of each module
 separator = 
@@ -101,7 +100,7 @@ tray-maxsize = 14
 tray-background = ${colors.bg-alt}
 tray-offset-x = 0
 tray-offset-y = 0
-tray-padding = 0
+tray-padding = 8
 tray-scale = 1
 
 ;; workspace-scroll handling on whole bar

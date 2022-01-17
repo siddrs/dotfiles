@@ -69,8 +69,9 @@ SDDM
 
 <details>
 <summary><strong>Polybar Styles</strong></summary>
-<img src="./assets/polybars.png" alt="polybars">
-NOTE: Modify the i3 config file to change the polybar style, I will probably automate it using a script sometime later :|
+
+**NOTE:** Modify the i3 config file to change the polybar style, I will probably automate it using a script sometime later :|
+
 </details>
 
 ## Alrighty get ready to install some bloat
@@ -85,7 +86,8 @@ NOTE: Modify the i3 config file to change the polybar style, I will probably aut
     <li> ttf-font-awesome </li>
     <li> ttf-material-design-icons </li>
     <li> ttf-remixicon </li>
-    <li> ttf-icomoon-feather </li>  
+    <li> ttf-icomoon-feather </li>
+    <li> Iosevka Nerd Font (Manually download and place it in <code>~/.local/share/fonts/</code>)</li>  
 </ul>
 </details>
 
@@ -119,7 +121,7 @@ $ yay -S i3-gaps kitty polybar rofi rofi-power-menu rofi-emoji dunst light picom
 
 ## Some Important Stuff: 
 - **GTK THEME:**
-Grab the Tokyo Night GTK Theme from here: [`github.com/koiosdev/Tokyo-Night-Linux`](https://github.com/koiosdev/Tokyo-Night-Linux). Follow the instruction over there to install and enable it. <br> **P.S:** The aforementioned repo also has tokyo-night themes for Discord and Spotify.
+Grab the Tokyo Night GTK Theme from here: [`github.com/koiosdev/Tokyo-Night-Linux`](https://github.com/koiosdev/Tokyo-Night-Linux). Follow the instruction over there to install and enable it. <br> **P.S:** The aforementioned repo also has tokyo-night themes for Discord and Spotify. The Icon theme I use is Papirus Dark (Indigo).
 
 - **BLUETOOTH:** Make sure you have the bluetooth utilites installed (`bluez, bluez-utils, blueberry`). Then enable the bluetooth service `sudo systemctl enable --now bluetooth`
 
@@ -145,6 +147,9 @@ If you want some wallpapers that go along this theme this repo [`github.com/roto
 - **SDDM:** Get the SDDM theme from here [`tokyo-night-sddm`](https://github.com/rototrash/tokyo-night-sddm)
 
 - **FIREFOX:** FirefoxCSS from [`tokyo-night-fox`](https://github.com/rototrash/tokyo-night-fox)
+
+- **POLYBAR:** There are couple of presets (themes) in the `.config/polybar/themes` directory, you can switch to different presets by modifying the i3 config file.
+
 ## Keybinds
 
 I use <kbd>super</kbd> AKA Windows key as my main modifier.
@@ -181,9 +186,33 @@ Go through the i3 config file for more.
 
 </details>
 
+## About
+<details>
+<summary>Some Info about my setup</summary>
+
+| Thingy | What I use |
+|--- | --- |
+| OS | ArcoLinux |
+| WM | i3-gaps |
+| File Manager | Thunar | 
+| Notifications | Dunst |
+| Status Bar  | Polybar |
+| Launcher | Rofi |
+| Shell | zsh |
+| Prompt | starship | 
+| Editor | **VSCodium** + Neovim |
+| IDE | QtCreator | 
+| Icons | Papirus Dark (Indigo) |
+| GTK Theme | TokyoNight |
+| DM | SDDM |
+| Lockscreen | i3lock-color |
+
+</details>
 
 ## Why?
 The primary purpose of this repository is to help myself setting up and maintaining my workspaces in case something goes wrong or I want to replicate my setup on other systems :)
+
+Also for you guys ;) 
 
 ## Credits
 - [@erikdubois](https://github.com/erikdubois) and Arcolinux Team for this amazing [Distro](https://arcolinux.com/)
@@ -194,6 +223,7 @@ The primary purpose of this repository is to help myself setting up and maintain
 - [@adi1090x](https://github.com/adi1090x) for some of his scripts that I yoinked
 - The [r/unixporn](https://www.reddit.com/r/unixporn/) and the Linux 
 community
+- The man pages and docs
 
 ## License
 [**MIT**](https://github.com/rototrash/dotfiles/blob/main/LICENSE)

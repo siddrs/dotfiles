@@ -3,24 +3,30 @@
 ################################################
 
 # feh
-#exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/light/waiting.png &
-# exec --no-startup-id feh --bg-tile ~/Pictures/wallpapers/tokyo-night/tiles/cross-storm-thin.png &
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/broke.png &
+
+# Light Wallpaper
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/light/waiting.png &
+# Tile Wallpaper
+#exec --no-startup-id feh --bg-tile ~/Pictures/wallpapers/tokyo-night/tiles/cross-storm-thin.png &
+# Dark Wallpaper
+#exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/broke.png &
 
 ################################################
 #### Polybar
 ################################################
 
-#exec_always --no-startup-id ~/.config/polybar/themes/smpl/launch.sh &
-exec_always --no-startup-id ~/.config/polybar/themes/smpl/launch.sh &
+# Change the polybar style from here. Simply modify the $(style) variable
+# use 'ls ~/.config/polybar/themes' to get names of availabe styles and specify it below.
 
-### Toggle Polybar ###
+set $(style) round
+exec_always --no-startup-id ~/.config/polybar/themes/$(style)/launch.sh &
+
+# Hide/Unhide Polybar 
 bindsym $mod+Shift+b exec --no-startup-id polybar-msg cmd toggle
 
 ################################################
 ### KEY DEFINITIONS TO REMEMBER
 ################################################
-
 
 # $Mod = WINDOWS key or Super key or Mod4        # Mod1 = ALT key
 
