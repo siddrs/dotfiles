@@ -1,18 +1,44 @@
 
 /* colors */
 
-* {
-  al:  #00000000;
-  bg:  #16161e;
-  bga: #4b4b66;
-  bor: #24283b;
-  bl:  #7aa2f7;
-  fg:  #c0caf5;
-  ac:  #f7768e;
-  gr:  #9ece6a;
-  ye:  #e0af68;
-  or:  #ff9e64;
-  purp:#bb9af7;
-  cy:  #2ac3de;
+// Tokyo Night
+*{
+  bg:     #16161e;
+  bg-alt: #1a1b26;
+  black:  #24283b;
+  black2: #414868;
+  gray:   #565f89;
+  fg:     #a9b1d6;
+  
+  white:  #c0caf5;
+  red:    #f7768e;
+  yellow: #e0af68;
+  orange: #ff9e64;
+  green:  #9ece6a;
+  cyan:   #2ac3de;
+  blue:   #7aa2f7;
+  purple: #bb9af7;
+    
+  transp: #00000000;
 }
 
+
+// JellyBeans
+// *{
+//   bg:     #151515;
+//   bg-alt: #212121;
+//   black:  #2e2e2e;
+//   black2: #3b3b3b;
+//   gray:   #3b3b3b;
+//   fg:     #e8e8d3;
+  
+//   white:  #e8e8d3;
+//   red:    #ed7f76;
+//   yellow: #fad07a;
+//   orange: #edaf76;
+//   green:  #99ad6a;
+//   blue:   #8197bf;
+//   purple: #a68bb3;
+    
+//   transp: #00000000;
+// }

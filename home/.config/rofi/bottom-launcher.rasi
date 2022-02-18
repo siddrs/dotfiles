@@ -1,0 +1,113 @@
+configuration {
+    modi:                   "drun";
+    font:                   "JetBrainsMono Nerd Font 13";
+    show-icons:             true;
+	icon-theme: 			"Papirus";
+    display-drun: 			"APPLICATIONS";
+    drun-display-format:    "{icon} {name}";
+    disable-history:        false;
+	sidebar-mode:           false;
+}
+
+@theme "colors.rasi"
+
+* {
+    padding:                0;
+    margin:                 0;
+}
+
+window {
+    background-color:       @bg-alt;
+    text-color:             @fg;
+    location:               south;
+    anchor:                 south;
+    width:                  100%;
+    padding:                0px;
+    x-offset:               0;
+    y-offset:               0;
+    children:               [ inputbar, mainbox ];
+}
+
+inputbar {
+    background-color: 		@transp;
+    children:               [ prompt, entry ];
+}
+
+
+prompt {
+    enabled: 				false;
+    padding: 				25px;
+    margin:                 0px;
+    horizontal-align:       0.5;
+    vertical-align:         0.5;
+	background-color: 		@transp;
+	text-color: 			@black2;
+	font:					"JetBrainsMono Nerd Font 24";
+}
+
+entry {
+    background-color:       @transp;
+    text-color:             @fg;
+    placeholder-color:      @gray;
+    expand:                 true;
+    vertical-align:         0.5;
+    horizontal-align:       0.5;
+    placeholder:            "Search for Applications";
+    padding:                25px;
+    blink:                  true;
+    font:					"JetBrainsMono Nerd Font 16";
+    blink:                  true;
+}
+
+mainbox {
+    background-color:               @bg;
+	border:							0px 0px 0px 0px;
+    border-radius:                  0px 0px 0px 0px ;
+    children:                       [ listview ];
+    padding:                        30px;
+    margin:                         0px 0px;    
+}
+
+listview {
+    background-color:               @bg;
+    padding:                        0px;
+    columns:                        6;
+    lines:                          3;
+    spacing:                        25px;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+
+element {
+    background-color:               @transp;
+    text-color:                     @fg;
+    orientation:                    vertical;
+    border-radius:                  0px;
+    padding:                        15px;
+}
+
+element-icon {
+    background-color: 				inherit;
+    text-color:       				inherit;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    size:                           42px;
+}
+
+element-text {
+    background-color: 				@transp;
+    text-color:       				inherit;
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    padding:                        10px 10px 0px 0px;
+}
+
+element selected {
+    background-color:               @bg-alt;
+    text-color:                     @white;
+    border-radius:                  4px;
+    border-color:                  	@bg;
+}

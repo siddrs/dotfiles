@@ -15,11 +15,11 @@ exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/light/waiti
 #### Polybar
 ################################################
 
-# Change the polybar style from here. Simply modify the $(style) variable
+# Change the polybar style from here. Simply modify the $style variable
 # use 'ls ~/.config/polybar/themes' to get names of availabe styles and specify it below.
 
-set $(style) round
-exec_always --no-startup-id ~/.config/polybar/themes/$(style)/launch.sh &
+set $style round
+exec_always --no-startup-id ~/.config/polybar/themes/$style/launch.sh &
 
 # Hide/Unhide Polybar 
 bindsym $mod+Shift+b exec --no-startup-id polybar-msg cmd toggle
@@ -133,7 +133,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 ################################################
 
 # rofi
-bindsym $mod+Shift+f exec --no-startup-id rofi -show drun -theme ~/.config/rofi/launcher.rasi 
+bindsym $mod+Shift+f exec --no-startup-id rofi -show drun -theme ~/.config/rofi/bottom-launcher.rasi 
 bindsym $mod+Shift+p exec --no-startup-id rofi -show drun -theme ~/Desktop/rofi-themes/config
 
 # rofi-powermenu
@@ -306,17 +306,24 @@ font pango:JetBrainsMono Nerd Font 11
 # Assign application to start on a specific workspace
 # you can find the class with the program xprop
 
-# zoom on worspace 6
+# Zoom on Workspace 6
 assign [class="Zoom|zoom"] $ws6
 for_window [class="zoom|Zoom"] move to workspace $ws6
 
 # Telegram on Workspace 8
 assign [class="telegramdesktop|telegram-desktop|Telegram|telegram"] $ws8
 
-# spotify on worspace 10
+# Spotify on Workspace 10
 assign [class="Spotify|spotify"] $ws10
 # fix for spotify not moving to workspace 10
 for_window [class="Spotify"] move to workspace $ws10
+
+# Steam on Workspace 7
+assign [class="Steam|steam"] $ws7
+
+# CSGO on Workspace 7
+assign [class="csgo_linux64"] $ws7
+
 
 ################################################
 ### Autostart Applications at startup
@@ -326,7 +333,7 @@ for_window [class="Spotify"] move to workspace $ws10
 # exec_always --no-startup-id autotiling
 
 # dunst
-# exec_always --no-startup-id dunst &
+exec_always --no-startup-id dunst &
 
 # Music
 #exec --no-startup-id spotify
@@ -348,11 +355,11 @@ exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # bluetooth
-#exec --no-startup-id blueberry-tray 
+# exec --no-startup-id blueberry-tray 
 exec --no-startup-id bluetooth-autoconnect 
 
 # network
-exec --no-startup-id nm-applet
+exec_always --no-startup-id nm-applet
 
 # num lock activated
 exec_always --no-startup-id numlockx on
@@ -493,6 +500,9 @@ for_window [class="Pavucontrol|pavucontrol"] floating enable
 for_window [class="Font-manager"] floating disable
 
 for_window [title="Blender Preferences"] floating enable move position center resize set 1000 650
+
+# Steam
+for_window [class="Steam|steam"] floating enable
 
 ################################################
 #### just ArcoLinux things

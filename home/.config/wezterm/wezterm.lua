@@ -1,7 +1,8 @@
 local wezterm = require("wezterm")
 
 local colors = {
-	bg = "#16161E",
+	-- bg = "#11171d", --greenish
+    bg = "#16161e",
 	fg = "#a9b1d6",
 	black = "#24283b",
 	red = "#f7768e",
@@ -42,8 +43,10 @@ return {
         italic = true,
         font = wezterm.font("VictorMono Nerd Font", {weight="Bold", italic=true}),
       },
+
     },
     font_size = 13,
+	default_cursor_style = "SteadyBar",
 	window_close_confirmation = "NeverPrompt",
 	window_padding = { left = 18, right = 18, top = 18, bottom = 18 },
 	tab_max_width = 25,
@@ -57,9 +60,9 @@ return {
 		cursor_border = colors.white,
 		brights = colors_f,
 		tab_bar = {
-			background = colors.bg,
+			background = "#1a1b26",
 			active_tab = {
-				bg_color = colors.black,
+				bg_color = "#16161e",
 				fg_color = colors.fg,
 				intensity = "Bold",
 			},

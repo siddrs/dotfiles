@@ -77,9 +77,9 @@ font-7 = "Iosevka Nerd Font:size=15:weight=bold;5"
 font-8 = "JetBrainsMono Nerd Font:size=20;5"
 
 ; Modules
-modules-left = ld menu rd space ld i3 rd space ld memory rd space ld cpu rd
+modules-left = ld menu rd space ld i3 rd space ld memory rd space ld cpu rd space temperature
 modules-center = xwindow
-modules-right = ld date rd space ld pulseaudio rd space ld battery rd space ld powermenu rd
+modules-right = ld bluetooth rd space ld date rd space ld pulseaudio rd space ld battery rd space ld powermenu rd 
 
 ; The separator will be inserted between the output of each module
 separator = 

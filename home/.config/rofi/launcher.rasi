@@ -13,12 +13,12 @@ window {
     background-color:               @bg;
     text-color:                     @fg;
 	border:							0px;
-	border-color:					@bor;
-    border-radius:                  6px;
+	border-color:					@black;
+    border-radius:                  0px;
 	width:							450;
     location:                       northwest;
     anchor:                         northwest;
-    x-offset:                       15;
+    x-offset:                       12;
     y-offset:                       60;
 }
 
@@ -26,13 +26,13 @@ prompt {
     enabled: 						true;
     padding: 						0px 30px 0px 5px;
     vertical-align:                 0.5;
-	background-color: 				@al;
-	text-color: 					@bl;
+	background-color: 				@transp;
+	text-color: 					@blue;
 	font:							"JetBrainsMono Nerd Font 24";
 }
 
 entry {
-    background-color:               @al;
+    background-color:               @transp;
     text-color:                     @fg;
     placeholder-color:              @fg;
     expand:                         true;
@@ -49,13 +49,13 @@ inputbar {
     expand:                         false;
 	border:							0% 0% 0% 0%;
     border-radius:                  0px;
-	border-color:					@ac;
+	border-color:					@black;
     margin:                         0% 0% 0% 0%;
     padding:                        0px 25px 25px 0px;
 }
 
 listview {
-    background-color:               @al;
+    background-color:               @transp;
     padding:                        0px;
     columns:                        1;
     lines:                          12;
@@ -66,7 +66,7 @@ listview {
 }
 
 mainbox {
-    background-color:               @al;
+    background-color:               @transp;
 	border:							0% 0% 0% 0%;
     border-radius:                  0% 0% 0% 0%;
 	border-color:					@ac;
@@ -76,7 +76,7 @@ mainbox {
 }
 
 element {
-    background-color:               @al;
+    background-color:               @transp;
     text-color:                     @fg;
     orientation:                    horizontal;
     border-radius:                  0%;
@@ -93,7 +93,7 @@ element-icon {
 }
 
 element-text {
-    background-color: 				@al;
+    background-color: 				@transp;
     text-color:       				inherit;
     expand:                         true;
     horizontal-align:               0;
@@ -102,7 +102,7 @@ element-text {
 }
 
 element selected {
-    background-color:               @bl;
+    background-color:               @blue;
     text-color:                     @bg;
 	border:							0% 0% 0% 0%;
     border-radius:                  6px;

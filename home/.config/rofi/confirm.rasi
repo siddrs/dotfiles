@@ -2,7 +2,7 @@
 
 * {
     background-color:       @bg;
-    text-color:             @ac;
+    text-color:             @red;
 	font:				 	"JetBrains Mono Medium 16";
 }
 
@@ -10,8 +10,8 @@ window {
     width:      			450px;
     padding:    			30px;
     border:					4px;
-    border-radius:          6px;
-    border-color:           @ac;
+    border-radius:          0px;
+    border-color:           @red;
     location:               center;
     x-offset:               0;
     y-offset:               -4%;
@@ -23,5 +23,5 @@ entry {
     width: 					150px;
     text-color:				@ac;
     placeholder:            "y / yes / n / no";
-    placeholder-color:      @bga;
+    placeholder-color:      @black2;
 }
