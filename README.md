@@ -48,7 +48,7 @@ yay -S nerd-fonts-jetbrains-mono
 ```
 
 ## installation
-- everything from repo's `home` dir will go into your `home` dir
+- everything from repo's `home` dir will go into your `home` dir. Please make sure you copy over the fonts from `.local/share/fonts/` too.
 - **gtk theme:** 
     - copy the `Jellybeans` folder inside the `usr/share/themes/` dir of this repo to your `/usr/share/themes/` dir.
     - **applying the theme:** Run `lxappearance` (Customize look and feel) and select Jellybeans.
