@@ -1,15 +1,15 @@
 /* Custom styles */
 
 /* select-on */
-@define-color selected_bg_color #364a82;
-@define-color selected_fg_color #c0caf5;
+@define-color selected_bg_color #2e2e2e;
+@define-color selected_fg_color #e8e8d3;
 @define-color theme_selected_bg_color @selected_bg_color;
 @define-color theme_selected_fg_color @selected_fg_color;
 /* select-on */
 
 /* panel-on */
-@define-color panel_bg_color #414868;
-@define-color panel_fg_color #c0caf5;
+@define-color panel_bg_color #2e2e2e;
+@define-color panel_fg_color #e8e8d3;
 
 PanelWidget,
 PanelApplet,
@@ -88,8 +88,8 @@ WnckTasklist {
 /* panel-on */
 
 /* menu-on */
-@define-color menu_bg_color #1d202f;
-@define-color menu_fg_color #c0caf5;
+@define-color menu_bg_color #191919;
+@define-color menu_fg_color #e8e8d3;
 
 GtkTreeMenu.menu,
 GtkMenuToolButton.menu,

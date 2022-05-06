@@ -42,41 +42,41 @@ URxvt.colorUL:      	 #87afd7
 !!! begin
 
 ! special
-*.foreground: #c0caf5
-*.background: #16161e
-*.cursorColor: #c0caf5
+*.foreground: #e8e8d3
+*.background: #151515
+*.cursorColor: #e8e8d3
 
 ! black
-*.color0: #24283b
-*.color8: #24283b
+*.color0: #3b3b3b
+*.color8: #888888
 
 ! red
-*.color1: #f7768e
-*.color9: #f7768e
+*.color1: #cf6a4c
+*.color9: #cf6a4c
 
 ! green
-*.color2: #9ece6a
-*.color10: #9ece6a
+*.color2: #99ad6a
+*.color10: #99ad6a
 
 ! yellow
-*.color3: #ffa86f
-*.color11: #ffa86f
+*.color3: #d8ad4c
+*.color11: #d8ad4c
 
 ! blue
-*.color4: #88afff
-*.color12: #88afff
+*.color4: #597bc5
+*.color12: #597bc5
 
 ! magenta
-*.color5: #c3a4f8
-*.color13: #c3a4f8
+*.color5: #c6b6ee
+*.color13: #c6b6ee
 
 ! cyan
-*.color6: #09c1dc
-*.color14: #09c1dc
+*.color6: #71b9f8
+*.color14: #71b9f8
 
 ! white
-*.color7: #c0caf5
-*.color15: #c0caf5
+*.color7: #e8e8d3
+*.color15: #e8e8d3
 
 
 !!! end
@@ -145,40 +145,40 @@ xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
 xterm*termName: xterm-color
 xterm*eightBitInput: false
 
-xterm*foreground: #c0caf5
-xterm*background: #16161e
+xterm*foreground: #e8e8d3
+xterm*background: #151515
 
 ! Blacks
-xterm*color0:           #24283b
-xterm*color8:           #24283b
+xterm*color0:           #3b3b3b
+xterm*color8:           #888888
 
 ! Reds
-xterm*color1:           #f7768e
-xterm*color9:           #f7768e
+xterm*color1:           #cf6a4c
+xterm*color9:           #cf6a4c
 
 ! Greens
-xterm*color2:           #9ece6a
-xterm*color10:          #9ece6a
+xterm*color2:           #99ad6a
+xterm*color10:          #99ad6a
 
 ! Yellows
-xterm*color3:           #ffa86f
-xterm*color11:          #ffa86f
+xterm*color3:           #d8ad4c
+xterm*color11:          #d8ad4c
 
 ! Blues
-xterm*color4:           #88afff
-xterm*color12:          #88afff
+xterm*color4:           #597bc5
+xterm*color12:          #597bc5
 
 ! Purples
-xterm*color5:           #c3a4f8
-xterm*color13:          #c3a4f8
+xterm*color5:           #c6b6ee
+xterm*color13:          #c6b6ee
 
 ! Cyans
-xterm*color6:           #09c1dc
-xterm*color14:          #09c1dc
+xterm*color6:           #71b9f8
+xterm*color14:          #71b9f8
 
 ! Whites
-xterm*color7:           #c0caf5
-xterm*color15:          #c0caf5
+xterm*color7:           #e8e8d3
+xterm*color15:          #e8e8d3
 
 xterm*boldMode: false
 xterm*colorBDMode: true
@@ -195,7 +195,7 @@ xterm*colorBD: rgb:ff/ff/ff
 UXTerm*termName: xterm-256color
 
 
-UXTerm*cursorColor:        #c8c8c8
+UXTerm*cursorColor:        #e8e8d3
 UXTerm*VT100.geometry:     100x30
 UXTerm*font:               Monospace
 UXTerm*faceSize:		   11

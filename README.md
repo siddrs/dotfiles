@@ -1,167 +1,89 @@
-<h1 align=center>Tokyo Night Dotfiles</h1>
+<h1>.config</h1>
 
-<p align=center>
-  <img src="./assets/banner.png">
-</p>
+these are my current config files based on [jellybeans](https://github.com/nanotech/jellybeans.vim) 
 
-<p align=center> Hi! This repository contains the configuration files a.k.a. the dotfiles of my Arch-Linux i3wm setup based on the Tokyo Night color-scheme</p>
+check the other branches for older configs -
+[ayu-dark](https://github.com/rototrash/dotfiles/tree/ayu-dark) | [tokyo-night](https://github.com/rototrash/dotfiles/tree/tokyo-night) 
 
-<p align=center>Grab anything you want! Just be careful with my i3 config, don't blindly copy the whole thing, somethings may not work on your system. Just cherry-pick what you want to keep your system clean. You can install the whole thing but I do not recommend it. Go through the configs before doing anything :D</p>
-
-<p align=center>
-Please make sure you go through this README :)<br>
-If you get stuck somewhere you can always message me on Discord
-<p align=center>
-<a href = "https://discord.com/users/710151070344675418" > 
-    <img src="https://dcbadge.vercel.app/api/shield/710151070344675418?theme=blurple&compact=true">
-</a>
-</p>
-
-<p align=center>
-Have a good time ricing! 😄
-</p>
-
-<p align=center>
-<strong>PS:</strong> 
-If you are here for my old dotfiles based on the Ayu-Dark colors, check out the <a href="https://github.com/rototrash/dotfiles/tree/ayu-dots">Ayu-dots Branch</a>
-</p>
-
-## Previews
-<p align=center>
-Thunar + Neovim
-<img src="./assets/3.png" alt="preview">
-</p>
-
-<p align=center>
-Rofi + Kitty
-<img src="./assets/1.png" alt="preview">
-</p>
+## previews
 
 <details>
-<summary><strong>More Previews!</strong></summary>
-
-<p align=center>
-NCMCCPP + Cava
-<img src="./assets/2.png" alt="preview">
-</p>
-
-<p align=center>
-Spotify
-<img src="./assets/4.png" alt="preview">
-</p>
-
-<p align=center>
-Firefox + Discord
-<img src="./assets/5.png" alt="preview">
-</p>
-
-<p align=center>
-i3-lock
-<img src="./assets/7.png" alt="preview">
-</p>
-
-<p align=center>
-SDDM
-<img src="https://raw.githubusercontent.com/rototrash/tokyo-night-sddm/main/Previews/1.png" alt="preview">
-</p>
-
+<summary>preview</summary>
+<br><img src="https://cdn.discordapp.com/attachments/780418865158946818/972192548665847808/unknown.png?size=4096"><br>
+soon™
 </details>
 
-<details>
-<summary><strong>Polybar Styles</strong></summary>
+## some overview
+- `home/`
+    - `.config/`
+        - `BetterDiscord`: contains theme files for Discord
+        - `gtk-3.0`: sets some theme settings
+        - `i3`: i3 config with auto starting applications, borders and gaps settings, etc
+        - `picom`: picom config with subtle animations.
+        - `polybar`: config for the status bar with modules n shit enabled
+        - `rofi`: rofi configs for app lauchers
+        - `nvim`: optional nvim config
+        - and much more...
+    - `.local/share/fonts`: contains the fonts
+    - `.scripts`: contains various essential scripts
+    - `.mozilla`: contains the custom firefox user css
+- `usr/share/themes/Jellybeans`: contains the jellybeans gtk theme
 
-**NOTE:** Modify the i3 config file to change the polybar style, I will probably automate it using a script sometime later :|
-
-</details>
-
-## Alrighty get ready to install some bloat
-
-<details>
-<summary><strong>Fonts</strong></summary>
-<ul>
-    <li> nerd-fonts-jetbrains-mono </li> 
-    <li> nerd-fonts-victor-mono </li>
-    <li> nerd-fonts-mplus </li>
-    <li> ttf-jetbrains-mono </li>
-    <li> ttf-font-awesome </li>
-    <li> ttf-material-design-icons </li>
-    <li> ttf-remixicon </li>
-    <li> ttf-icomoon-feather </li>
-    <li> Iosevka Nerd Font (Manually download and place it in <code>~/.local/share/fonts/</code>)</li>  
-</ul>
-</details>
-
+## installing packages and fonts
+- required packages:
 ```shell
-$ yay -S nerd-fonts-jetbrains-mono nerd-fonts-victor-mono nerd-fonts-mplus ttf-jetbrains-mono ttf-font-awesome ttf-material-design-icons ttf-remixicon ttf-icomoon-feather
+sudo pacman -S i3-gaps polybar rofi alacritty dunst light picom-jonaburg-git i3lock-color feh bluez bluez-utils blueberry pavucontrol pamixer starship thunar nvim scrot lxappearance papirus-icon-theme
 ```
-<details>
-<summary><strong>Packages and Apps</strong></summary>
-Hopefully these are all, tell me in case you find something that isn't listed here :)
-<ul>
-    <li> i3-gaps </li>
-    <li> feh </li>
-    <li> light </li>
-    <li> dunst </li>
-    <li> polybar </li>
-    <li> starship-git </li>
-    <li> i3lock-color </li>
-    <li> ueberzug, w3m </li>  
-    <li> picom-jonaburg-git </li>
-    <li> mpd, ncmpcpp, cava </li>
-    <li> kitty or alacritty or wezterm </li> 
-    <li> blueberry, bluez, bluez-utils</li>
-    <li> rofi, rofi-power-menu, rofi-emoji </li>
-    <li> pavucontrol, pulseaudio-control </li>
-</ul>
-</details>
-
+- required fonts:
 ```shell
-$ yay -S i3-gaps kitty polybar rofi rofi-power-menu rofi-emoji dunst light picom-jonaburg-git i3lock-color feh bluez bluez-utils blueberry pulseaudio-control pavucontrol mpd ncmpcpp cava ueberzug w3m starship-git
+yay -S ttf-remixicon ttf-icomoon-feather
+```
+- optional packages: 
+```shell
+yay -S mpd ncmpcpp w3m zsh neofetch kitty ranger papirus-folders papirus-folders-gui-bin betterdiscordctl nm-applet
+```
+- optional fonts:
+```shell
+yay -S nerd-fonts-jetbrains-mono
 ```
 
-## Some Important Stuff: 
-- **GTK THEME:**
-Grab the Tokyo Night GTK Theme from here: [`github.com/koiosdev/Tokyo-Night-Linux`](https://github.com/koiosdev/Tokyo-Night-Linux). Follow the instruction over there to install and enable it. <br> **P.S:** The aforementioned repo also has tokyo-night themes for Discord and Spotify. The Icon theme I use is Papirus Dark (Indigo).
+## installation
+- everything from repo's `home` dir will go into your `home` dir
+- **gtk theme:** 
+    - copy the `Jellybeans` folder inside the `usr/share/themes/` dir of this repo to your `/usr/share/themes/` dir.
+    - **applying the theme:** Run `lxappearance` (Customize look and feel) and select Jellybeans.
+- **discord theme:** After running `betterdiscordctl install` go into the newly added Better Discord entry in the discord settings menu and select the `midnight` theme.
+- **firefox user css:** follow the instructions in [**THIS**](https://github.com/rototrash/tokyo-night-fox) repo to install it. Put the `chrome` folder in your `~/.mozilla/firefox/something.default-release/` dir.
 
-- **BLUETOOTH:** Make sure you have the bluetooth utilites installed (`bluez, bluez-utils, blueberry`). Then enable the bluetooth service `sudo systemctl enable --now bluetooth`
+## misc. 
+- **bluetooth:** install the bluetooth utilites (`bluez, bluez-utils, blueberry`). enable bluetooth service `sudo systemctl enable --now bluetooth`
 
-- **WALLPAPERS:**
-If you want some wallpapers that go along this theme this repo [`github.com/rototrash/wallpapers`](https://github.com/rototrash/wallpapers)
+- **wallpapers:** [`github.com/rototrash/wallpapers`](https://github.com/rototrash/wallpapers)
 
-- <details>
-    <summary><strong>NCMPCPP:</strong> Displaying the Album Cover</summary>
-    <ul>
-    <li> I use some scripts for displaying the current track's cover art in ncmpcpp cli and also send dunst notifications when the track changes which I got from <a href="https://github.com/tam-carre/ncmpcpp-ueberzug"><code>github.com/tam-carre/ncmpcpp-ueberzug</code></a>. Follow the instructions given over there to get it running.
-    </li>
-    <br>
-    <li> Also there are two ncmcpp configs inside the ncmpcpp folder, the   <kbd>config</kbd> file is the one that displays cover art and the <kbd>config.normal</kbd> file which is without the cover art.
-    </li>
-    <br>
-    <li> If you don't want the cover art, simply rename the current <kbd>config</kbd> to <kbd>config.art</kbd> and the <kbd>config.normal</kbd> to <kbd>config</kbd>. I know this sounds confusing lol.
-    </li>
-    </ul>
-</details>
+- **papirus folder colors:** run `papirus-folders-gui` and select the black theme
 
--   **NVIM:** Nvim config files from [`NvChad`](https://github.com/NvChad/NvChad)
+- **jellybeans for vscode:** launch vscode Quick Open (Ctrl+P), paste the following command and press enter or just search for it and install it. why am i even writing this 
+    ```
+    ext install DimitarNonov.jellybeans-theme
+    ``` 
 
-- **SDDM:** Get the SDDM theme from here [`tokyo-night-sddm`](https://github.com/rototrash/tokyo-night-sddm)
+- **note:** be careful `i3` config or idk, dont care, somethings might not work the way you want. just go through it before copying it over. Grab parts from it.
 
-- **FIREFOX:** FirefoxCSS from [`tokyo-night-fox`](https://github.com/rototrash/tokyo-night-fox)
+- the gtk theme was made by modifying the [Material Black](https://www.gnome-look.org/p/1316887) theme
 
-- **POLYBAR:** There are couple of presets (themes) in the `.config/polybar/themes` directory, you can switch to different presets by modifying the i3 config file.
+- the discord theme was made by modifying the [midnight](https://betterdiscord.app/theme/midnight) theme
 
-## Keybinds
+## keybinds
 
-I use <kbd>super</kbd> AKA Windows key as my main modifier.
+<kbd>super</kbd> (windows) key is the main modifier.
 <details>
 <summary> Basic Keybinds</summary>
 
 | Keybind | Action |
 | --- | --- |
-| <kbd>super + enter</kbd> | Spawn Terminal (kitty) |
+| <kbd>super + enter</kbd> | Spawn Terminal (alacritty) |
 | <kbd>super + shift + enter</kbd> | Spawn Thunar |
 | <kbd>super + shift + f</kbd> | Launch rofi launcher |
-| <kbd>super + control + l</kbd> | Launch rofi-power-menu |
 | <kbd>super + q</kbd> | Close client |
 | <kbd>super + shift + space</kbd> | Float active client |
 | <kbd>super + space</kbd> | Switch Focus between Floating and Tiled clients |
@@ -186,9 +108,9 @@ Go through the i3 config file for more.
 
 </details>
 
-## About
+## about
 <details>
-<summary>Some Info about my setup</summary>
+<summary>some info about my setup</summary>
 
 | Thingy | What I use |
 |--- | --- |
@@ -200,30 +122,26 @@ Go through the i3 config file for more.
 | Launcher | Rofi |
 | Shell | zsh |
 | Prompt | starship | 
-| Editor | **VSCodium** + Neovim |
+| Editor | vscodium & neovim |
 | IDE | QtCreator | 
-| Icons | Papirus Dark (Indigo) |
-| GTK Theme | TokyoNight |
+| Icons | Papirus Dark (Black) |
+| GTK Theme | Jellybeans |
 | DM | SDDM |
 | Lockscreen | i3lock-color |
 
 </details>
 
-## Why?
-The primary purpose of this repository is to help myself setting up and maintaining my workspaces in case something goes wrong or I want to replicate my setup on other systems :)
+## why?
+backup in case I fuck up something
 
-Also for you guys ;) 
+## contact
+for notifying me if something's missing or wrong or if you want help
 
-## Credits
-- [@erikdubois](https://github.com/erikdubois) and Arcolinux Team for this amazing [Distro](https://arcolinux.com/)
-- [@enkia](https://github.com/enkia) for the Tokyo Night colors
-- [@dempfi](https://github.com/dempfi) for the Ayu colors
-- [@koisodev](https://github.com/koiosdev/Tokyo-Night-Linux) for the Tokyo Night GTK and spotify themes 
-- [@tam-carre](https://github.com/tam-carre) for [ncmpcpp-ueberzug](https://github.com/tam-carre/ncmpcpp-ueberzug)
-- [@adi1090x](https://github.com/adi1090x) for some of his scripts that I yoinked
-- The [r/unixporn](https://www.reddit.com/r/unixporn/) and the Linux 
-community
-- The man pages and docs
+discord: [@rototrash#0900](https://discord.com/users/710151070344675418) 
+
+## thanks to
+- [mespyr](https://github.com/mespyr/)
+- man pages and docs
 
 ## License
 [**MIT**](https://github.com/rototrash/dotfiles/blob/main/LICENSE)

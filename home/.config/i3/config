@@ -5,21 +5,21 @@
 # feh
 
 # Light Wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/light/waiting.png &
+#exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/light/misty_mountains-tn.jpg &
 # Tile Wallpaper
-#exec --no-startup-id feh --bg-tile ~/Pictures/wallpapers/tokyo-night/tiles/cross-storm-thin.png &
+# exec --no-startup-id feh --bg-tile ~/Pictures/wallpapers/tokyo-night/tiles/cross-storm-thin.png &
 # Dark Wallpaper
-#exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/tokyo-night/broke.png &
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/jellybeans/geometric/circles-11.png &
 
 ################################################
 #### Polybar
 ################################################
 
 # Change the polybar style from here. Simply modify the $style variable
-# use 'ls ~/.config/polybar/themes' to get names of availabe styles and specify it below.
+# use 'ls ~/.config/polybar/styles' to get names of availabe styles and specify it below.
 
-set $style round
-exec_always --no-startup-id ~/.config/polybar/themes/$style/launch.sh &
+set $STYLE round
+exec_always --no-startup-id ~/.config/polybar/styles/$STYLE/launch.sh &
 
 # Hide/Unhide Polybar 
 bindsym $mod+Shift+b exec --no-startup-id polybar-msg cmd toggle
@@ -136,15 +136,12 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 bindsym $mod+Shift+f exec --no-startup-id rofi -show drun -theme ~/.config/rofi/bottom-launcher.rasi 
 bindsym $mod+Shift+p exec --no-startup-id rofi -show drun -theme ~/Desktop/rofi-themes/config
 
-# rofi-powermenu
-bindsym $mod+Shift+v exec --no-startup-id ~/.config/rofi/scripts/powermenu
-
 # -- conflict -- 
 # bindsym $mod+Shift+h exec --no-startup-id rofi -show emoji -theme ~/.config/rofi/launcher.rasi
 # -- -- -- -- -- 
 
 # dmenu
-bindsym $mod+shift+d exec --no-startup-id dmenu_run -i -b -nb '#16161e' -nf '#88afff' -sb '#88afff' -sf '#191919' -fn 'JetBrainsMono Nerd Font:bold:pixelsize=14'
+bindsym $mod+shift+d exec --no-startup-id dmenu_run -i -b -nb '#151515' -nf '#888888' -sb '#597bc5' -sf '#151515' -fn 'JetBrainsMono Nerd Font:bold:pixelsize=14'
 
 # xfce4-appfinder
 bindsym $mod+p exec --no-startup-id xfce4-appfinder
@@ -297,7 +294,7 @@ bindsym $mod+Mod1+Ctrl+$Left resize grow width 30 px or 1 ppt
 ################################################
 
 # Font for window titles
-font pango:JetBrainsMono Nerd Font 11
+font pango:CartographCF Nerd Font Mono Light 12
 
 ################################################
 ### Assign Applications to workspaces
@@ -307,8 +304,8 @@ font pango:JetBrainsMono Nerd Font 11
 # you can find the class with the program xprop
 
 # Zoom on Workspace 6
-assign [class="Zoom|zoom"] $ws6
-for_window [class="zoom|Zoom"] move to workspace $ws6
+assign [class="Zoom|zoom|Zoom Meeting"] $ws6
+for_window [class="zoom|Zoom|Zoom Meeting"] move to workspace $ws6
 
 # Telegram on Workspace 8
 assign [class="telegramdesktop|telegram-desktop|Telegram|telegram"] $ws8
@@ -356,7 +353,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # bluetooth
 # exec --no-startup-id blueberry-tray 
-exec --no-startup-id bluetooth-autoconnect 
+exec_always --no-startup-id bluetooth-autoconnect 
 
 # network
 exec_always --no-startup-id nm-applet
@@ -369,9 +366,9 @@ exec_always --no-startup-id numlockx on
 ################################################
 
 # terminals (I know this is a mess)
-bindsym $mod+Return exec --no-startup-id kitty;focus
+bindsym $mod+Return exec --no-startup-id alacritty;focus
 bindsym $mod+KP_Enter exec --no-startup-id urxvt;focus
-bindsym control+mod1+t exec --no-startup-id alacritty; focus
+bindsym control+mod1+t exec --no-startup-id kitty; focus
 bindsym control+mod1+Return exec --no-startup-id wezterm; focus
 bindsym control+mod1+KP_Enter exec --no-startup-id termite; focus
 bindsym F12 exec --no-startup-id xfce4-terminal --drop-down; focus
@@ -426,7 +423,7 @@ bindsym XF86TouchpadToggle exec --no-startup-id ~/.scripts/toggle-touchpad.sh
 ################################################
 
 # High-Qual-Fullscreen
-bindsym Shift+Print exec --no-startup-id scrot -q 25 -d 1 'SCROT-HQ-%H-%M-%S-[%d-%m-%y].png' -e 'mv $f ~/Pictures/screenshots' && notify-send -u low "SCROT" "Screenshot captured\nSaved at ~/Pictures/screenshots"
+bindsym Shift+Print exec --no-startup-id scrot -q 25 '%d-%m-%y_%s.png' -e 'mv $f ~/Pictures/screenshots' && notify-send -u low -i "/usr/share/icons/Papirus-Dark/16x16/apps/photolayoutseditor.svg" "Scrot" "Screenshot Saved"
 
 # Low-Qual
 #bindsym Shift+Print exec --no-startup-id scrot -q 75 'SCROT-LQ-%H-%M-%S-[%d-%m-%y].jpg' -e 'mv $f ~/Pictures/screenshots'
@@ -547,6 +544,7 @@ bindsym XF86AudioStop exec --no-startup-id playerctl stop
 bindsym XF86MonBrightnessUp exec --no-startup-id "$HOME/.scripts/dunst-brightness up"
 bindsym XF86MonBrightnessDown exec --no-startup-id "$HOME/.scripts/dunst-brightness down"
 
+
 ################################################
 #### Borders and i3gaps-next settings
 ################################################
@@ -573,11 +571,10 @@ gaps inner 15
 gaps outer 0
 # gaps inner 16 
 # gaps outer 5
-# gaps top 44
-# smart_gaps off
+#smart_gaps off
 smart_borders on
 
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 2
 for_window [class="firefox"] border pixel 2
 for_window [instance="script-fu"] border normal
 
@@ -636,7 +633,7 @@ mode "$mode_gaps_outer" {
 #if you want transparency on non-focused windows, ...
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
-bindsym control+mod1+o exec --no-startup-id ~/.config/picom/scripts/picom-toggle.sh && notify-send -u critical "PICOM" "Compositor has been disabled"
+bindsym control+mod1+o exec --no-startup-id ~/.config/picom/scripts/picom-toggle.sh && notify-send -u normal "Picom" "Compositor has been disabled"
 
 ################################################
 #### i3 bar settings (if in use)
@@ -653,19 +650,30 @@ bindsym control+mod1+o exec --no-startup-id ~/.config/picom/scripts/picom-toggle
 ### TOKYO NIGHT ###
 
     ## START THEMING WM (Borders and stuff)
-    # Theme name : TOKYO-NIGHT
+    # Theme name : Jellybeans
 
     # Window color settings
-    # class                  border    backgr.   text      indicator
-    client.focused          "#88afff" "#88afff" "#16161e" "#88afff"
-    client.unfocused        "#24283b" "#24283b" "#c0caf5" "#24283b"
-    client.focused_inactive "#24283b" "#24283b" "#c0caf5" "#24283b"
-    client.placeholder      "#24283b" "#24283b" "#c0caf5" "#24283b"
-    client.urgent           "#f7768e" "#f7768e" "#16161e" "#f7768e"
+    # class                  border    backgr.   text     indicator 
+    client.focused          "#597bc5" "#597bc5" "#151515" "#597bc5"
+    client.unfocused        "#151515" "#151515" "#5b5b5b" "#151515"
+    client.focused_inactive "#151515" "#151515" "#5b5b5b" "#151515"
+    client.placeholder      "#151515" "#151515" "#5b5b5b" "#151515"
+    client.urgent           "#cf6a4c" "#cf6a4c" "#151515" "#cf6a4c"
 
-    client.background       #24283b
+    client.background       #2e2e2e
+
 
     ##STOP THEMING WM
+
+################################################
+#### Scratchpads
+################################################
+
+bindsym $mod+BackSpace move scratchpad
+bindsym $mod+equal scratchpad show
+
+# Spotify - Tile and move to workspace 10
+bindsym $mod+minus [class="spotify|Spotify"] scratchpad show floating disable move to workspace $ws10 focus
 
 ################################################
 #### END

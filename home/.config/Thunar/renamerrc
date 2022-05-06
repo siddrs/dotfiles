@@ -1,0 +1,16 @@
+[Configuration]
+LastActiveMode=THUNAR_RENAMER_MODE_NAME
+LastActiveRenamer=ThunarSbrReplaceRenamer
+
+[TagRenamer]
+Lowercase=FALSE
+ReplaceSpaces=FALSE
+Text=
+Format=TAG_RENAMER_FORMAT_TITLE
+
+[ThunarSbrReplaceRenamer]
+CaseSensitive=FALSE
+Replacement=circles
+Pattern=wall
+Regexp=FALSE
+

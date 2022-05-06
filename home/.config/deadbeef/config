@@ -1,0 +1,212 @@
+ape.write_apev2 1
+artwork.cache.period 48
+artwork.cache_reset_time 1651592582
+artwork.enable_albumartorg 1
+artwork.enable_embedded 1
+artwork.enable_lastfm 1
+artwork.enable_localfolder 0
+artwork.enable_musicbrainz 1
+artwork.enable_wos 0
+artwork.filemask *cover*.jpg;*front*.jpg;*folder*.jpg;*cover*.png;*front*.png;*folder*.png
+artwork.missing_artwork 1
+artwork.nocover_path 
+artwork.scale_towards_longer 1
+artwork.scaled.cache_reset_time 1651592582
+chip.voices 255
+cli_add_playlist_name Default
+close_send_to_tray 1
+converter.dsp_preset -1
+converter.encoder_preset 0
+converter.output_folder /home/sid
+converter.output_format 0
+converter.overwrite_action 0
+deadbeef_version 1.8.8
+discord_presence.enable 1
+discord_presence.end_timestamp 2
+discord_presence.hide_on_pause 0
+discord_presence.icon_script %album%
+discord_presence.lastfm_cover 1
+discord_presence.paused_icon 0
+discord_presence.playlist_on_state 0
+discord_presence.show_tracknum 0
+discord_presence.state_script by %artist%
+discord_presence.title_script %title%
+filebrowser.autofilter 1
+filebrowser.bgcolor 
+filebrowser.bgcolor_selected 
+filebrowser.coverart_files cover.png;cover.jpg;folder.png;folder.jpg;front.png;front.jpg
+filebrowser.coverart_scale 1
+filebrowser.coverart_size 24
+filebrowser.defaultpath 
+filebrowser.enabled 1
+filebrowser.expanded_rows file:///home/sid/Music/Surf%20Mesa/Single file:///home/sid/Music/En
+filebrowser.extra_bookmarks $HOME/.config/deadbeef/bookmarks
+filebrowser.fgcolor 
+filebrowser.fgcolor_selected 
+filebrowser.filter 
+filebrowser.filter_enabled 1
+filebrowser.font_size 0
+filebrowser.fullsearch_wait 5
+filebrowser.hidden 0
+filebrowser.hide_navigation 1
+filebrowser.hide_search 0
+filebrowser.hide_toolbar 0
+filebrowser.icon_size 24
+filebrowser.save_treeview 1
+filebrowser.search_delay 1000
+filebrowser.show_coverart 1
+filebrowser.showbookmarks 0
+filebrowser.showhidden 0
+filebrowser.showicons 1
+filebrowser.sidebar_width 220
+filebrowser.sort_treeview 1
+filebrowser.treelines 0
+filechooser.lastdir file:///home/sid/Drives/Data/Movies%20and%20Songs/Songs
+gtkui.action_separators 0
+gtkui.autoresize_columns 0
+gtkui.color.bar_background 6425 6425 6425
+gtkui.color.bar_foreground 22873 31611 50629
+gtkui.color.listview_column_text 34952 34952 34952
+gtkui.color.listview_cursor 5397 5397 5397
+gtkui.color.listview_even_row 8481 8481 8481
+gtkui.color.listview_group_text 22872 31611 50629
+gtkui.color.listview_odd_row 5397 5397 5397
+gtkui.color.listview_playing_text 65535 47544 25699
+gtkui.color.listview_selected_text 5397 5397 5397
+gtkui.color.listview_selection 25740 30171 38228
+gtkui.color.listview_text 34952 34952 34952
+gtkui.columns.playlist [{"title":"Track","id":"-1","format":"%tracknumber%","sort_format":"","size":"55","align":"0","color_override":"0","color":"#ff888888"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"452","align":"0","color_override":"0","color":"#ff000000"},{"title":"Album","id":"-1","format":"%album%","sort_format":"","size":"445","align":"0","color_override":"0","color":"#ff000000"},{"title":"Artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","sort_format":"","size":"422","align":"0","color_override":"0","color":"#ffe8e8d3"}]
+gtkui.custom_tray_icon deadbeef_tray_icon
+gtkui.delete_files_ask 1
+gtkui.disable_seekbar_overlay 0
+gtkui.embolden_current_track 1
+gtkui.embolden_selected_tracks 0
+gtkui.eq.visible 0
+gtkui.font.listview_column_text CartographCF Nerd Font 10
+gtkui.font.listview_group_text CartographCF Nerd Font 14
+gtkui.font.listview_text CartographCF Nerd Font 12
+gtkui.hide_remove_from_disk 0
+gtkui.hide_tray_icon 0
+gtkui.italic_current_track 1
+gtkui.italic_selected_tracks 0
+gtkui.layout.0.6.2 vsplitter locked=0 ratio=0.949640 pos=0 size2=0 {hsplitter locked=0 ratio=0.254228 pos=0 size2=0 {vsplitter locked=0 ratio=0.470779 pos=0 size2=0 {pltbrowser {} coverart {} } vsplitter locked=0 ratio=0.983766 pos=0 size2=0 {vsplitter locked=0 ratio=0.000000 pos=0 size2=0 {quick_search {} tabs active=0 num_tabs=2 tab000="Playlist" tab001="File browser" {playlist hideheaders=0 width=689 {} filebrowser {} } } playback_status {} } } hsplitter locked=0 ratio=0.085624 pos=241 size2=0 {playtb {} hsplitter locked=0 ratio=0.956497 pos=0 size2=0 {seekbar {} volumebar {} } } } 
+gtkui.move_to_trash 1
+gtkui.name_playlist_from_folder 1
+gtkui.override_bar_colors 1
+gtkui.override_listview_colors 1
+gtkui.override_tabstrip_colors 0
+gtkui.playlist.group_by_tf "%album%"
+gtkui.pltbrowser.highlight_curr_plt 1
+gtkui.pltbrowser.mmb_delete_playlist 1
+gtkui.pltbrowser.play_on_double_click 1
+gtkui.show_menu 1
+gtkui.skip_deleted_songs 0
+gtkui.start_hidden 0
+gtkui.statusbar.visible 0
+gtkui.statusbar_seltime 1
+gtkui.tabscroll 0
+gtkui.titlebar_playing_tf %title%
+gtkui.titlebar_stopped_tf Stopped - DeadBeef
+gtkui.tray_volume_sensitivity 1
+gtkui.unicode_playstate 0
+gui_plugin GTK3
+headerbarui.button_spacing 8.000000
+headerbarui.combined_playpause 1
+headerbarui.disable 1
+headerbarui.embed_menubar 0
+headerbarui.hide_playback_buttons 0
+headerbarui.hide_seekbar_on_streaming 0
+headerbarui.new_app_menu 1
+headerbarui.show_add_button 1
+headerbarui.show_designmode_button 1
+headerbarui.show_playback_button 1
+headerbarui.show_preferences_button 0
+headerbarui.show_seek_bar 1
+headerbarui.show_stop_button 0
+headerbarui.show_volume_button 1
+hotkey.key01 "Ctrl f" 0 0 find
+hotkey.key02 "Ctrl o" 0 0 open_files
+hotkey.key03 "Ctrl q" 0 0 quit
+hotkey.key04 "Ctrl a" 0 0 select_all
+hotkey.key05 "Escape" 0 0 deselect_all
+hotkey.key06 "F1" 0 0 help
+hotkey.key07 "Delete" 1 0 remove_from_playlist
+hotkey.key08 "Ctrl w" 0 0 remove_current_playlist
+hotkey.key09 "Alt Return" 1 0 track_properties
+hotkey.key10 "Return" 0 0 play
+hotkey.key11 "Alt 1" 0 0 playlist1
+hotkey.key12 "Alt 2" 0 0 playlist2
+hotkey.key13 "Alt 3" 0 0 playlist3
+hotkey.key14 "Alt 4" 0 0 playlist4
+hotkey.key15 "Alt 5" 0 0 playlist5
+hotkey.key16 "Alt 6" 0 0 playlist6
+hotkey.key17 "Alt 7" 0 0 playlist7
+hotkey.key18 "Alt 8" 0 0 playlist8
+hotkey.key19 "Alt 9" 0 0 playlist9
+hotkey.key20 "Alt 0" 0 0 playlist10
+hotkeys_created 1
+junk.enable_cp1251_detection 0
+junk.enable_shift_jis_detection 1
+logwindow.geometry.h 719
+logwindow.geometry.w 634
+logwindow.geometry.x 319
+logwindow.geometry.y 174
+mainwin.geometry.h 1000
+mainwin.geometry.w 935
+mainwin.geometry.x 967
+mainwin.geometry.y 62
+mp3.id3v1_encoding iso8859-1
+mp3.id3v2_version 3
+mp3.write_id3v1 1
+mp3.write_id3v2 1
+network.proxy.port 8080
+notify.albumart 1
+notify.albumart_size 256
+notify.enable 1
+notify.format_content_tf by %artist%
+notify.format_title_tf %title%
+output_plugin alsa
+playback.loop 1
+playback.volume -6.234651
+playback_status.format.00 '<span foreground="#d8ad4c" size="x-large"><b><i>'%title%'</i></b></span>'
+playback_status.format.01 '<span foreground="#888888" size="medium"><b>'by'</b></span>' '<span foreground="#e8e8d3" size="large"><b>'%artist%'</b></span>' '<span foreground="#888888" size="medium"><b>'on'</b></span>' '<span foreground="#e8e8d3" size="large"><b>'%album%'</b></span>'
+playback_status.format.02 
+playback_status.num_lines 2
+playback_status.refresh_interval 100
+playlist.current 1
+playlist.cursor.0 -1
+playlist.cursor.1 463
+playlist.cursor.2 0
+playlist.cursor.3 0
+playlist.cursor.4 0
+playlist.cursor.5 0
+playlist.cursor.6 0
+playlist.groups.spacing 0
+playlist.pin.groups 0
+playlist.scroll.0 0
+playlist.scroll.1 -463
+playlist.scroll.2 0
+playlist.scroll.3 0
+playlist.scroll.4 0
+playlist.scroll.5 0
+playlist.scroll.6 0
+playlist.scroll.cursorfollowplayback 1
+playlist.tab.00000 Default
+playlist.tab.00001 All Songs
+playlist.tab.00002 Copy of All Songs
+prefwin.geometry.h 646
+prefwin.geometry.w 1196
+prefwin.geometry.x 407
+prefwin.geometry.y 262
+resume.paused 0
+resume.playlist -1
+resume.position -1.000000
+resume.track -1
+streamer.samplerate 44100
+streamer.samplerate_mult_44 44100
+streamer.samplerate_mult_48 48000
+trkproperties.geometry.h 501
+trkproperties.geometry.w 1243
+trkproperties.geometry.x 387
+trkproperties.geometry.y 479
+wv.write_apev2 1

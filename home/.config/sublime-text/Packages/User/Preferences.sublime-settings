@@ -1,0 +1,14 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"theme": "ayu-dark.sublime-theme",
+	"color_scheme": "Packages/Enki Theme/scheme/Enki-Tokyo-Night.tmTheme",
+	"font_size": 14,
+	// "font_face": "FantasqueSansMono Nerd Font",
+	"font_face": "OperatorMono Nerd Font",
+	"hardware_acceleration": "opengl",
+	"remember_workspace": false,	
+	
+}

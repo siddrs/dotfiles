@@ -258,11 +258,11 @@ for i in $info; do
     wm) print wm "${wm##*/}";;
     up) print up "$up";;
     gtk) print gtk "${gtk# }";;
-    cpu) print cpu "$vendor$cpu";;
+    # cpu) print cpu "$vendor$cpu";;
     mem) print mem "$mem";;
-    host) print host "$model";;
+    # host) print host "$model";;
     kern) print kern "$kernel";;
-    pkgs) print pkgs "$pkgs";;
+    # pkgs) print pkgs "$pkgs";;
     term) print term "$term";;
     user) printf '%7s@%s\n' "$USER" "$host";;
     col) col;;

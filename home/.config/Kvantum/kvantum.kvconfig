@@ -1,0 +1,5 @@
+[General]
+theme=MateriaDark
+
+[Applications]
+Default=virtualbox

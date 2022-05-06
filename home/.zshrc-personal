@@ -1,5 +1,8 @@
-### MY CUSTOM ALIASES ###
+### ENV VARS ###
+#export GTK_CSD=0
+#export LD_PRELOAD=/usr/lib/libgtk3-nocsd.so.0
 
+### CUSTOM ALIASES ###
 # edit configs with sublime-text
 alias subi3="subl ~/.config/i3/config"
 alias subzsh="subl ~/.zshrc"
@@ -23,4 +26,11 @@ alias tokyo-conv="python3 ~/Code/projects/tokyo-night-factory/conv.py"
 alias nv="nvim"
 alias vi="nvim"
 
-# alias cava="cava -p $HOME/.config/i3/cava/config" 
+alias du="du -h"
+
+# alias spotify-adblock="env LD_PRELOAD=/usr/lib/spotify-adblock.so spotify %U"
+# alias whichkey="xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'"
+
+alias copyfix-1="sudo sysctl -w vm.dirty_bytes=50331648"
+alias copyfix-2="sudo sysctl -w vm.dirty_background_bytes=16777216"
+

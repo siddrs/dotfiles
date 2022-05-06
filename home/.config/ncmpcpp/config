@@ -59,7 +59,8 @@ visualizer_type          = ellipse
 visualizer_fps           = 60
 visualizer_autoscale     = yes
 
-visualizer_look = ""
+; visualizer_look = ""
+; visualizer_look = "●▮"
 ; visualizer_look = "▄▍"
 ; visualizer_look = "▐"
 ; visualizer_look = "▗"
@@ -77,7 +78,7 @@ visualizer_look = ""
 ; visualizer_look = "●●"
 ; visualizer_look = "●▗"
 
-visualizer_color         = blue, magenta, red, yellow
+visualizer_color         = blue, green, yellow, red
 
 # Note: The next few visualization options apply to the spectrum visualizer.
 visualizer_spectrum_smooth_look = yes

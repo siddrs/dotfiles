@@ -1,0 +1,49 @@
+/**
+ * @name midnight
+ * @description A darkened discord theme.
+ * @author refact0r
+ * @version 1.2.0
+ * @source https://github.com/refact0r/midnight-discord
+ * @authorId 508863359777505290
+*/
+@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+
+/* change colors here */
+/* a color picker should show up if you hover over the "hsl(x, y, z)" or the "#rrggbb" part */
+/* Jellybeans Colors */
+.theme-dark {
+	/* main accent color */
+	--accent-color: #597bc5;
+	/* color of accent color buttons on hover */
+	--accent-color-2: #597bc590;
+	/* color of accent color buttons on click */
+	--accent-color-3: #597bc580;
+	/* link color */
+	--link-color: #71b9f8;
+	/* user mention background */
+	--mention-background: #3b3b3b;
+	/* background of messages that mention you */
+	--mentioned-background: #212121;
+	/* background of messages that mention you on hover */
+	--mentioned-hover-background: #2e2e2e;
+	/* main text color (messages, titles, unread text/indicators) */
+	--primary-text: #e8e8d3;
+	/* secondary text color (channels, descriptions, buttons) */
+	--secondary-text: #e8e8d390;
+	/* muted text color (input box placeholders, muted channels, message times) */
+	--muted-text: #e8e8d340;
+	/* main chat/channel list/member list background */
+	--primary-background: #151515;
+	/* background of pretty much everything else */
+	--secondary-background: #212121;
+	/* scrollbar thumb color */
+	--scrollbar-color: #2e2e2e;
+	/* color of things on hover */
+	--hover-modifier: #191919;
+	/* color of things when clicked */
+	--active-modifier: #19191990;
+	/* color of things when selected */
+	--selected-modifier: #212121;
+	/* amount of glow (set to 0 to disable) */
+	--glow-amount: 0px;
+}

@@ -1,6 +1,6 @@
 configuration {
     modi:                   "drun";
-    font:                   "JetBrainsMono Nerd Font 13";
+    font:                   "CartographCF Nerd Font 13";
     show-icons:             true;
 	icon-theme: 			"Papirus";
     display-drun: 			"APPLICATIONS";
@@ -31,6 +31,8 @@ window {
 inputbar {
     background-color: 		@transp;
     children:               [ prompt, entry ];
+    border:                 2px 0px 0px 0px;
+    border-color:           @black;
 }
 
 
@@ -52,17 +54,18 @@ entry {
     expand:                 true;
     vertical-align:         0.5;
     horizontal-align:       0.5;
-    placeholder:            "Search for Applications";
+    placeholder:            " Search for Applications ";
     padding:                25px;
     blink:                  true;
-    font:					"JetBrainsMono Nerd Font 16";
+    font:					"CartographCF Nerd Font 16";
     blink:                  true;
 }
 
 mainbox {
     background-color:               @bg;
-	border:							0px 0px 0px 0px;
+	border:							2px 0px 0px 0px;
     border-radius:                  0px 0px 0px 0px ;
+    border-color:                   @black;
     children:                       [ listview ];
     padding:                        30px;
     margin:                         0px 0px;    
@@ -108,6 +111,7 @@ element-text {
 element selected {
     background-color:               @bg-alt;
     text-color:                     @white;
+    border:                         2px;
     border-radius:                  4px;
-    border-color:                  	@bg;
+    border-color:                  	@black;
 }

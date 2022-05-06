@@ -96,8 +96,8 @@ distro_detect() {
 		if [ ! -d "$HOME"/.local/share/fonts ]; then
 			mkdir -p "$HOME"/.local/share/fonts
 		fi
-		if [ ! -f "$HOME"/.local/share/fonts/Material.ttf ] && [ ! -f /usr/share/fonts/Material.ttf ]; then
-			cp ttf-material-design-icons/* $HOME/.local/share/fonts
+		if [ ! -f "$HOME"/.local/share/fonts/material-design-icons/Material.ttf ] && [ ! -f /usr/share/fonts/Material.ttf ]; then
+			cp ttf-material-design-icons -r $HOME/.local/share/fonts
 			fc-cache -vf &>/dev/null
 		fi
 		;;

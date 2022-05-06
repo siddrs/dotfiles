@@ -1,0 +1,51 @@
+print_info() {
+    info "$(color 7)os" distro
+    info "$(color 7)├$(color 2) pk" packages
+    info "$(color 7)├$(color 2) wm"   wm
+    info "$(color 7)├$(color 2) tr" term
+    info "$(color 7)└$(color 2) sh"   shell
+    prin
+    prin "$(color 7)hw" "ASUS TUF A15 FAV06IV"
+    info "$(color 7)├$(color 2) cpu" cpu
+    info "$(color 7)├$(color 2) gpu" gpu
+    # info "$(color 7)├$(color 2) disk" disk
+    info "$(color 7)└$(color 2) res" resolution
+    prin ""
+    prin "$(color 0) $(color 1) $(color 2) $(color 3) $(color 4) $(color 5) $(color 6) $(color 7) "
+}
+
+kernel_shorthand="on"
+distro_shorthand="on"
+os_arch="off"
+uptime_shorthand="on"
+memory_percent="on"
+package_managers="off"
+shell_path="off"
+shell_version="off"
+speed_type="bios_limit"
+speed_shorthand="off"
+cpu_brand="off"
+cpu_speed="off"
+cpu_cores="off"
+cpu_temp="off"
+gpu_brand="off"
+gpu_type="off"
+refresh_rate="off"
+colors=(distro)
+bold="on"
+underline_enabled="on"
+underline_char="―"
+separator=" "
+block_range=(0 7)
+color_blocks="on"
+block_width=3
+block_height=1
+cpu_display="off"
+memory_display="small"
+battery_display="bar"
+disk_display="off"
+image_backend="ascii"
+ascii_distro="Arcolinux_small"
+ascii_colors=(distro)
+ascii_bold="on"
+stdout="off"

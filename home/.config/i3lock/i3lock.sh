@@ -1,16 +1,16 @@
 # Colors
-BLANK='#16161e'
-DEFAULT='#24283b'
-TEXT='#7aa2f7'
-WRONG='#f7768e'
-VERIFYING='#9ece6a'
-ORN='#7aa2f7'
+BLANK='#151515'
+DEFAULT='#2e2e2e'
+TEXT='#e8e8d3'
+WRONG='#ed7f76'
+VERIFYING='#99ad6a'
+ORN='#e8e8d3'
 
 # Set the paused status of dunst
 dunstctl set-paused true
 
 # Font
-FONT="JetBrainsMono Nerd Font"
+FONT="CartographCF Nerd Font"
 
 
 i3lock \

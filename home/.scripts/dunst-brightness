@@ -7,7 +7,6 @@
 # Script inspired by these wonderful people:
 # https://github.com/dastorm/volume-notification-dunst/blob/master/volume.sh
 # https://gist.github.com/sebastiencs/5d7227f388d93374cebdf72e783fbd6a
-4
 DIR="$HOME/.config/dunst"
 
 function get_brightness {
@@ -21,7 +20,7 @@ function send_notification {
   # https://en.wikipedia.org/wiki/Box-drawing_character
   bar=$(seq -s "─" 0 $((brightness / 5)) | sed 's/[0-9]//g')
   # Send the notification
-  dunstify "Brightness  $brightness%" -i $icon -r 5555 -u normal -h int:value:$(($brightness))
+  dunstify "Brightness  $brightness%" "System" -i $icon -r 5555 -u normal -h int:value:$(($brightness))
 }
 
 case $1 in

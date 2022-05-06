@@ -1,110 +1,112 @@
 configuration {
     modi:                           "drun";
-	font:							"JetBrainsMono Nerd Font 13";
+	font:							"CartographCF Nerd Font 13";
     show-icons:                     true;
-    display-drun: 					"";
+    icon-theme: 			        "Papirus";
+    display-drun: 					"";
     drun-display-format:            "{icon} {name}";
 	sidebar-mode: 					true;
 }
 
 @theme "colors.rasi"
 
+* {
+    padding:                0;
+    margin:                 0;
+}
+
 window {
-    background-color:               @bg;
+    background-color:               @bg-alt;
     text-color:                     @fg;
-	border:							0px;
-	border-color:					@black;
+	
+    border:							0px;
     border-radius:                  0px;
-	width:							450;
-    location:                       northwest;
-    anchor:                         northwest;
+	border-color:					@black;
+	
+    width:							450;
     x-offset:                       12;
     y-offset:                       60;
-}
-
-prompt {
-    enabled: 						true;
-    padding: 						0px 30px 0px 5px;
-    vertical-align:                 0.5;
-	background-color: 				@transp;
-	text-color: 					@blue;
-	font:							"JetBrainsMono Nerd Font 24";
-}
-
-entry {
-    background-color:               @transp;
-    text-color:                     @fg;
-    placeholder-color:              @fg;
-    expand:                         true;
-    horizontal-align:               0;
-    placeholder:                    "Search";
-    padding:                        10px 0px 0px 0px;
-    blink:                          true;
+    
+    anchor:                         northwest;
+    location:                       northwest;
+    children:                       [ inputbar, mainbox ];
 }
 
 inputbar {
 	children: 						[ prompt, entry ];
-    background-color:               @bg;
-    text-color:                     @fg;
-    expand:                         false;
-	border:							0% 0% 0% 0%;
-    border-radius:                  0px;
-	border-color:					@black;
-    margin:                         0% 0% 0% 0%;
-    padding:                        0px 25px 25px 0px;
+    background-color:               @transp;
 }
 
-listview {
-    background-color:               @transp;
-    padding:                        0px;
-    columns:                        1;
-    lines:                          12;
-    spacing:                        10px;
-    cycle:                          false;
-    dynamic:                        true;
-    layout:                         vertical;
+prompt {
+    enabled: 				false;
+    padding: 				25px;
+    margin:                 0px;
+    horizontal-align:       0.5;
+    vertical-align:         0.5;
+	background-color: 		@transp;
+	text-color: 			@black2;
+}
+
+entry {
+    background-color:       @transp;
+    text-color:             @fg;
+    placeholder-color:      @gray;
+    expand:                 true;
+    vertical-align:         0.5;
+    horizontal-align:       0.5;
+    padding:                25px;
+    blink:                  true;
+    font:					"CartographCF Nerd Font 15";
+    placeholder:            " Search for Applications ";
+    // 
 }
 
 mainbox {
-    background-color:               @transp;
-	border:							0% 0% 0% 0%;
-    border-radius:                  0% 0% 0% 0%;
-	border-color:					@ac;
-    children:                       [ inputbar, listview ];
-    spacing:                       	0%;
-    padding:                        25px;
+    border:                         2px 0px 0px 0px;
+    border-color:                   @black;
+    background-color:               @bg;
+    children:                       [ listview ];
+    padding:                        20px;
+}
+
+listview {
+    background-color:               @bg;
+    padding:                        0px;
+    columns:                        1;
+    lines:                          8;
+    spacing:                        15px;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
 }
 
 element {
     background-color:               @transp;
     text-color:                     @fg;
     orientation:                    horizontal;
-    border-radius:                  0%;
-    padding:                        0.5% 0.5% 0.5% 0.5%;
+    padding:                        10px;
 }
 
 element-icon {
     background-color: 				inherit;
     text-color:       				inherit;
-    horizontal-align:               0.5;
     vertical-align:                 0.5;
-    size:                           26px;
+    size:                           32px;
     border:                         0px;
 }
 
 element-text {
+    enabled:                        true;
     background-color: 				@transp;
     text-color:       				inherit;
     expand:                         true;
-    horizontal-align:               0;
     vertical-align:                 0.5;
-    margin:                         0% 0.25% 0% 0.25%;
 }
 
 element selected {
-    background-color:               @blue;
-    text-color:                     @bg;
-	border:							0% 0% 0% 0%;
-    border-radius:                  6px;
-    border-color:                  	@bg;
+    background-color:               @bg-alt;
+    text-color:                     @fg;
+	border:							2px;
+    border-radius:                  4px;
+    border-color:                  	@black;
 }

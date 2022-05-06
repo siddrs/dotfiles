@@ -1,0 +1,42 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "'CartographCF Nerd Font', 'Iosevka Nerd Font', 'JetBrainsMono Nerd Font', 'VictorMono Nerd Font', 'remixicon', 'icomoon\\-feather'",
+    "editor.fontSize": 18,
+    "files.autoSave": "onWindowChange",
+    "editor.fontLigatures": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "everforest.darkContrast": "hard",
+    "[yuck]": {
+        
+    },
+    "RPC.disconnectOnIdle": true,
+    "RPC.showFileInfo": false,
+    "RPC.showProblems": false,
+    "RPC.showWorkspace": false,
+    "RPC.showDebugging": false,
+    "RPC.showTime": false,
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "underline",
+    "vim.cursorStylePerMode.visual": "block",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "discord.removeTimestamp": true,
+    "discord.idleTimeout": 60,
+    "discord.detailsIdling": "Having an existential crisis",
+    "workbench.colorTheme": "Jellybeans Theme",
+    "workbench.startupEditor": "none",
+    "svg.preview.mode": "svg",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.smoothScrolling": true,
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "editor.minimap.renderCharacters": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.unicodeHighlight.allowedCharacters": {
+        "⠀": true
+    },
+    "files.associations": {
+        "dunstrc": "ruby"
+    },
+}

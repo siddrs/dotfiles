@@ -1,0 +1,11 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+'",
+        "command": "terminal.focus"
+    },
+    {
+        "key": "ctrl+;",
+        "command": "workbench.action.focusActiveEditorGroup"
+    }
+]

@@ -6,7 +6,7 @@ music_library="$HOME/Music"
 fallback_image="$HOME/.config/ncmpcpp/ncmpcpp-ueberzug/img/fallback.png"
 padding_top=3
 padding_bottom=1
-padding_right=1
+padding_right=0
 max_width=20 
 reserved_playlist_cols=0
 reserved_cols_in_percent="false"
@@ -19,8 +19,8 @@ padding_left=00
 # Only set this if the geometries are wrong or ncmpcpp shouts at you to do it.
 # Visually select/highlight a character on your terminal, zoom in an image 
 # editor and count how many pixels a character's width and height are.
-font_height=
-font_width=
+font_height=24
+font_width=10
 
 title=$(mpc current -f '%title'%)
 artist=$(mpc current -f '%artist'%)
@@ -30,8 +30,9 @@ main() {
     kill_previous_instances >/dev/null 2>&1
     find_cover_image        >/dev/null 2>&1
     display_cover_image     2>/dev/null
-    dunstify -u low --replace=69 -i "$cover_path" " $title" "by $artist\non $album"  
-    # dunstify -u low --replace=69 -i "$cover_path" " Now Playing" "$(mpc current)"
+    dunstify -u low --replace=69 -i "$cover_path" "$title" "by $artist"
+    # dunstify -u low --replace=69 -i "$cover_path" "$title" "by $artist\non $album"  
+    # dunstify -u low --replace=69 -i "$cover_path" " Now Playing" "$(mpc current)"
     detect_window_resizes   >/dev/null 2>&1
 }
 

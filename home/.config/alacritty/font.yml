@@ -1,0 +1,19 @@
+font:
+  normal:
+    family: CartographCF Nerd Font
+    style: Normal
+  italic:
+    family: CartographCF Nerd Font
+    style: Italic
+  bold:
+    family: CartographCF Nerd Font
+    style: Bold
+    
+  size: 12
+  # size: 14
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1488955845049151-1</unique-id>
+	<command>alacritty</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>photolayoutseditor</icon>
+	<name>Set as Wallpaper</name>
+	<unique-id>1651762816983907-1</unique-id>
+	<command>feh --bg-fill %f</command>
+	<description>Set as Wallpaper</description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>tiled</icon>
+	<name>Tile Wallpaper</name>
+	<unique-id>1651687956859807-1</unique-id>
+	<command>feh --bg-tile %f</command>
+	<description>Tile Wallpaper</description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>gtk-convert</icon>
+	<name>Convert png to jpg</name>
+	<unique-id>1510662686010963-1</unique-id>
+	<command>convert %f -quality 100 `basename %f .png`.jpg</command>
+	<description>Convert png to jpg</description>
+	<patterns>*.png</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>insert-link-symbolic</icon>
+	<name>Create symlink</name>
+	<unique-id>1526631663081446-14</unique-id>
+	<command>ln -s  %f &quot;%n&quot;</command>
+	<description>Softlink between two files or directories</description>
+	<patterns>*</patterns>
+	<directories/>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>checkbox</icon>
+	<name>Check sha1sum</name>
+	<unique-id>1526633271260079-26</unique-id>
+	<command>zenity --info --title=&quot;Check sha1 for %n&quot; --text=&quot;$(sha1sum %f)&quot;</command>
+	<description>Check sha1sum</description>
+	<patterns>*.iso;*.ISO</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>checkbox</icon>
+	<name>Check sha256sum</name>
+	<unique-id>1577688162350307-1</unique-id>
+	<command>zenity --info --title=&quot;Check sha256 for %n&quot; --text=&quot;$(sha256sum %f)&quot;</command>
+	<description>Check sha256sum</description>
+	<patterns>*.iso;*.ISO</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>checkbox</icon>
+	<name>Check md5sum</name>
+	<unique-id>1526736788575383-2</unique-id>
+	<command>zenity --info --title=&quot;Check md5 for %n&quot; --text=&quot;$(md5sum %f)&quot;</command>
+	<description>Check md5sum</description>
+	<patterns>*.iso;*.ISO;*.tar.gz;*.TAR.GZ;*.zip;*.ZIP</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>final-term</icon>
+	<name>Extract here</name>
+	<unique-id>1489091300385082-4</unique-id>
+	<command>tar xjf %n</command>
+	<description></description>
+	<patterns>*.tar.bz2;*.tbz2</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>cs-startup-programs</icon>
+	<name>Run</name>
+	<unique-id>1526630606202525-4</unique-id>
+	<command>urxvt -e %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>system-file-manager-root</icon>
+	<name>Open folder as root</name>
+	<unique-id>1493475601060449-3</unique-id>
+	<command>pkexec thunar %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>aplication-x-executable</icon>
+	<name>Make executable</name>
+	<unique-id>1526670239648084-2</unique-id>
+	<command>chmod +x %f</command>
+	<description>Make a file execuble</description>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+</actions>
