@@ -24,7 +24,7 @@ soon™
         - `rofi`: rofi configs for app lauchers
         - `nvim`: optional nvim config
         - and much more...
-    - `.local/share/fonts`: contains the fonts
+    - `.local/share/fonts`: contains the required fonts
     - `.scripts`: contains various essential scripts
     - `.mozilla`: contains the custom firefox user css
 - `usr/share/themes/Jellybeans`: contains the jellybeans gtk theme
@@ -32,7 +32,7 @@ soon™
 ## installing packages and fonts
 - required packages:
 ```shell
-sudo pacman -S i3-gaps polybar rofi alacritty dunst light picom-jonaburg-git i3lock-color feh bluez bluez-utils blueberry pavucontrol pamixer starship thunar nvim scrot lxappearance papirus-icon-theme
+sudo pacman -S i3-gaps polybar rofi alacritty dunst light picom-jonaburg-git i3lock-color feh bluez bluez-utils blueberry pavucontrol pamixer thunar nvim scrot lxappearance
 ```
 - required fonts:
 ```shell
@@ -40,7 +40,7 @@ yay -S ttf-remixicon ttf-icomoon-feather
 ```
 - optional packages: 
 ```shell
-yay -S mpd ncmpcpp w3m zsh neofetch kitty ranger papirus-folders papirus-folders-gui-bin betterdiscordctl nm-applet
+yay -S mpd ncmpcpp w3m zsh neofetch kitty ranger papirus-icon-theme papirus-folders papirus-folders-gui-bin betterdiscordctl nm-applet starship-git 
 ```
 - optional fonts:
 ```shell
@@ -48,11 +48,11 @@ yay -S nerd-fonts-jetbrains-mono
 ```
 
 ## installation
-- everything from repo's `home` dir will go into your `home` dir. Please make sure you copy over the fonts from `.local/share/fonts/` too.
+- everything from repo's `home` dir will go into your `home` dir. Please make sure you copy over the fonts from `.local/share/fonts/` too. (put the fonts in `.local/share/fonts` and **NOT** in `/usr/share/fonts`!!!)
 - **gtk theme:** 
     - copy the `Jellybeans` folder inside the `usr/share/themes/` dir of this repo to your `/usr/share/themes/` dir.
     - **applying the theme:** Run `lxappearance` (Customize look and feel) and select Jellybeans.
-- **discord theme:** After running `betterdiscordctl install` go into the newly added Better Discord entry in the discord settings menu and select the `midnight` theme.
+- **discord theme:** After running `betterdiscordctl install` go into the newly added Better Discord entry in the discord settings menu and select the `midnight` theme.a
 - **firefox user css:** follow the instructions in [**THIS**](https://github.com/rototrash/tokyo-night-fox) repo to install it. Put the `chrome` folder in your `~/.mozilla/firefox/something.default-release/` dir.
 
 ## misc. 
@@ -140,10 +140,10 @@ for notifying me if something's missing or wrong or if you want help
 discord: [@rototrash#0900](https://discord.com/users/710151070344675418) 
 
 ## thanks to
-- [mespyr](https://github.com/mespyr/)
+- [mespyr's](https://github.com/mespyr/)
 - man pages and docs
 
-## License
+## license
 [**MIT**](https://github.com/rototrash/dotfiles/blob/main/LICENSE)
 
 All attempts have been made to identify third party content within the repository, with sources and attribution given where necessary. Please contact me if any issues are discovered.
