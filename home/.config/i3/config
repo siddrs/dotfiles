@@ -567,7 +567,7 @@ new_window none
 #new_float normal
 new_float none
 
-gaps inner 15 
+gaps inner 20 
 gaps outer 0
 # gaps inner 16 
 # gaps outer 5
