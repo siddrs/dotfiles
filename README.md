@@ -53,7 +53,7 @@ yay -S nerd-fonts-jetbrains-mono
     - copy the `Jellybeans` folder inside the `usr/share/themes/` dir of this repo to your `/usr/share/themes/` dir.
     - **applying the theme:** Run `lxappearance` (Customize look and feel) and select Jellybeans.
 - **discord theme:** After running `betterdiscordctl install` go into the newly added Better Discord entry in the discord settings menu and select the `midnight` theme.a
-- **firefox user css:** follow the instructions in [**THIS**](https://github.com/rototrash/tokyo-night-fox) repo to install it. Put the `chrome` folder in your `~/.mozilla/firefox/something.default-release/` dir.
+- **firefox user css:** follow the instructions in my [**firefox-css**](https://github.com/rototrash/firefox-css) repo to install it. Put the `chrome` folder in your `~/.mozilla/firefox/something.default-release/` dir.
 
 ## misc. 
 - **bluetooth:** install the bluetooth utilites (`bluez, bluez-utils, blueberry`). enable bluetooth service `sudo systemctl enable --now bluetooth`
