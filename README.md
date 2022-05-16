@@ -9,7 +9,7 @@ check the other branches for older configs -
 
 <details>
 <summary>preview</summary>
-<br><img src="https://cdn.discordapp.com/attachments/780418865158946818/972192548665847808/unknown.png?size=4096" width="360"><br>
+<br><img src="https://cdn.discordapp.com/attachments/780418865158946818/972192548665847808/unknown.png?size=4096" width="144"><br>
 soon™
 </details>
 
