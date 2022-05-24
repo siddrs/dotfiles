@@ -1,112 +1,112 @@
 configuration {
-    modi:                           "drun";
-	font:							"CartographCF Nerd Font 13";
-    show-icons:                     true;
-    icon-theme: 			        "Papirus";
-    display-drun: 					"";
-    drun-display-format:            "{icon} {name}";
-	sidebar-mode: 					true;
+    modi: "drun";
+    font: "CartographCF Nerd Font Light 13";
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-drun: "";
+    drun-display-format: "{icon} {name}";
+    sidebar-mode: true;
 }
 
 @theme "colors.rasi"
 
 * {
-    padding:                0;
-    margin:                 0;
+    padding: 0;
+    margin: 0;
 }
 
 window {
-    background-color:               @bg-alt;
-    text-color:                     @fg;
-	
-    border:							0px;
-    border-radius:                  0px;
-	border-color:					@black;
-	
-    width:							450;
-    x-offset:                       12;
-    y-offset:                       60;
-    
-    anchor:                         northwest;
-    location:                       northwest;
-    children:                       [ inputbar, mainbox ];
+    background-color: @bg-alt;
+    text-color: @gray;
+
+    border: 2px;
+    border-radius: 0px;
+    border-color: @black;
+
+    width: 450;
+    x-offset: 12;
+    y-offset: 60;
+
+    anchor: northwest;
+    location: northwest;
+    children: [ inputbar, mainbox];
 }
 
 inputbar {
-	children: 						[ prompt, entry ];
-    background-color:               @transp;
+    children: [ prompt, entry];
+    background-color: @transp;
 }
 
 prompt {
-    enabled: 				false;
-    padding: 				25px;
-    margin:                 0px;
-    horizontal-align:       0.5;
-    vertical-align:         0.5;
-	background-color: 		@transp;
-	text-color: 			@black2;
+    enabled: false;
+    padding: 25px;
+    margin: 0px;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    background-color: @transp;
+    text-color: @black2;
 }
 
 entry {
-    background-color:       @transp;
-    text-color:             @fg;
-    placeholder-color:      @gray;
-    expand:                 true;
-    vertical-align:         0.5;
-    horizontal-align:       0.5;
-    padding:                25px;
-    blink:                  true;
-    font:					"CartographCF Nerd Font 15";
-    placeholder:            " Search for Applications ";
+    background-color: @transp;
+    text-color: @gray;
+    placeholder-color: @gray;
+    expand: true;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    padding: 25px;
+    blink: true;
+    font: "CartographCF Nerd Font Light 14";
+    placeholder: " Search for Applications ";
     // 
 }
 
 mainbox {
-    border:                         2px 0px 0px 0px;
-    border-color:                   @black;
-    background-color:               @bg;
-    children:                       [ listview ];
-    padding:                        20px;
+    border: 2px 0px 0px 0px;
+    border-color: @black;
+    background-color: @bg;
+    children: [ listview];
+    padding: 20px;
 }
 
 listview {
-    background-color:               @bg;
-    padding:                        0px;
-    columns:                        1;
-    lines:                          8;
-    spacing:                        15px;
-    cycle:                          false;
-    dynamic:                        true;
-    layout:                         vertical;
+    background-color: @bg;
+    padding: 0px;
+    columns: 1;
+    lines: 8;
+    spacing: 15px;
+    cycle: false;
+    dynamic: true;
+    layout: vertical;
 }
 
 element {
-    background-color:               @transp;
-    text-color:                     @fg;
-    orientation:                    horizontal;
-    padding:                        10px;
+    background-color: @transp;
+    text-color: @gray;
+    orientation: horizontal;
+    padding: 10px;
 }
 
 element-icon {
-    background-color: 				inherit;
-    text-color:       				inherit;
-    vertical-align:                 0.5;
-    size:                           32px;
-    border:                         0px;
+    background-color: #00000000;
+    text-color: inherit;
+    vertical-align: 0.5;
+    size: 32px;
+    border: 0px;
 }
 
 element-text {
-    enabled:                        true;
-    background-color: 				@transp;
-    text-color:       				inherit;
-    expand:                         true;
-    vertical-align:                 0.5;
+    enabled: true;
+    background-color: @transp;
+    text-color: inherit;
+    expand: true;
+    vertical-align: 0.5;
 }
 
 element selected {
-    background-color:               @bg-alt;
-    text-color:                     @fg;
-	border:							2px;
-    border-radius:                  4px;
-    border-color:                  	@black;
+    background-color: @bg-alt;
+    text-color: @gray;
+    border: 2px;
+    border-radius: 4px;
+    border-color: @black;
 }

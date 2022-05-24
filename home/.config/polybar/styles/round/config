@@ -1,6 +1,6 @@
 ;; File-Inclusions
 
-include-file = ~/.config/polybar/styles/colors.ini
+include-file = ~/.config/polybar/styles/round/colors.ini
 include-file = ~/.config/polybar/styles/round/modules.ini
 
 ;; Global WM Settings
@@ -71,7 +71,7 @@ font-3 = "CartographCF Nerd Font:size=15;3"
 font-4 = "CartographCF Nerd Font:size=13;3"
 
 ; Modules
-modules-left = ld menu rd space ld i3 rd space ld mpd rd space ld memory rd space ld cpu rd space temperature
+modules-left = ld menu rd space ld i3 rd space ld memory rd space ld cpu rd space temperature
 modules-center = xwindow
 modules-right = ld bluetooth rd space ld date rd space ld pulseaudio rd space ld battery rd space ld powermenu rd
 
@@ -82,7 +82,7 @@ separator =
 dim-value = 1.0
 
 ; Value to be used to set the WM_NAME atom
-wm-name =
+wm-name = i3
 
 ; Locale used to localize various module data (e.g. date)
 locale = 

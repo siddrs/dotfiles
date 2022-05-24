@@ -13,11 +13,10 @@ alias setwall="feh --bg-fill"
 alias tilewall="feh --bg-tile"
 
 # navigations
-alias D:="cd ~/Drives/D/"
-alias E:="cd ~/Drives/E/"
-alias F:="cd ~/Drives/F/"
+alias D:="cd ~/Drives/Dev/"
+alias E:="cd ~/Drives/Data/"
 
-alias code="codium" 
+# alias code="codium"
 
 alias sdtest="sddm-greeter --test-mode --theme"
 

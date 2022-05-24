@@ -429,3 +429,5 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
 #### STARSHIP PROMPT ####
 eval "$(starship init zsh)"
+
+alias luamake=/home/sid/.local/share/lang-servers/lua-language-server/3rd/luamake/luamake

@@ -1,6 +1,6 @@
 [Configuration]
-LastActiveMode=THUNAR_RENAMER_MODE_NAME
-LastActiveRenamer=ThunarSbrReplaceRenamer
+LastActiveMode=THUNAR_RENAMER_MODE_BOTH
+LastActiveRenamer=ThunarSbrNumberRenamer
 
 [TagRenamer]
 Lowercase=FALSE
@@ -10,7 +10,13 @@ Format=TAG_RENAMER_FORMAT_TITLE
 
 [ThunarSbrReplaceRenamer]
 CaseSensitive=FALSE
-Replacement=circles
-Pattern=wall
+Replacement=S06E0
+Pattern=E0
 Regexp=FALSE
+
+[ThunarSbrNumberRenamer]
+TextMode=THUNAR_SBR_TEXT_MODE_NT
+Text=\ - All of Us Are Dead
+Mode=THUNAR_SBR_NUMBER_MODE_123
+Start=1
 

@@ -1,61 +1,63 @@
 vim.g.nvim_tree_show_icons = {
-	git = 0,
+	git = 1,
 	folders = 1,
 	files = 1,
-	folder_arrows = 0,
+	folder_arrows = 1,
 }
 
 vim.g.nvim_tree_icons = {
 	-- default = "",
 	symlink = "",
 	git = {
-	   deleted = "",
-	   ignored = "",
-	   renamed = "",
-	   staged = "",
-	   unmerged = "",
-	   unstaged = "",
-	   untracked = "",
+		deleted = "",
+		ignored = "",
+		renamed = "",
+		staged = "",
+		unmerged = "",
+		unstaged = "",
+		untracked = "",
+		arrow_open = "",
+		arrow_closed = "",
 	},
 	folder = {
-	   default = "",
-	   open = "",
-	   empty = "",
-	   empty_open = "",
-	   symlink = "",
-	   symlink_open = "",
+		default = "",
+		open = "",
+		empty = "",
+		empty_open = "",
+		symlink = "",
+		symlink_open = "",
 	},
- }
- 
+}
 
-require'nvim-tree'.setup {
-	disable_netrw      = true,
-	hijack_netrw       = true,
-	open_on_setup      = false,
-	ignore_ft_on_setup = {},
+
+require 'nvim-tree'.setup {
+	disable_netrw        = true,
+	hijack_netrw         = true,
+	open_on_setup        = false,
+	ignore_ft_on_setup   = {},
 	-- auto_close         = true,
 	auto_reload_on_write = true,
-	open_on_tab        = false,
-	hijack_cursor      = false,
-	update_cwd         = false,
-	hijack_directories = {
+	open_on_tab          = false,
+	hijack_cursor        = false,
+	update_cwd           = false,
+	hijack_directories   = {
 		enable = true,
 		auto_open = true,
 	},
-	renderer = {
+	renderer             = {
 		indent_markers = {
-		  enable = true,
-		  icons = {
-			corner = "╰╴ ",
-			edge = "│  ",
-			none = "  ",
-		  },
+			enable = false,
+			icons = {
+				corner = "╰╴ ",
+				edge = "│  ",
+				none = "  ",
+			},
 		},
-		-- icons = {
-		--   webdev_colors = false,
-		-- },
+		icons = {
+			webdev_colors = true,
+		},
 	},
-	diagnostics = {
+	diagnostics          = {
 		enable = false,
 		icons = {
 			hint = "",
@@ -64,25 +66,25 @@ require'nvim-tree'.setup {
 			error = "",
 		}
 	},
-	update_focused_file = {
-		enable     = false,
-		update_cwd = false,
+	update_focused_file  = {
+		enable      = false,
+		update_cwd  = false,
 		ignore_list = {}
 	},
-	system_open = {
+	system_open          = {
 		cmd  = nil,
 		args = {}
 	},
-	filters = {
+	filters              = {
 		dotfiles = false,
 		custom = {}
 	},
-	git = {
+	git                  = {
 		enable = true,
 		ignore = true,
 		timeout = 500,
 	},
-	view = {
+	view                 = {
 		width = 30,
 		height = 25,
 		hide_root_folder = true,
@@ -96,11 +98,11 @@ require'nvim-tree'.setup {
 		relativenumber = false,
 		signcolumn = "yes"
 	},
-	trash = {
+	trash                = {
 		cmd = "trash",
 		require_confirm = true
 	},
-	actions = {
+	actions              = {
 		change_dir = {
 			global = false,
 		},

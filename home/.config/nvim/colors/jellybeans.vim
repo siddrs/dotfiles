@@ -652,14 +652,14 @@ hi! NvimTreeFileDirty guifg=#8197bf
 hi! NvimTreeGitDirty guifg=#8197bf
 hi! NvimTreeGitDeleted guifg=#cf6a4c
 hi! NvimTreeRootFolder guifg=#71b9f8
-hi! NvimTreeIndentMarker guifg=#3b3b3b
+hi! NvimTreeIndentMarker guifg=#888888
 "  hi! NvimTreeOpenedFileName guifg=#e8e8d3
 
 " Dashboard
-hi! DashboardHeader guifg=#597bc5
-hi! DashboardCenter guifg=#ffb964
-hi! DashboardFooter guifg=#99ad6a
-"  hi! DashboardShortCut guifg=#597bc5
+hi! DashboardHeader guifg=#888888
+hi! DashboardCenter guifg=#888888
+hi! DashboardFooter guifg=#888888
+"  hi! DashboardShortCut guifg=#888888
 
 " vim-indent-guides
 

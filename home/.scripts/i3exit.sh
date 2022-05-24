@@ -3,7 +3,7 @@
 
 case "$1" in
     lock)
-        sh ~/.config/i3lock/i3lock.sh
+        sh $HOME/.scripts/i3lock.sh
         ;;
     logout)
         i3-msg exit
