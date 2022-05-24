@@ -29,9 +29,9 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 10x60
+    offset = 15x60
 
-
+    
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
     
@@ -75,7 +75,7 @@
     # Draw a line of "separator_height" pixel height between two
     # notifications.
     # Set to 0 to disable.
-    separator_height = 4
+    separator_height = 2
 
     # Padding between text and separator.
     padding = 10
@@ -88,7 +88,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 4
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
     frame_color = "#2e2e2e"
@@ -261,13 +261,6 @@
     # Set this to true to use X11 output on Wayland.
     force_xwayland = false
 
-    ### Shortcuts
-    # close = ctrl+space
-    # close_all = ctrl+shift+space
-    # history = ctrl+grave
-    # context = ctrl+shift+period
-
-
     ### Legacy
 
     # Use the Xinerama extension instead of RandR for multi-monitor support.
@@ -305,6 +298,15 @@
     # where there are multiple screens with very different dpi values.
     per_monitor_dpi = false
 
+# The internal keyboard shortcut support in dunst is now considered deprecated
+# and should be replaced by dunstctl calls. You can use the configuration of your
+# WM or DE to bind these to shortcuts of your choice.
+# Check the dunstctl manual page for more info.
+[shortcuts]
+close = ctrl+space
+close_all = ctrl+shift+space
+history = ctrl+grave
+context = ctrl+shift+period
 
 [urgency_low]
     background = "#151515"
@@ -320,7 +322,7 @@
     background = "#151515"
     foreground = "#cf6a4c"
     frame_color = "#cf6a4c"
-    timeout = 7
+    timeout = 9
     # Icon for notifications with critical urgency, uncomment to enable
     #icon = /path/to/icon
 
