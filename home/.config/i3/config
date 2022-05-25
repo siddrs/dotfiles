@@ -16,11 +16,6 @@ include $HOME/.config/i3/04-win-rules.conf
 include $HOME/.config/i3/05-scratchpad.conf
 
 
-## ----- Set Wallpaper ----- ##
-
-exec --no-startup-id feh --bg-fill $HOME/Pictures/wallpapers/jellybeans/geometric/circles-6.png &
-
-
 ## ----- Variables ----- ##
 
 ## Define polybar style | `ls $HOME/.config/polybar/styles` to see available styles (currently one)
@@ -111,7 +106,7 @@ popup_during_fullscreen smart
 
     # Window color settings
     # class                  border    backgr.   text     indicator 
-    client.focused          "#597bc5" "#597bc5" "#151515" "#597bc5"
+    client.focused          "#212121" "#212121" "#99AD6A" "#2b2b2b"
     client.unfocused        "#151515" "#151515" "#5b5b5b" "#151515"
     client.focused_inactive "#151515" "#151515" "#5b5b5b" "#151515"
     client.placeholder      "#151515" "#151515" "#5b5b5b" "#151515"
