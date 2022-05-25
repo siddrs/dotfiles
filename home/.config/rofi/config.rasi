@@ -1,0 +1,3 @@
+configuration {
+    icon-theme: "Papirus";
+}

@@ -1,14 +1,9 @@
 * {
   bg:     #151515;
   bg-alt: #191919;
-  bg2:    #1b1b1b;
-  bg3:    #212121;
-
   black:  #2e2e2e;
-  black2: #3b3b3b;
   gray:   #888888;
   fg:     #e8e8d3;
-
   
   white:  #e8e8d3;
   red:    #cf6a4c;

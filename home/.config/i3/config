@@ -9,19 +9,16 @@ include $HOME/.config/i3/02-keys-i3.conf
 # Keybinds - Run scripts, launch apps, all user related keybinds
 include $HOME/.config/i3/03-keys-user.conf
 
-# Window Rules - Floating or Tiled, etc
+# Window Rules - Floating or Tiled and Assign Apps to specific workspaces
 include $HOME/.config/i3/04-win-rules.conf
 
-# Assigning Apps to Specific Workspaces
-include $HOME/.config/i3/05-ws-assign.conf
-
 # Scratchpad Stuff
-include $HOME/.config/i3/06-scratchpad.conf
+include $HOME/.config/i3/05-scratchpad.conf
 
 
 ## ----- Set Wallpaper ----- ##
 
-exec --no-startup-id feh --bg-fill $HOME/Pictures/wallpapers/jellybeans/geometric/circles-11.png &
+exec --no-startup-id feh --bg-fill $HOME/Pictures/wallpapers/jellybeans/geometric/circles-6.png &
 
 
 ## ----- Variables ----- ##
@@ -59,6 +56,7 @@ floating_modifier $mod
 ## Window Titles Bars -> border normal
 # for_window [all] border normal 0
 for_window [class="^.*"] border pixel 2
+for_window [class="firefox*"] border pixel 2
 
 ## Borders for Tiled Clients
 # new_window pixel 1
@@ -119,7 +117,7 @@ popup_during_fullscreen smart
     client.placeholder      "#151515" "#151515" "#5b5b5b" "#151515"
     client.urgent           "#cf6a4c" "#cf6a4c" "#151515" "#cf6a4c"
 
-    client.background       #2e2e2e
+    client.background       #3b3b3b
 
 
 ### STOP THEMING WM ###

@@ -1,15 +1,11 @@
 configuration {
-    modi: "drun";
-    font: "CartographCF Nerd Font Light 13";
     show-icons: true;
-    icon-theme: "Papirus";
-    display-drun: "APPLICATIONS";
-    drun-display-format: "{icon} {name}";
-    disable-history: false;
-    sidebar-mode: false;
+    drun-display-format: " {name}";
+    display-drun: "Apps";
+    modi: "drun";ww
 }
 
-@theme "colors.rasi"
+@theme "common/settings.rasi"
 
 * {
     padding: 0;
@@ -45,7 +41,7 @@ prompt {
     horizontal-align: 0.0;
     vertical-align: 0.5;
     background-color: @transp;
-    text-color: @black2;
+    text-color: @black;
     font: "CartographCF Nerd Font 24";
 }
 
@@ -87,7 +83,7 @@ listview {
 
 element {
     background-color: @transp;
-    text-color: @fg;
+    text-color: @gray;
     orientation: vertical;
     border-radius: 0px;
     padding: 15px;
@@ -103,16 +99,17 @@ element-icon {
 
 element-text {
     background-color: @transp;
-    text-color: @gray;
+    text-color: inherit;
     expand: true;
     horizontal-align: 0.5;
     vertical-align: 0.5;
     padding: 10px 10px 0px 0px;
+    font: "CartographCF Nerd Font Light 13";
 }
 
 element selected {
     background-color: @bg-alt;
-    text-color: @gray;
+    text-color: @fg;
     border: 2px;
     border-radius: 4px;
     border-color: @black;

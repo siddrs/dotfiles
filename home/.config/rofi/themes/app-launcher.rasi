@@ -1,14 +1,11 @@
 configuration {
-    modi: "drun";
-    font: "CartographCF Nerd Font Light 13";
     show-icons: true;
-    icon-theme: "Papirus";
-    display-drun: "";
-    drun-display-format: "{icon} {name}";
-    sidebar-mode: true;
+    drun-display-format: " {name}";
+    display-drun: "Apps";
+    modi: "drun";
 }
 
-@theme "colors.rasi"
+@theme "common/settings.rasi"
 
 * {
     padding: 0;
@@ -19,7 +16,7 @@ window {
     background-color: @bg-alt;
     text-color: @gray;
 
-    border: 2px;
+    border: 0px;
     border-radius: 0px;
     border-color: @black;
 
@@ -29,11 +26,11 @@ window {
 
     anchor: northwest;
     location: northwest;
-    children: [ inputbar, mainbox];
+    children: [ inputbar, mainbox ];
 }
 
 inputbar {
-    children: [ prompt, entry];
+    children: [ prompt, entry ];
     background-color: @transp;
 }
 
@@ -44,7 +41,7 @@ prompt {
     horizontal-align: 0.5;
     vertical-align: 0.5;
     background-color: @transp;
-    text-color: @black2;
+    text-color: @black;
 }
 
 entry {
@@ -58,7 +55,6 @@ entry {
     blink: true;
     font: "CartographCF Nerd Font Light 14";
     placeholder: " Search for Applications ";
-    // 
 }
 
 mainbox {
@@ -78,6 +74,7 @@ listview {
     cycle: false;
     dynamic: true;
     layout: vertical;
+    
 }
 
 element {
@@ -85,6 +82,7 @@ element {
     text-color: @gray;
     orientation: horizontal;
     padding: 10px;
+    
 }
 
 element-icon {
@@ -101,12 +99,13 @@ element-text {
     text-color: inherit;
     expand: true;
     vertical-align: 0.5;
+    font: "CartographCF Nerd Font 13";
 }
 
 element selected {
     background-color: @bg-alt;
-    text-color: @gray;
+    text-color: @fg;
     border: 2px;
-    border-radius: 4px;
+    border-radius: 4px;   
     border-color: @black;
 }

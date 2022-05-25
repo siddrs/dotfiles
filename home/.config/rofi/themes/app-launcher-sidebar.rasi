@@ -1,0 +1,112 @@
+configuration {
+    show-icons: true;
+    drun-display-format: " {name}";
+    display-drun: "Apps";
+    modi: "drun";
+}
+
+@theme "common/settings.rasi"
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+window {
+    background-color: @bg-alt;
+    text-color: @fg;
+    location: east;
+    anchor: east;
+    width: 25%;
+    height: 100%;
+    padding: 0px;
+    x-offset: 0;
+    y-offset: 0px;
+    children: [ inputbar, mainbox];
+    border: 0px 0px 0px 2px;
+    border-color: @black;
+}
+
+inputbar {
+    background-color: @transp;
+    children: [ prompt, entry];
+    border: 0px 0px 0px 0px;
+    border-color: @black;
+}
+
+
+prompt {
+    enabled: false;
+    padding: 25px;
+    margin: 0px;
+    horizontal-align: 0.0;
+    vertical-align: 0.5;
+    background-color: @transp;
+    text-color: @black;
+    font: "CartographCF Nerd Font 24";
+}
+
+entry {
+    background-color: @transp;
+    text-color: @gray;
+    placeholder-color: @gray;
+    expand: true;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    placeholder: " Search ";
+    padding: 25px;
+    blink: true;
+    font: "CartographCF Nerd Font Light 16";
+    blink: true;
+
+}
+
+mainbox {
+    background-color: @bg;
+    border: 2px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+    border-color: @black;
+    children: [ listview ];
+    padding: 30px 0px 0px 30px;
+    margin: 0px 0px;
+}
+
+listview {
+    background-color: @bg;
+    padding: 0px;
+    columns: 1;
+    spacing: 15px;
+    cycle: false;
+    dynamic: true;
+    layout: vertical;
+}
+
+
+element {
+    background-color: @transp;
+    text-color: @gray;
+    padding: 15px 30px 15px 15px;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+    size: 42px;
+}
+
+element-text {
+    background-color: @transp;
+    text-color: inherit;
+    expand: true;
+    vertical-align: 0.5;
+    font: "CartographCF Nerd Font Light 15";
+}
+
+element selected {
+    background-color: @bg-alt;
+    text-color: @fg;
+    border: 2px 0px 2px 2px;
+    border-radius: 20px 0px 0px 20px;
+    border-color: @black;
+}
