@@ -20,6 +20,8 @@ soon™
         - `gtk-3.0`: sets some theme settings
         - `i3`: i3 config with auto starting applications, borders and gaps settings, etc
         - `picom`: picom config with subtle animations.
+          - `presets/picom.conf.jonaburg:` picom config to use if you are using jonaburg's fork
+          - `presets/picom.conf.pijulius:` picom config to use if you are using pijulius' fork with animations.
         - `polybar`: config for the status bar with modules n shit enabled
         - `rofi`: rofi configs for app lauchers
         - `nvim`: optional nvim config
@@ -56,6 +58,9 @@ yay -S nerd-fonts-jetbrains-mono
 - **firefox user css:** follow the instructions in my [**firefox-css**](https://github.com/rototrash/firefox-css) repo to install it. Put the `chrome` folder in your `~/.mozilla/firefox/something.default-release/` dir.
 
 ## misc. 
+- **picom:** as of now, I have switched to using pijulius' fork of picom. It is not available in the AUR, so you have to build it yourself.
+  - There are two preset configs available in the `~/.config/picom/presets` dir. simply copy one of those to `~/.config/picom` and rename it to `picom.conf` depending upon which fork you are using.
+
 - **bluetooth:** install the bluetooth utilites (`bluez, bluez-utils, blueberry`). enable bluetooth service `sudo systemctl enable --now bluetooth`
 
 - **wallpapers:** [`github.com/rototrash/wallpapers`](https://github.com/rototrash/wallpapers)
@@ -79,30 +84,30 @@ yay -S nerd-fonts-jetbrains-mono
 <details>
 <summary> Basic Keybinds</summary>
 
-| Keybind | Action |
-| --- | --- |
-| <kbd>super + enter</kbd> | Spawn Terminal (alacritty) |
-| <kbd>super + shift + enter</kbd> | Spawn Thunar |
-| <kbd>super + shift + f</kbd> | Launch rofi launcher |
-| <kbd>super + q</kbd> | Close client |
-| <kbd>super + shift + space</kbd> | Float active client |
-| <kbd>super + space</kbd> | Switch Focus between Floating and Tiled clients |
-| <kbd>super + [1-0]</kbd> |  Change workspace |
-| <kbd>super + shift + [1-0]</kbd> | Move focused client to workspace |
-| <kbd>control + Alt + [arrow keys]</kbd> | Move between active workspaces |
-| <kbd>super + e</kbd> | Tiling layout |
-| <kbd>super + z</kbd> | Tabbed layout |
-| <kbd>super + s</kbd> | Stacked layout |
-| <kbd>super + [arrow keys]</kbd> | Change focus by direction 
-| <kbd>super + [hjkl]</kbd> | ^ |
-| <kbd>super + shift + [arrow keys]</kbd> | Move client by direction. (Floating and Tiled) |
-| <kbd>super + shift + [hjkl]</kbd> | ^ |
-| <kbd>super + control + alt +[arrow keys]</kbd> | Resize active client |
-| <kbd>super + f</kbd> | Toggle fullscreen |
-| <kbd>super + shift + r</kbd> | Reload i3 |
-| <kbd>super + v</kbd> | Split Client Vertically |
-| <kbd>super + b</kbd> | Split Client Horizontally |
-| <kbd>super + shift + b</kbd> | hide/unhide polybar |
+| Keybind                                        | Action                                          |
+| ---------------------------------------------- | ----------------------------------------------- |
+| <kbd>super + enter</kbd>                       | Spawn Terminal (alacritty)                      |
+| <kbd>super + shift + enter</kbd>               | Spawn Thunar                                    |
+| <kbd>super + shift + f</kbd>                   | Launch rofi launcher                            |
+| <kbd>super + q</kbd>                           | Close client                                    |
+| <kbd>super + shift + space</kbd>               | Float active client                             |
+| <kbd>super + space</kbd>                       | Switch Focus between Floating and Tiled clients |
+| <kbd>super + [1-0]</kbd>                       | Change workspace                                |
+| <kbd>super + shift + [1-0]</kbd>               | Move focused client to workspace                |
+| <kbd>control + Alt + [arrow keys]</kbd>        | Move between active workspaces                  |
+| <kbd>super + e</kbd>                           | Tiling layout                                   |
+| <kbd>super + z</kbd>                           | Tabbed layout                                   |
+| <kbd>super + s</kbd>                           | Stacked layout                                  |
+| <kbd>super + [arrow keys]</kbd>                | Change focus by direction                       |
+| <kbd>super + [hjkl]</kbd>                      | ^                                               |
+| <kbd>super + shift + [arrow keys]</kbd>        | Move client by direction. (Floating and Tiled)  |
+| <kbd>super + shift + [hjkl]</kbd>              | ^                                               |
+| <kbd>super + control + alt +[arrow keys]</kbd> | Resize active client                            |
+| <kbd>super + f</kbd>                           | Toggle fullscreen                               |
+| <kbd>super + shift + r</kbd>                   | Reload i3                                       |
+| <kbd>super + v</kbd>                           | Split Client Vertically                         |
+| <kbd>super + b</kbd>                           | Split Client Horizontally                       |
+| <kbd>super + shift + b</kbd>                   | hide/unhide polybar                             |
 
 Go through the i3 config file for more.
 
@@ -112,22 +117,22 @@ Go through the i3 config file for more.
 <details>
 <summary>some info about my setup</summary>
 
-| Thingy | What I use |
-|--- | --- |
-| OS | ArcoLinux |
-| WM | i3-gaps |
-| File Manager | Thunar | 
-| Notifications | Dunst |
-| Status Bar  | Polybar |
-| Launcher | Rofi |
-| Shell | zsh |
-| Prompt | starship | 
-| Editor | vscodium & neovim |
-| IDE | QtCreator | 
-| Icons | Papirus Dark (Black) |
-| GTK Theme | Jellybeans |
-| DM | SDDM |
-| Lockscreen | i3lock-color |
+| Thingy        | What I use           |
+| ------------- | -------------------- |
+| OS            | ArcoLinux            |
+| WM            | i3-gaps              |
+| File Manager  | Thunar               |
+| Notifications | Dunst                |
+| Status Bar    | Polybar              |
+| Launcher      | Rofi                 |
+| Shell         | zsh                  |
+| Prompt        | starship             |
+| Editor        | vscodium & neovim    |
+| IDE           | QtCreator            |
+| Icons         | Papirus Dark (Black) |
+| GTK Theme     | Jellybeans           |
+| DM            | SDDM                 |
+| Lockscreen    | i3lock-color         |
 
 </details>
 
