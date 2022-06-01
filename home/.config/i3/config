@@ -69,7 +69,7 @@ gaps outer 0
 
 ## Smart Gaps and Borders
 # smart_gaps on
-smart_borders on
+# smart_borders on
 
 
 ## ----- Window Titles ----- ##
@@ -106,7 +106,7 @@ popup_during_fullscreen smart
 
     # Window color settings
     # class                  border    backgr.   text     indicator 
-    client.focused          "#212121" "#212121" "#99AD6A" "#2b2b2b"
+    client.focused          "#2e2e2e" "#2e2e2e" "#99AD6A" "#2e2e2e"
     client.unfocused        "#151515" "#151515" "#5b5b5b" "#151515"
     client.focused_inactive "#151515" "#151515" "#5b5b5b" "#151515"
     client.placeholder      "#151515" "#151515" "#5b5b5b" "#151515"

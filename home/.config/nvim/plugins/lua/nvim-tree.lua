@@ -1,41 +1,8 @@
-vim.g.nvim_tree_show_icons = {
-	git = 1,
-	folders = 1,
-	files = 1,
-	folder_arrows = 1,
-}
-
-vim.g.nvim_tree_icons = {
-	-- default = "",
-	symlink = "",
-	git = {
-		deleted = "",
-		ignored = "",
-		renamed = "",
-		staged = "",
-		unmerged = "",
-		unstaged = "",
-		untracked = "",
-		arrow_open = "",
-		arrow_closed = "",
-	},
-	folder = {
-		default = "",
-		open = "",
-		empty = "",
-		empty_open = "",
-		symlink = "",
-		symlink_open = "",
-	},
-}
-
-
 require 'nvim-tree'.setup {
 	disable_netrw        = true,
 	hijack_netrw         = true,
 	open_on_setup        = false,
 	ignore_ft_on_setup   = {},
-	-- auto_close         = true,
 	auto_reload_on_write = true,
 	open_on_tab          = false,
 	hijack_cursor        = false,
@@ -45,6 +12,38 @@ require 'nvim-tree'.setup {
 		auto_open = true,
 	},
 	renderer             = {
+		icons = {
+			webdev_colors = true,
+			show = {
+				git = true,
+				folder = true,
+				file = true,
+				folder_arrow = true,
+			},
+			glyphs = {
+				default = "",
+				symlink = "",
+				git = {
+					deleted = "",
+					ignored = "",
+					renamed = "",
+					staged = "",
+					unmerged = "",
+					unstaged = "",
+					untracked = "",
+				},
+				folder = {
+					default = "",
+					open = "",
+					empty = "",
+					empty_open = "",
+					symlink = "",
+					symlink_open = "",
+					arrow_open = "",
+					arrow_closed = "",
+				},
+			},
+		},
 		indent_markers = {
 			enable = false,
 			icons = {
@@ -53,12 +52,9 @@ require 'nvim-tree'.setup {
 				none = "  ",
 			},
 		},
-		icons = {
-			webdev_colors = true,
-		},
 	},
 	diagnostics          = {
-		enable = false,
+		enable = true,
 		icons = {
 			hint = "",
 			info = "",
@@ -89,7 +85,7 @@ require 'nvim-tree'.setup {
 		height = 25,
 		hide_root_folder = true,
 		side = 'right',
-		-- auto_resize = true,
+		auto_resize = true,
 		mappings = {
 			custom_only = false,
 			list = {}

@@ -6,18 +6,12 @@
 #: individual font faces and even specify special fonts for particular
 #: characters.
 
-    font_family       JetBrains Mono Regular Nerd Font Complete
-    bold_font         JetBrains Mono Bold Nerd Font Complete
-    italic_font       JetBrains Mono Italic Nerd Font Complete
-    bold_italic_font  JetBrains Mono Bold Italic Nerd Font Complete
-
-    # font_family         Victor Mono Regular Nerd Font Complete
-    # bold_font           Victor Mono Bold Nerd Font Complete
-    # italic_font         Victor Mono Italic Nerd Font Complete
-    # bold_italic_font    Victor Mono Bold Italic Nerd Font Complete
-
-    # italic_font       Victor Mono SemiBold Italic Nerd Font Complete
-    # bold_italic_font  Victor Mono Bold Italic Nerd Font Complete 
+    font_family      JetBrains Mono Medium Nerd Font Complete
+    bold_font        JetBrains Mono Extra Bold Nerd Font Complete
+    italic_font      Victor Mono SemiBold Italic Nerd Font Complete
+    # italic_font      JetBrains Mono Bold Italic Nerd Font Complete
+    # bold_italic_font JetBrains Mono ExtBd Ita Nerd Font Complete
+    bold_italic_font Victor Mono Bold Italic Nerd Font Complete 
 
 #: You can specify different fonts for the bold/italic/bold-italic
 #: variants. To get a full list of supported fonts use the `kitty
@@ -31,7 +25,7 @@
 #:     italic_font      Operator Mono Book Italic
 #:     bold_italic_font Operator Mono Medium Italic
 
-font_size 12
+font_size 13
 
 #: Font size (in pts)
 
@@ -276,7 +270,7 @@ mouse_hide_wait 3.0
 #: robustly with the ever-changing sea of bugs that is Cocoa is too
 #: much effort.
 
-url_color #c6a679
+url_color #0087bd
 url_style curly
 
 #: The color and style for highlighting URLs on mouse-over. url_style
@@ -571,7 +565,7 @@ single_window_margin_width -1
 #: values set top, horizontal and bottom. Four values set top, right,
 #: bottom and left.
 
-window_padding_width 15
+window_padding_width 8
 
 #: The window padding (in pts) (blank area between the text and the
 #: window border). A single value sets all four sides. Two values set
@@ -783,44 +777,44 @@ dynamic_background_opacity no
 background_tint 0.0
 dim_opacity 1
 
-foreground #f0f0f0
-background #0f0f0f
+foreground #ffffff
+background #13181c
 
 
-selection_foreground #0f0f0f
-selection_background #f0f0f0 
+selection_foreground #090909
+selection_background #ffffff 
 
 #: black
-color0 #4c4c4c
-color8 #262626
+color0 #29343d
+color8 #3b4b58
 
 #: red
-color1 #ac8a8c
-color9 #c49ea0
+color1 #f9929b
+color9 #fca2aa
 
 #: green
-color2 #8aac8b
-color10 #9ec49f
+color2 #9ce5c0
+color10 #a5d4af
 
 #: yellow
-color3 #aca98a
-color11 #c4c19e
+color3 #fbdf90
+color11 #fbeab9
 
 #: blue
-color4 #8f8aac
-color12 #a39ec4
+color4 #a3b8ef
+color12 #bac8ef
 
 #: magenta
-color5 #ac8aac
-color13 #c49ec4
+color5 #ccaced
+color13 #d7c1ed
 
 #: cyan
-color6 #8aacab
-color14 #9ec3c4
+color6 #22a2c9
+color14 #22a2c9
 
 #: white
-color7 #e7e7e7
-color15 #f0f0f0
+color7 #ffffff
+color15 #eaeaea
 
 #: }}}
 

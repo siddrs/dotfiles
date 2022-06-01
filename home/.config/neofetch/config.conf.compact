@@ -1,49 +1,23 @@
 # See this wiki page for more info:
 # https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
 print_info() {
-    info title
-    prin "$(color 4)-----$(color 3)-----$(color 1)-----"
-    info "" distro
-    info "" kernel
-    info "" uptime
-    info "" wm
-    info "" shell
-    info "" term
-    info "" theme
-    prin "$(color 4)-----$(color 3)-----$(color 1)-----"
-    prin "" "AMD Ryzen 9 4900H"
-    prin "" "GeForce RTX 2060 Mobile"
-    info "" memory
-    info "" resolution
-    # info "" packages
-    # info "" model
-    # prin "" "ASUS TUF A15 FA506IV"
     
-    # prin "$(color 4)-----$(color 3)-----$(color 1)-----"
-    # info underline
-    # info "DE" de
-    # info "" wm_theme
-    # info "" font
-    # info "" icons
-    # info "" term_font
-    # info underline   
-    # info "" cpu
-    # info "GPU Driver" gpu_driver  # Linux/macOS only
-    # info "CPU Usage" cpu_usage
-    # info "Disk" disk
-    # info "Battery" battery
-    # info "Song" song
-    # [[ "$player" ]] && prin "Music Player" "$player"
-    # info "Local IP" local_ip
-    # info "Public IP" public_ip
-    # info "Users" users
-    # info "Locale" locale  # This only works on glibc systems.
+    info title
 
-    # info cols
-    # prin "\n"
     prin "$(color 4)-----$(color 3)-----$(color 1)-----"
+    
+    info "" distro
+    info "" wm
+    info "" shell
+    info "" packages
+    info "" uptime
+    info "" term
+    info "" theme
+
+    prin "$(color 4)-----$(color 3)-----$(color 1)-----"
+    
     prin "$(color 8) $(color 1) $(color 3) $(color 2) $(color 6) $(color 4) $(color 5)"
-    # prin "$(color 9) $(color 11) $(color 10) $(color 14) $(color 12) $(color 13)    \t $(color 8) $(color 15)"
+        
 }
 
 # Title
@@ -110,7 +84,7 @@ os_arch="off"
 # on:   '2 days, 10 hours, 3 mins'
 # tiny: '2d 10h 3m'
 # off:  '2 days, 10 hours, 3 minutes'
-uptime_shorthand="on"
+uptime_shorthand="tiny"
 
 
 # Memory
@@ -153,7 +127,7 @@ memory_unit="gib"
 # on:   '998 (pacman), 8 (flatpak), 4 (snap)'
 # tiny: '908 (pacman, flatpak, snap)'
 # off:  '908'
-package_managers="on"
+package_managers="off"
 
 
 # Shell
@@ -179,7 +153,7 @@ shell_path="off"
 # Example:
 # on:  'bash 4.4.5'
 # off: 'bash'
-shell_version="on"
+shell_version="off"
 
 
 # CPU
@@ -770,7 +744,7 @@ image_source="auto"
 #       Slackware, SunOS, LinuxLite, OpenSUSE, Raspbian,
 #       postmarketOS, and Void have a smaller logo variant.
 #       Use '{distro name}_small' to use the small variants.
-ascii_distro="arch_old"
+ascii_distro="arcolinux_small"
 
 # Ascii Colors
 #

@@ -71,9 +71,9 @@ font-3 = "CartographCF Nerd Font:size=15;3"
 font-4 = "CartographCF Nerd Font:size=13;3"
 
 ; Modules
-modules-left = ld menu rd space ld i3 rd space ld memory rd space ld cpu rd space temperature
+modules-left = ld menu rd space ld mpd rd space ld i3 rd space ld memory rd space ld cpu rd space 
 modules-center = xwindow
-modules-right = ld bluetooth rd space ld date rd space ld pulseaudio rd space ld battery rd space ld powermenu rd
+modules-right = temperature space ld bluetooth rd space ld date rd space ld pulseaudio rd space ld battery rd space ld powermenu rd
 
 ; The separator will be inserted between the output of each module
 separator = 

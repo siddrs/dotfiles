@@ -276,7 +276,7 @@ mouse_hide_wait 3.0
 #: robustly with the ever-changing sea of bugs that is Cocoa is too
 #: much effort.
 
-url_color #c6a679
+url_color #0087bd
 url_style curly
 
 #: The color and style for highlighting URLs on mouse-over. url_style
@@ -783,44 +783,44 @@ dynamic_background_opacity no
 background_tint 0.0
 dim_opacity 1
 
-foreground #f0f0f0
-background #0f0f0f
+foreground #e8e8d3
+background #151515
 
 
-selection_foreground #0f0f0f
-selection_background #f0f0f0 
+selection_foreground #151515
+selection_background #e8e8d3 
 
 #: black
-color0 #4c4c4c
-color8 #262626
+color0 #212121
+color8 #3b3b3b
 
 #: red
-color1 #ac8a8c
-color9 #c49ea0
+color1 #cf6a4c
+color9 #cf6a4c
 
 #: green
-color2 #8aac8b
-color10 #9ec49f
+color2 #99ad6a
+color10 #99ad6a
 
 #: yellow
-color3 #aca98a
-color11 #c4c19e
+color3 #d8ad4c
+color11 #d8ad4c
 
 #: blue
-color4 #8f8aac
-color12 #a39ec4
+color4 #597bc5
+color12 #597bc5
 
 #: magenta
-color5 #ac8aac
-color13 #c49ec4
+color5 #c6b6ee
+color13 #c6b6ee
 
 #: cyan
-color6 #8aacab
-color14 #9ec3c4
+color6 #71b9f8
+color14 #71b9f8
 
 #: white
-color7 #e7e7e7
-color15 #f0f0f0
+color7 #e8e8d3
+color15 #e8e8d3
 
 #: }}}
 

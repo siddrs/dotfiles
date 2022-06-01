@@ -1,0 +1,25 @@
+# Tokyo Night
+colors:
+  primary:
+    background: '#16161e'
+    foreground: '#a9b1d6'
+ 
+  normal:
+    black:   '#24283b'
+    red:     '#f7768e'
+    green:   '#9ece6a'
+    yellow:  '#ffa86f'
+    blue:    '#88afff'
+    magenta: '#c3a4f8'
+    cyan:    '#09c1dc'
+    white:   '#c0caf5'
+
+  bright:
+    black:   '#24283b'
+    red:     '#f7768e'
+    green:   '#9ece6a'
+    yellow:  '#ffa86f'
+    blue:    '#88afff'
+    magenta: '#c3a4f8'
+    cyan:    '#09c1dc'
+    white:   '#c0caf5'

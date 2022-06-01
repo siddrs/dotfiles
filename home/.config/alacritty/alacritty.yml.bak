@@ -1,0 +1,37 @@
+import:
+  - ~/.config/alacritty/colors.yml
+  - ~/.config/alacritty/font.yml
+
+window:
+  padding:
+    x: 20
+    y: 20
+  dynamic_padding: false
+  dynamic_title: true
+
+scrolling:
+  history: 5000
+  multiplier: 3
+
+mouse:
+  hide_when_typing: true
+
+cursor:
+  style:
+    shape: Beam
+  unfocused_hollow: true
+
+selection:
+  save_to_clipboard: true
+
+debug:
+  persistent_logging: true
+logging: true
+
+draw_bold_text_with_bright_colors: true
+
+env:
+  TERM: alacritty
+  WINIT_X11_SCALE_FACTOR: '1.0'
+
+live_config_reload: true

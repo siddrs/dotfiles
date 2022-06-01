@@ -2,48 +2,42 @@
 # https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
 print_info() {
     info title
-    prin "$(color 4)-----$(color 3)-----$(color 1)-----"
-    info "" distro
-    info "" kernel
-    info "" uptime
-    info "" wm
-    info "" shell
-    info "" term
-    info "" theme
-    prin "$(color 4)-----$(color 3)-----$(color 1)-----"
-    prin "" "AMD Ryzen 9 4900H"
-    prin "" "GeForce RTX 2060 Mobile"
-    info "" memory
-    info "" resolution
-    # info "" packages
-    # info "" model
-    # prin "" "ASUS TUF A15 FA506IV"
-    
-    # prin "$(color 4)-----$(color 3)-----$(color 1)-----"
-    # info underline
-    # info "DE" de
-    # info "" wm_theme
-    # info "" font
-    # info "" icons
-    # info "" term_font
-    # info underline   
-    # info "" cpu
+    info underline
+
+    info " " distro 
+    #info " " model 
+    info " " kernel 
+    info " " uptime
+    # info " " packages 
+    info " " shell 
+    #info "Resolution" resolution
+    #info "DE" de
+    info " " wm 
+    #info "WM Theme" wm_theme
+    info " " theme
+    #info "Icons" icons
+    info " " term
+    #info "Terminal Font" term_font
+    #info " " cpu
+    #info "GPU" gpu
+    info " " memory
+
     # info "GPU Driver" gpu_driver  # Linux/macOS only
     # info "CPU Usage" cpu_usage
     # info "Disk" disk
     # info "Battery" battery
-    # info "Song" song
-    # [[ "$player" ]] && prin "Music Player" "$player"
+    # info "Font" font
+    # info " " song
+    #[[ "$player" ]] && prin "Music Player" "$player"
     # info "Local IP" local_ip
     # info "Public IP" public_ip
     # info "Users" users
     # info "Locale" locale  # This only works on glibc systems.
-
-    # info cols
-    # prin "\n"
-    prin "$(color 4)-----$(color 3)-----$(color 1)-----"
-    prin "$(color 8) $(color 1) $(color 3) $(color 2) $(color 6) $(color 4) $(color 5)"
-    # prin "$(color 9) $(color 11) $(color 10) $(color 14) $(color 12) $(color 13)    \t $(color 8) $(color 15)"
+    #
+    #info cols
+    prin
+    #prin "$(color 0) $(color 1) $(color 2) $(color 3) $(color 4) $(color 5) $(color 6) $(color 7) ⠀"
+    prin "$(color 8) $(color 9) $(color 10) $(color 11) $(color 12) $(color 13) $(color 14) $(color 15) ⠀"
 }
 
 # Title
@@ -137,7 +131,7 @@ memory_percent="off"
 # kib  '1020928KiB / 7117824KiB'
 # mib  '1042MiB / 6951MiB'
 # gib: ' 0.98GiB / 6.79GiB'
-memory_unit="gib"
+memory_unit="mib"
 
 
 # Packages
@@ -153,7 +147,7 @@ memory_unit="gib"
 # on:   '998 (pacman), 8 (flatpak), 4 (snap)'
 # tiny: '908 (pacman, flatpak, snap)'
 # off:  '908'
-package_managers="on"
+package_managers="off"
 
 
 # Shell
@@ -179,7 +173,7 @@ shell_path="off"
 # Example:
 # on:  'bash 4.4.5'
 # off: 'bash'
-shell_version="on"
+shell_version="off"
 
 
 # CPU
@@ -273,7 +267,7 @@ cpu_temp="off"
 # Example:
 # on:  'AMD HD 7950'
 # off: 'HD 7950'
-gpu_brand="off"
+gpu_brand="on"
 
 # Which GPU to display
 #
@@ -307,7 +301,7 @@ gpu_type="all"
 # Example:
 # on:  '1920x1080 @ 60Hz'
 # off: '1920x1080'
-refresh_rate="on"
+refresh_rate="off"
 
 
 # Gtk Theme / Icons / Font
@@ -487,7 +481,7 @@ disk_percent="on"
 # xmms2d
 # xnoise
 # yarock
-music_player="auto"
+music_player="mpd"
 
 # Format to display song information.
 #
@@ -497,7 +491,7 @@ music_player="auto"
 #
 # Example:
 # default: 'Song: Jet - Get Born - Sgt Major'
-song_format="%artist% - %album% - %title%"
+song_format="%title% by %artist% on %album%"
 
 # Print the Artist, Album and Title on separate lines
 #
@@ -535,8 +529,7 @@ mpc_args=()
 # Example:
 # colors=(distro)      - Text is colored based on Distro colors.
 # colors=(4 6 1 8 8 6) - Text is colored in the order above.
-# colors=(distro)
-colors=(4 6 8 2 2 7)
+colors=(distro)
 
 
 # Text Options
@@ -561,7 +554,7 @@ underline_enabled="on"
 # Default:  '-'
 # Values:   'string'
 # Flag:     --underline_char
-underline_char="-"
+underline_char="\033[95m——"
 
 
 # Info Separator
@@ -573,7 +566,7 @@ underline_char="-"
 # Example:
 # separator="->":   'Shell-> bash'
 # separator=" =":   'WM = dwm'
-separator=" "
+separator="\033[92m  "
 
 
 # Color Blocks
@@ -704,7 +697,7 @@ disk_display="off"
 # Values:   'ascii', 'caca', 'chafa', 'jp2a', 'iterm2', 'off',
 #           'pot', 'termpix', 'pixterm', 'tycat', 'w3m', 'kitty'
 # Flag:     --backend
-image_backend="ascii"
+image_backend="w3m"
 
 # Image Source
 #
@@ -718,8 +711,8 @@ image_backend="ascii"
 # NOTE: 'auto' will pick the best image source for whatever image backend is used.
 #       In ascii mode, distro ascii art will be used and in an image mode, your
 #       wallpaper will be used.
-image_source="auto"
-
+#image_source="wallpaper"
+#image_source="/home/sid/Pictures/wallpapers/tokyo-night/squares.png"
 
 # Ascii Options
 
@@ -770,7 +763,7 @@ image_source="auto"
 #       Slackware, SunOS, LinuxLite, OpenSUSE, Raspbian,
 #       postmarketOS, and Void have a smaller logo variant.
 #       Use '{distro name}_small' to use the small variants.
-ascii_distro="arch_old"
+ascii_distro="ArcoLinux_small"
 
 # Ascii Colors
 #
@@ -802,7 +795,7 @@ ascii_bold="on"
 # Default:  'off'
 # Values:   'on', 'off'
 # Flag:     --loop
-image_loop="off"
+image_loop="on"
 
 # Thumbnail directory
 #
@@ -836,14 +829,14 @@ crop_offset="center"
 # Values:  'auto', '00px', '00%', 'none'
 # Flags:   --image_size
 #          --size
-image_size="auto"
+image_size="280px"
 
 # Gap between image and text
 #
 # Default: '3'
 # Values:  'num', '-num'
 # Flag:    --gap
-gap=3
+gap=1
 
 # Image offsets
 # Only works with the w3m backend.
@@ -852,8 +845,8 @@ gap=3
 # Values:  'px'
 # Flags:   --xoffset
 #          --yoffset
-yoffset=0
-xoffset=0
+yoffset=15
+xoffset=15
 
 # Image background color
 # Only works with the w3m backend.

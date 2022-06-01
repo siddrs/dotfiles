@@ -6,18 +6,10 @@
 #: individual font faces and even specify special fonts for particular
 #: characters.
 
-    font_family       JetBrains Mono Regular Nerd Font Complete
-    bold_font         JetBrains Mono Bold Nerd Font Complete
-    italic_font       JetBrains Mono Italic Nerd Font Complete
-    bold_italic_font  JetBrains Mono Bold Italic Nerd Font Complete
-
-    # font_family         Victor Mono Regular Nerd Font Complete
-    # bold_font           Victor Mono Bold Nerd Font Complete
-    # italic_font         Victor Mono Italic Nerd Font Complete
-    # bold_italic_font    Victor Mono Bold Italic Nerd Font Complete
-
-    # italic_font       Victor Mono SemiBold Italic Nerd Font Complete
-    # bold_italic_font  Victor Mono Bold Italic Nerd Font Complete 
+font_family      JetBrainsMonoNerdFont
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
 
 #: You can specify different fonts for the bold/italic/bold-italic
 #: variants. To get a full list of supported fonts use the `kitty
@@ -172,7 +164,8 @@ box_drawing_scale 0.001, 1, 1.5, 2
 
 #: Cursor customization {{{
 
-cursor #a9b1d6
+cursor #cccccc
+
 #: Default cursor color
 
 cursor_text_color #111111
@@ -181,7 +174,7 @@ cursor_text_color #111111
 #: with the background color of the cell underneath instead, use the
 #: special keyword: background
 
-cursor_shape beam
+cursor_shape block
 
 #: The cursor shape can be one of (block, beam, underline). Note that
 #: when reloading the config this will be changed only if the cursor
@@ -276,7 +269,7 @@ mouse_hide_wait 3.0
 #: robustly with the ever-changing sea of bugs that is Cocoa is too
 #: much effort.
 
-url_color #c6a679
+url_color #0087bd
 url_style curly
 
 #: The color and style for highlighting URLs on mouse-over. url_style
@@ -571,7 +564,7 @@ single_window_margin_width -1
 #: values set top, horizontal and bottom. Four values set top, right,
 #: bottom and left.
 
-window_padding_width 15
+window_padding_width 8
 
 #: The window padding (in pts) (blank area between the text and the
 #: window border). A single value sets all four sides. Two values set
@@ -783,44 +776,44 @@ dynamic_background_opacity no
 background_tint 0.0
 dim_opacity 1
 
-foreground #f0f0f0
-background #0f0f0f
+foreground #a9b1d6
+background #16161e
+#: background #1a1b26
 
-
-selection_foreground #0f0f0f
-selection_background #f0f0f0 
+selection_foreground #000000
+selection_background #c0caf5
 
 #: black
-color0 #4c4c4c
-color8 #262626
+color0 #24283b
+color8 #24283b
 
 #: red
-color1 #ac8a8c
-color9 #c49ea0
+color1 #f7768e
+color9 #f7768e
 
 #: green
-color2 #8aac8b
-color10 #9ec49f
+color2 #9ece6a
+color10 #9ece6a
 
 #: yellow
-color3 #aca98a
-color11 #c4c19e
+color3 #ffa86f
+color11 #ffa86f
 
 #: blue
-color4 #8f8aac
-color12 #a39ec4
+color4 #88afff
+color12 #88afff
 
 #: magenta
-color5 #ac8aac
-color13 #c49ec4
+color5 #c3a4f8
+color13 #c3a4f8
 
 #: cyan
-color6 #8aacab
-color14 #9ec3c4
+color6 #09c1dc
+color14 #09c1dcs
 
 #: white
-color7 #e7e7e7
-color15 #f0f0f0
+color7 #c0caf5
+color15 #c0caf5
 
 #: }}}
 

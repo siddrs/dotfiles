@@ -1,13 +1,23 @@
 font:
   normal:
     family: CartographCF Nerd Font
-    style: Normal
+    style: Regular
   italic:
     family: CartographCF Nerd Font
     style: Italic
   bold:
     family: CartographCF Nerd Font
     style: Bold
+    
+  # normal:
+  #   family: Iosevka Nerd Font
+  #   style: Normal
+  # italic:
+  #   family: Iosevka Nerd Font
+  #   style: Italic
+  # bold:
+  #   family: Iosevka Nerd Font
+  #   style: Bold
     
   size: 12
   # size: 14
