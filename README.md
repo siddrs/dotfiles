@@ -145,8 +145,11 @@ for notifying me if something's missing or wrong or if you want help
 discord: [@rototrash#0900](https://discord.com/users/710151070344675418) 
 
 ## thanks to
-- [mespyr's](https://github.com/mespyr/)
+- [mespyr](https://github.com/mespyr/)
 - man pages and docs
+
+## contributors
+- [pentasu](https://github.com/pentasu) - previews
 
 ## license
 [**MIT**](https://github.com/rototrash/dotfiles/blob/main/LICENSE)
