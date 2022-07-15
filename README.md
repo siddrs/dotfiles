@@ -9,8 +9,8 @@ check the other branches for older configs -
 
 <details>
 <summary>preview</summary>
-<br><img src="https://cdn.discordapp.com/attachments/780418865158946818/972192548665847808/unknown.png?size=4096" width="144"><br>
-soon™
+<br><img src="https://cdn.discordapp.com/attachments/635625917623828520/971811462932750356/05-05-22_1651767892.png?size=4096" width="1920"><br>
+more coming soon™
 </details>
 
 ## some overview
